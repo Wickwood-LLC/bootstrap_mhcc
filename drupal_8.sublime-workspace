@@ -1,0 +1,671 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"base",
+				"base_url"
+			],
+			[
+				"background-c",
+				"background-color\tproperty"
+			],
+			[
+				"back",
+				"background\tproperty"
+			],
+			[
+				"art",
+				"art-block\t style.scss"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"view",
+				"view-header\t style.css"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"padding",
+				"padding-right\tproperty"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"sticky-hear",
+				"sticky-header\t style.less"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"hea",
+				"header"
+			],
+			[
+				"heade",
+				"header"
+			],
+			[
+				"he",
+				"headerHeight"
+			],
+			[
+				"header",
+				"headerHeight"
+			],
+			[
+				"head",
+				"headerHeight"
+			],
+			[
+				"flex",
+				"flex-end"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"borde",
+				"border-box"
+			],
+			[
+				"bl",
+				"block\tdisplay"
+			],
+			[
+				"grid",
+				"grid-12\t style.less"
+			],
+			[
+				"fl",
+				"flex\tdisplay"
+			],
+			[
+				"au",
+				"auto\theight"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"fun",
+				"fun\tFunction"
+			],
+			[
+				"wind",
+				"windowWidth"
+			],
+			[
+				"menu",
+				"menuHeight"
+			],
+			[
+				"z-",
+				"z-index\tproperty"
+			],
+			[
+				"men",
+				"menuHeight"
+			],
+			[
+				"admi",
+				"adminHeight"
+			],
+			[
+				"top",
+				"topSpacing"
+			],
+			[
+				"brea",
+				"breakpoint\t mixins.less"
+			],
+			[
+				"box-",
+				"box-sizing"
+			],
+			[
+				"magin",
+				"margin-left\tproperty"
+			],
+			[
+				"marin",
+				"margin-right\tproperty"
+			],
+			[
+				"ma",
+				"margin-top\tproperty"
+			],
+			[
+				"margi",
+				"margin\tproperty"
+			],
+			[
+				"flui",
+				"fluid-type\t mixins.less"
+			],
+			[
+				"line-",
+				"line-height\tproperty"
+			],
+			[
+				"marg",
+				"margin-left\tproperty"
+			],
+			[
+				"margn",
+				"margin-top\tproperty"
+			],
+			[
+				"max-",
+				"max-width\tproperty"
+			],
+			[
+				"min-",
+				"min-height\tproperty"
+			],
+			[
+				"margin-",
+				"margin-bottom\tproperty"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"active",
+				"active-trail\t style-mobile.less"
+			],
+			[
+				"fle",
+				"flex-start"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"co",
+				"cover\tbackground-size"
+			],
+			[
+				"inlin",
+				"inline-block\tdisplay"
+			],
+			[
+				"border",
+				"border-box"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"list-s",
+				"list-style\tproperty"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"views",
+				"views-row\t bwma_rubik_style.scss"
+			],
+			[
+				"tex",
+				"text-indent"
+			],
+			[
+				"remov",
+				"removeClass"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"materua",
+				"Material Theme: Configuration"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Applications/MAMP/htdocs/drupal_8"
+	],
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/bootstrap_rubik.info.yml",
+		"/Applications/MAMP/htdocs/d8_lightning/composer.json",
+		"/Applications/MAMP/htdocs/panopoly/composer.json",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/config/schema/bootstrap_rubik.schema.yml",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/scss/_default-variables.scss",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/css/style.css",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/scss/style.scss",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/scss/_drupal-bootstrap.scss",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/templates/drupal_8.sublime-project",
+		"/Applications/MAMP/htdocs/drupal_8/web/sites/default/settings.local.php",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/templates/page.html.twig",
+		"/Applications/MAMP/htdocs/drupal_8/web/sites/default/settings.php",
+		"/Applications/MAMP/htdocs/drupal_8/web/sites/default/default.services.yml",
+		"/Applications/MAMP/htdocs/drupal_8/web/sites/development.services.yml",
+		"/Applications/MAMP/htdocs/drupal_8/web/sites/default/services.yml",
+		"/Applications/MAMP/htdocs/drupal_8/web/sites/default/default.settings.php",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap/bootstrap.api.php",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap/bootstrap.theme",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap/deprecated.php",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap/src/Plugin/Setting/General/Buttons/ButtonColorize.php",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap/docs/plugins/Alter.md",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap/js/modal.jquery.ui.bridge.js",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/bootstrap/assets/javascripts/bootstrap.js",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap/templates/system/system-themes-page.html.twig",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap/src/Plugin/Prerender/Operations.php",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap/src/Plugin/Preprocess/Links.php",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap/js/theme.js",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap/src/Utility/Element.php",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/bootstrap/package-lock.json",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap/docs/plugins/Prerender.md",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap/js/misc/tabledrag.js",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/templates/breadcrumb.html.twig",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/omega_rubik/omega_rubik.info.yml",
+		"/Applications/MAMP/htdocs/drupal_8/composer.json",
+		"/Applications/MAMP/htdocs/drupal_8/composer.lock",
+		"/Applications/MAMP/htdocs/drupal_7/composer.json",
+		"/Applications/MAMP/htdocs/panopoly/composer.lock",
+		"/Library/Application Support/appsolute/MAMP PRO/conf/php7.3.1.ini",
+		"/Library/Application Support/appsolute/MAMP PRO/conf/php.ini",
+		"/Users/palagpatski/Library/Application Support/appsolute/MAMP PRO/httpd.conf",
+		"/Applications/MAMP/conf/php7.3.1/php.ini",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/config/install/bootstrap_rubik.settings.yml",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/bootstrap_rubik.libraries.yml",
+		"/Applications/MAMP/conf/php7.3.1/pear.conf",
+		"/Applications/MAMP/tmp/mysql/my.cnf",
+		"/Applications/MAMP/bin/phpMyAdmin/config.inc.php",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/package.json",
+		"/Applications/MAMP/conf/SQLiteManager/config.db",
+		"/Applications/MAMP/htdocs/panopoly/sites/default/settings.php",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/bootstrap/assets/stylesheets/bootstrap/_variables.scss",
+		"/Applications/MAMP/htdocs/drupal_8/web/vendor/drush/drush/drush",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/kateri-bartik/kateri_bartik.theme",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/kateri-bartik/config/schema/kateri_bartik.schema.yml",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/kateri-bartik/kateri_bartik.info.yml",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/kateri-bartik/kateri_bartik.libraries.yml",
+		"/Users/palagpatski/.bash_profile",
+		"/Applications/MAMP/htdocs/drupal_8/web/vendor/drush/drush/drush.php",
+		"/Applications/MAMP/htdocs/drupal_8/load.environment.php",
+		"/Applications/MAMP/htdocs/drupal_8/phpunit.xml.dist",
+		"/Applications/MAMP/htdocs/drupal_8/scripts/composer/ScriptHandler.php",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap/docs/Sub-Theming.md",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik/THEMENAME.libraries.yml",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/kateri-bartik/color/color.inc",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/kateri-bartik/color/preview.html",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/kateri-bartik/kateri_bartik.breakpoints.yml",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/kateri-bartik/kateri_bartik.libraries.yaml",
+		"/Applications/MAMP/htdocs/drupal_8/web/core/themes/bartik/bartik.libraries.yml",
+		"/Applications/MAMP/htdocs/drupal_8/web/core/themes/bartik/bartik.info.yml",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/kateri-bartik/templates/page.tpl.php",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/kateri-bartik/sass/kateri-bartik.styles.scss",
+		"/Users/palagpatski/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/kateri-bartik/sass/base/_base.scss",
+		"/Applications/MAMP/htdocs/drupal_8/web/themes/kateri-bartik/bartik.info.yml",
+		"/Users/palagpatski/Documents/WEB DEV/bwmassoc_omega/sass/pages/homepage.scss",
+		"/Users/palagpatski/Documents/WEB DEV/bartik/bartik.info",
+		"/Users/palagpatski/Documents/WEB DEV/bartik/bartik.info.yml",
+		"/Users/palagpatski/Documents/WEB DEV/bwmassoc_omega/templates/maintenance-page.tpl.php",
+		"/Users/palagpatski/Documents/WEB DEV/wwm_marina_omega/template.php",
+		"/Users/palagpatski/Documents/WEB DEV/esw4acl_theme899/less/style.less",
+		"/Users/palagpatski/Downloads/header-img.spring.png",
+		"/Users/palagpatski/Downloads/Epubor_Ultimate_v3.0.10.508_Multilingual_macOS_[sn]/Read me!.rtf",
+		"/Users/palagpatski/Documents/WEB DEV/bwmassoc_omega/sass/base/_base.scss",
+		"/Users/palagpatski/Documents/WEB DEV/esw4acl_theme899/css/maintenance.css.map",
+		"/Users/palagpatski/Documents/WEB DEV/wwm-rubik/wwm_rubik_style.scss",
+		"/Users/palagpatski/Documents/WEB DEV/bwmassoc_omega/sass/pages/press_release_nodes.scss",
+		"/Users/palagpatski/Documents/WEB DEV/esw4acl_theme899/less/blog_view_panel_pages.less",
+		"/Users/palagpatski/Documents/WEB DEV/bwmassoc_omega/sass/pages/view_card_cycles.scss",
+		"/Users/palagpatski/Documents/WEB DEV/esw4acl_theme899/css/blog_view_panel_pages.css",
+		"/Users/palagpatski/Documents/WEB DEV/esw4acl_theme899/css/font-awesome.css",
+		"/Users/palagpatski/Downloads/fontawesome-free-5.7.1-web/css/all.css",
+		"/Users/palagpatski/.ssh/known_hosts",
+		"/Users/palagpatski/Documents/WEB DEV/esw4acl_theme899/js/esw4acl_theme899.core.js",
+		"/Users/palagpatski/Documents/WEB DEV/esw4acl_theme899/templates/node.tpl.php",
+		"/Users/palagpatski/Documents/WEB DEV/esw4acl_theme899/config.codekit3",
+		"/Users/palagpatski/Documents/WEB DEV/trlf_s/css/style.css",
+		"/Users/palagpatski/Documents/WEB DEV/trlf_s/sass/_01-0-reset.scss",
+		"/Users/palagpatski/Documents/WEB DEV/trlf_s/sass/_04-0-typography.scss",
+		"/Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/css3/_deprecated-support.scss",
+		"/Users/palagpatski/Documents/WEB DEV/trlf_s/config.codekit3",
+		"/Users/palagpatski/Documents/WEB DEV/lw_omega/sass/components/_components.scss",
+		"/Users/palagpatski/Documents/WEB DEV/ibhr_omega/sass/components/_flexslider.scss",
+		"/Users/palagpatski/Documents/WEB DEV/lw_omega/sass/components/_flexslider.scss",
+		"/Users/palagpatski/Documents/WEB DEV/ibhr_omega/template.php",
+		"/Users/palagpatski/Documents/WEB DEV/ibhr_omega/sass/components/_navigation.scss",
+		"/Users/palagpatski/Documents/WEB DEV/ibhr_omega/sass/components/_header.scss",
+		"/Users/palagpatski/Documents/WEB DEV/ibhr_omega/sass/pages/contact.scss",
+		"/Users/palagpatski/Documents/WEB DEV/ibhr_omega/sass/pages/login.scss",
+		"/Users/palagpatski/Documents/WEB DEV/lw_omega/sass/base/_base.scss",
+		"/Users/palagpatski/Documents/WEB DEV/ibhr_omega/sass/abstractions/_mixins.scss",
+		"/Users/palagpatski/Documents/WEB DEV/lw_omega/template.php",
+		"/Users/palagpatski/Desktop/android/TWRP Backup Tool.sh",
+		"/Users/palagpatski/Documents/WEB DEV/ibhr_omega/sass/components/_components.scss",
+		"/Users/palagpatski/Documents/WEB DEV/ibhr_omega/sass/components/_regions.scss",
+		"/Users/palagpatski/Documents/WEB DEV/ibhr_omega/sass/components/_pages.scss",
+		"/Users/palagpatski/Documents/WEB DEV/ibhr_omega/sass/base/_base.scss",
+		"/Users/palagpatski/Documents/WEB DEV/wwm_vssc_skins/wwm_vscc_skins.module",
+		"/Users/palagpatski/Documents/WEB DEV/vscc/vscc.module",
+		"/Users/palagpatski/Documents/WEB DEV/vscc/theme/vscc.theme.inc",
+		"/Users/palagpatski/Documents/WEB DEV/wwm_vssc_skins/wwm_vscc_skins.info",
+		"/Users/palagpatski/Documents/WEB DEV/lw_omega/sass/components/_header.scss",
+		"/Users/palagpatski/Documents/WEB DEV/lw_omega/css/lw-omega.styles.css",
+		"/Users/palagpatski/Documents/WEB DEV/vscc/vsccnewskin/vsccnewskin.module",
+		"/Users/palagpatski/Documents/WEB DEV/lw_omega/sass/pages/published-books.scss",
+		"/Users/palagpatski/Documents/WEB DEV/dgr-rubik/sass/mail.scss",
+		"/Users/palagpatski/Documents/WEB DEV/dgr-rubik/sass/login.scss",
+		"/Users/palagpatski/Documents/WEB DEV/dgr-rubik/dgr_rubik_style.scss",
+		"/Users/palagpatski/Documents/WEB DEV/dgr-rubik/sass/faq-nodes.scss",
+		"/Users/palagpatski/Documents/WEB DEV/lw_omega/sass/pages/maintenance.scss"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap",
+			"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik",
+			"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap",
+			"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik",
+			"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap",
+			"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap_rubik",
+			"/Applications/MAMP/htdocs/drupal_8/web/themes/bootstrap",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"cache.backend.null",
+			"title",
+			"services.yml",
+			"services",
+			"bootstrap-search-form-wrapper",
+			"bootstrap_colorize_text",
+			"bootstrap_colorize_text_alter",
+			"btn",
+			"operations",
+			"btn-default",
+			"body",
+			"#block-superfish-1",
+			"$link-color",
+			"link-color",
+			"accent",
+			"fstream",
+			"\"tar\": \"2.2.1\",",
+			"\"fstream\": \"1.0.11\"",
+			"\"lodash\": \"4.17.10\"",
+			"lodash",
+			"primary",
+			"a {",
+			"mbstring.http_input",
+			"default_charset",
+			"memory_limit",
+			"mbstring.http_input",
+			"database",
+			"THEME",
+			"THEMENAME",
+			"composer",
+			"$settings['wt.environment']",
+			"drush",
+			"bartik",
+			"bartikkateri",
+			"kateri",
+			"bartik",
+			"color",
+			"Bartik",
+			"bartik/",
+			"bartik_",
+			"VERSION",
+			"page_",
+			"webkit",
+			"] =",
+			"regions[",
+			" =",
+			"]",
+			"regions[",
+			"pane-main-tabs",
+			"pane-main tabs"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"tar\": \"2.2.2\",",
+			"\"fstream\": \"1.0.12\"",
+			"\"lodash\": \"4.17.11\"",
+			"bootstrap_rubik",
+			"kateri_bartik",
+			"Kateri Bartik",
+			"kateri_bartik/",
+			"kateri_bartik_",
+			"1.x",
+			":",
+			"",
+			":",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "drupal_8.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

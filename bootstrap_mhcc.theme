@@ -1,0 +1,29 @@
+<?php
+
+use Drupal\Core\Render\Markup;
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+function bootstrap_mhcc_preprocess_html(&$variables) {
+	$node = \Drupal::routeMatch()->getParameter('node');
+	if ($node instanceof \Drupal\node\NodeInterface) {
+	  // You can get nid and anything else you need from the node object.
+	  $variables['is_published'] = $node->isPublished();
+  }
+  if (!empty($variables['head_title']['name'])) {
+    $variables['head_title']['name'] = html_entity_decode($variables['head_title']['name']);
+  }
+}
+
+function bootstrap_mhcc_preprocess_page(&$variables) {
+  $variables['site_name'] = Markup::create(strip_tags(html_entity_decode(\Drupal::config('system.site')->get('name'))));
+}
+
+function bootstrap_mhcc_preprocess_maintenance_page(&$variables) {
+  $variables['site_name'] = Markup::create(strip_tags(html_entity_decode(\Drupal::config('system.site')->get('name'))));
+}

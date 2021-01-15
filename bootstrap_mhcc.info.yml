@@ -1,0 +1,28 @@
+name: 'Bootstrap MHCC'
+description: 'A Drupal Bootstrap 3 based theme for MHCC.'
+package: 'Bootstrap'
+core: 8.x
+type: theme
+base theme: bootstrap_wwm_base
+logo: logo.png
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Header'
+  topbar: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Sidebar 1'
+  sidebar_second: 'Sidebar 2'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries-extend:
+  bootstrap/framework:
+    - bootstrap_mhcc/framework
+
+ckeditor_stylesheets:
+  - css/ckeditor-styles.css

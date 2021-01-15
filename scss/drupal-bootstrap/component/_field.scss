@@ -1,0 +1,49 @@
+/**
+ * $file
+ * Visual styles for fields.
+ */
+
+.field--label,
+.field__label {
+  font-weight: bold;
+}
+
+.field--label-inline {
+
+  .field--label,
+  .field__label,
+  .field--items {
+    float: left;
+    /*LTR*/
+  }
+}
+
+.field--label-inline {
+
+  .field--label,
+  .field__label,
+  >.field--item,
+  .field--items {
+    padding-right: 0.5em;
+  }
+}
+
+[dir="rtl"] .field--label-inline {
+
+  .field--label,
+  .field__label,
+  .field--items {
+    padding-left: 0.5em;
+    padding-right: 0;
+    float: right;
+    /*RTL*/
+  }
+}
+
+.field--label-inline {
+
+  .field--label::after,
+  .field__label::after {
+    content: ':';
+  }
+}
