@@ -7,9 +7,11 @@ base theme: bootstrap_wwm_base
 logo: logo.png
 
 regions:
+  header_left: 'Header Left'
+  header_mid: 'Header Middle'
+  header_right: 'Header Right'
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
-  header: 'Header'
   topbar: 'Top Bar'
   highlighted: 'Highlighted'
   help: 'Help'

@@ -2837,6 +2837,20 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/templates/block--system-branding-block.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/block--system-branding-block.html.twig",
+		"oF": 0
+		},
+	"/templates/block--system-branding-slogan-block.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/block--system-branding-slogan-block.html.twig",
+		"oF": 0
+		},
 	"/templates/block.html.twig": {
 		"cB": 0,
 		"ft": 8192,
