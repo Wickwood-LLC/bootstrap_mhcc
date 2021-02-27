@@ -152,12 +152,28 @@ ul {
     flex: 1 1 30%;
   }
   .region-header-mid {
-    padding: 1em;
+    padding: 0 1em;
     box-sizing: content-box;
   }
   .region-header-bottom {
     flex: 100%;
     margin-top: 0.5em;
+  }
+}
+
+// Bottom.
+#bottom {
+  display: flex;
+  flex-flow: row wrap;
+
+  .region-bottom-1,
+  .region-bottom-2,
+  .region-bottom-3 {
+    flex: 1 1 30%;
+  }
+  .region-bottom-2 {
+    padding: 0 1em;
+    box-sizing: content-box;
   }
 }
 

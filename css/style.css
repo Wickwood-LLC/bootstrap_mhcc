@@ -8045,13 +8045,29 @@ ul:last-child {
 }
 
 #header .region-header-mid {
-  padding: 1em;
+  padding: 0 1em;
   box-sizing: content-box;
 }
 
 #header .region-header-bottom {
   flex: 100%;
   margin-top: 0.5em;
+}
+
+#bottom {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#bottom .region-bottom-1,
+#bottom .region-bottom-2,
+#bottom .region-bottom-3 {
+  flex: 1 1 30%;
+}
+
+#bottom .region-bottom-2 {
+  padding: 0 1em;
+  box-sizing: content-box;
 }
 
 .footer {

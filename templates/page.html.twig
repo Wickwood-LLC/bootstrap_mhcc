@@ -113,7 +113,7 @@
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
 
-      {# Header #}
+      {# Top Bar #}
       {% if page.topbar %}
         {% block topbar %}
           <div class="col-sm-12" role="heading">
@@ -175,6 +175,20 @@
   </div>
 {% endblock %}
 
+{# Bottom #}
+<section class="bottom {{ container }}" id="bottom">
+  {% if page.bottom_1 %}
+      {{ page.bottom_1 }}
+  {% endif %}
+  {% if page.bottom_2 %}
+      {{ page.bottom_2 }}
+  {% endif %}
+  {% if page.bottom_3 %}
+      {{ page.bottom_3 }}
+  {% endif %}
+</section>
+
+{# Footer #}
 {% if page.footer %}
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">
