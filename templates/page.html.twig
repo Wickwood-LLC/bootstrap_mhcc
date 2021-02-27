@@ -53,26 +53,18 @@
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Header #}
-<header class="header {{ container }}">
+<header class="header {{ container }}" id="header">
   {% if page.header_left %}
-    <div class="header-left">
       {{ page.header_left }}
-    </div>
   {% endif %}
   {% if page.header_mid %}
-    <div class="header-mid">
       {{ page.header_mid }}
-    </div>
   {% endif %}
   {% if page.header_right %}
-    <div class="header-right">
       {{ page.header_right }}
-    </div>
   {% endif %}
   {% if page.header_bottom %}
-    <div class="header-bottom">
       {{ page.header_bottom }}
-    </div>
   {% endif %}
 </header>
 
