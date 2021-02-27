@@ -10,6 +10,7 @@ regions:
   header_left: 'Header Left'
   header_mid: 'Header Middle'
   header_right: 'Header Right'
+  header_bottom: 'Header Bottom'
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
   topbar: 'Top Bar'
