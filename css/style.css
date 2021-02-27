@@ -8029,8 +8029,29 @@ ul:last-child {
   text-align: center;
 }
 
-.page-header {
-  margin-top: 0;
+.logo img {
+  width: 100%;
+}
+
+#header {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#header .region-header-left,
+#header .region-header-mid,
+#header .region-header-right {
+  flex: 1 1 30%;
+}
+
+#header .region-header-mid {
+  padding: 1em;
+  box-sizing: content-box;
+}
+
+#header .region-header-bottom {
+  flex: 100%;
+  margin-top: 0.5em;
 }
 
 .footer {

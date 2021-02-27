@@ -136,9 +136,29 @@ ul {
   text-align: center;
 }
 
+// Logo
+.logo img {
+  width: 100%;
+}
+
 // Page header.
-.page-header {
-  margin-top: 0;
+#header {
+  display: flex;
+  flex-flow: row wrap;
+
+  .region-header-left,
+  .region-header-mid,
+  .region-header-right {
+    flex: 1 1 30%;
+  }
+  .region-header-mid {
+    padding: 1em;
+    box-sizing: content-box;
+  }
+  .region-header-bottom {
+    flex: 100%;
+    margin-top: 0.5em;
+  }
 }
 
 // Footer.
