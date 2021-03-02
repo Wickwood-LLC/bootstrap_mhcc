@@ -8054,6 +8054,11 @@ ul:last-child {
   margin-top: 0.5em;
 }
 
+.main-container > .row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 #bottom {
   display: flex;
   flex-flow: row wrap;

@@ -108,24 +108,38 @@
   {% endblock %}
 {% endif %}
 
+{# Help #}
+{% if page.help %}
+  {% block help %}
+    <div class="help {{ container }}">{{ page.help }}</div>
+  {% endblock %}
+{% endif %}
+
+{# Highlighted #}
+{% if page.highlighted %}
+  {% block highlighted %}
+    <div class="highlighted {{ container }}">{{ page.highlighted }}</div>
+  {% endblock %}
+{% endif %}
+
+{# Top Bar #}
+{% if page.topbar %}
+  {% block topbar %}
+    <div class="col-sm-12 topbar {{ container }}">
+      {{ page.topbar }}
+    </div>
+  {% endblock %}
+{% endif %}
+
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
 
-      {# Top Bar #}
-      {% if page.topbar %}
-        {% block topbar %}
-          <div class="col-sm-12" role="heading">
-            {{ page.topbar }}
-          </div>
-        {% endblock %}
-      {% endif %}
-
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}
-          <aside class="col-sm-3" role="complementary">
+          <aside class="col-sm-3 sidebar-1" role="complementary">
             {{ page.sidebar_first }}
           </aside>
         {% endblock %}
@@ -134,6 +148,7 @@
       {# Content #}
       {%
         set content_classes = [
+          'midbar',
           page.sidebar_first and page.sidebar_second ? 'col-sm-6',
           page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
           page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
@@ -141,21 +156,6 @@
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>
-
-        {# Highlighted #}
-        {% if page.highlighted %}
-          {% block highlighted %}
-            <div class="highlighted">{{ page.highlighted }}</div>
-          {% endblock %}
-        {% endif %}
-
-        {# Help #}
-        {% if page.help %}
-          {% block help %}
-            {{ page.help }}
-          {% endblock %}
-        {% endif %}
-
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
@@ -166,7 +166,7 @@
       {# Sidebar Second #}
       {% if page.sidebar_second %}
         {% block sidebar_second %}
-          <aside class="col-sm-3" role="complementary">
+          <aside class="col-sm-3 sidebar-2" role="complementary">
             {{ page.sidebar_second }}
           </aside>
         {% endblock %}

@@ -161,6 +161,12 @@ ul {
   }
 }
 
+// Content
+.main-container>.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 // Bottom.
 #bottom {
   display: flex;
