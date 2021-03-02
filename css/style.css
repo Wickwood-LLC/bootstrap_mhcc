@@ -8059,6 +8059,17 @@ ul:last-child {
   flex-flow: row wrap;
 }
 
+.main-container > .row .midbar {
+  width: unset;
+  flex: 1 1 75%;
+}
+
+.main-container > .row .sidebar-1,
+.main-container > .row .sidebar-2 {
+  width: unset;
+  flex: 1 1 25%;
+}
+
 #bottom {
   display: flex;
   flex-flow: row wrap;
