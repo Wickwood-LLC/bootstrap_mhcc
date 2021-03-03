@@ -18,8 +18,8 @@
 
 body {
   background: #028ad2;
-  background: linear-gradient(0deg,#028ad2 0%,rgba(2,138,210,0.95) 70%,white 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#028ad2",endColorstr="#ffffff",GradientType=1);
+  background: linear-gradient(0deg, #028ad2 0%, rgba(2, 138, 210, 0.95) 70%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#028ad2", endColorstr="#ffffff", GradientType=1);
   background-repeat: no-repeat;
   background-attachment: fixed;
   @include fluid-type(320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
@@ -141,20 +141,42 @@ ul {
   width: 100%;
 }
 
+.navbar-brand {
+  color: #293C98;
+  font-size: 1.2em;
+  padding: 0;
+}
+
+.navbar-text {
+  box-sizing: border-box;
+  font-family: 'Neuzeit Grotesk', Tahoma, Arial, Helvetica, Sans-Serif;
+  text-decoration: none;
+  line-height: normal;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 2px #00000080;
+  width: 100%;
+  font-size: 1.5em;
+}
+
 // Page header.
 #header {
   display: flex;
   flex-flow: row wrap;
+  margin-bottom: 1em;
 
   .region-header-left,
   .region-header-mid,
   .region-header-right {
     flex: 1 1 30%;
   }
+
   .region-header-mid {
     padding: 0 1em;
     box-sizing: content-box;
   }
+
   .region-header-bottom {
     flex: 100%;
     margin-top: 0.5em;
@@ -168,12 +190,13 @@ ul {
 
   .midbar {
     width: unset;
-    flex: 1 1 75%;
+    flex: 1 1 calc(50% - 30px);
   }
+
   .sidebar-1,
   .sidebar-2 {
     width: unset;
-    flex: 1 1 25%;
+    flex: 1 1 calc(25% - 30px);
   }
 }
 
@@ -187,6 +210,7 @@ ul {
   .region-bottom-3 {
     flex: 1 1 30%;
   }
+
   .region-bottom-2 {
     padding: 0 1em;
     box-sizing: content-box;
@@ -608,6 +632,7 @@ nav.tabs {
   }
 
   &.layout--threecol-section--25-50-25 {
+
     >.layout__region--first,
     >.layout__region--third {
       @include breakpoint(40em) {
@@ -759,20 +784,20 @@ nav.tabs {
   margin: 5px;
   border: 3px solid #9DC4D7;
 
-  > .block-title {
+  >.block-title {
     background: #7FCAE6;
-    background: linear-gradient(to bottom,#7FCAE6 0,#84CCE7 40%,#84CCE7 85%,#61BEE0 100%) no-repeat;
+    background: linear-gradient(to bottom, #7FCAE6 0, #84CCE7 40%, #84CCE7 85%, #61BEE0 100%) no-repeat;
     border-radius: 3px 3px 0 0;
     padding: 6px 5px;
     margin: 0 auto 2px;
   }
 
-  > h3.block-title {
+  >h3.block-title {
     font-weight: bold;
     @include fluid-type(320px, 1200px, 18px, 24px); // values inside are ($min_width,$max_width, $min_font, $max_font);
   }
 
-  > .block-content {
+  >.block-content {
     padding: 0.5em 1em 0 1em;
   }
 
@@ -787,7 +812,7 @@ nav.tabs {
   }
 }
 
-.boxed-columns > .layout__region {
+.boxed-columns>.layout__region {
   border: 1px solid #5c9630;
   border-radius: 8px;
   padding: 0.5em;
@@ -820,6 +845,7 @@ nav.tabs {
 .no-top-margin-title .block-title {
   margin-top: 0;
 }
+
 .no-bottom-margin-title .block-title {
   margin-bottom: 0;
 }
@@ -840,7 +866,7 @@ nav.tabs {
   float: right;
 
   &.js-layout-builder-block {
-  float: none;
+    float: none;
   }
 }
 
@@ -851,11 +877,62 @@ nav.tabs {
     margin: auto;
   }
 }
+
 /********************* VIEWS *********************/
 .views-exposed-form {
-  .form--inline > .form-item {
+  .form--inline>.form-item {
     float: none;
     display: inline-block;
+  }
+}
+
+.block-views-blockfull-calendar-view-block-1 {  
+  .view-header {
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0.5em 0;
+
+    a {
+      color: red;
+      text-decoration: none;
+      line-height: 1.2em;
+    }
+  }
+
+  .view-content,
+  ul.pager {
+    text-align: left;
+
+    a,
+    a:visited {
+      color: #000000;
+      text-decoration: none;
+      line-height: 1.6em;
+    }
+
+    a:hover {
+      color: red;
+      text-decoration: none;
+    }
+  }
+
+  .view-content {
+    font-size: 0.8em;
+    
+    .views-row {
+      text-indent: -1em;
+      padding-left: 1em;
+    }
+  }
+
+  ul.pager {
+    text-align: center;
+    margin: 0.5em 0;
+
+    .pager-current {
+      color: #356982;
+    }
   }
 }
 
@@ -883,7 +960,7 @@ form#user-register-form {
   .row {
     margin-bottom: 0.5em;
 
-    > div[class*="col"] {
+    >div[class*="col"] {
       margin-bottom: 0.5em;
     }
   }
@@ -940,54 +1017,76 @@ form#user-register-form {
   }
 
   #edit-group-user {
+
     .form-type-textfield,
     .form-type-select,
     .form-type-email,
     .form-type-password,
     .field--type-datetime {
-      label, .label {
+
+      label,
+      .label {
         flex: 0 0 136px;
       }
-      input, .select-wrapper {
+
+      input,
+      .select-wrapper {
         flex: 1 1 calc(100% - 136px);
       }
     }
   }
+
   #edit-group-user-login-info {
+
     .form-type-textfield,
     .form-type-select,
     .form-type-email,
     .form-type-password,
     .field--type-datetime {
-      label, .label {
+
+      label,
+      .label {
         flex: 0 0 150px;
       }
+
       input {
         flex: 1 1 calc(100% - 150px);
       }
     }
   }
+
   #field-mailing-address-values {
+
     div[class*="field-address-type"],
     div[class*="address-country-code"],
     div[class*="address-locality"],
     div[class*="address-administrative-area"],
     div[class*="address-postal-code"] {
-      label, .label {
+
+      label,
+      .label {
         flex: 0 0 143px;
       }
-      input, .select-wrapper {
+
+      input,
+      .select-wrapper {
         flex: 1 1 calc(100% - 143px);
       }
     }
   }
+
   #field-phone-values {
+
     div[class*="subform-field-phone-number"],
     div[class*="subform-field-phone-type"] {
-      label, .label {
+
+      label,
+      .label {
         flex: 0 0 155px;
       }
-      input, .select-wrapper {
+
+      input,
+      .select-wrapper {
         flex: 1 1 calc(100% - 155px);
       }
     }
@@ -1000,6 +1099,7 @@ form#user-register-form {
       .image-preview {
         flex: 1 0 auto;
       }
+
       .image-widget-data {
         flex: 1 1 auto;
 
@@ -1030,11 +1130,12 @@ form#user-register-form {
     margin: auto;
   }
 
-  .field--label, .field__label {
+  .field--label,
+  .field__label {
     font-weight: 500;
   }
 
   .block-field-blockparagraphphonefield-phone-type {
-      margin-right: 0.3em;
+    margin-right: 0.3em;
   }
 }

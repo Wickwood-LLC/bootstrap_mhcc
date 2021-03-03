@@ -7813,7 +7813,7 @@ body.toolbar-loading.toolbar {
 body {
   background: #028ad2;
   background: linear-gradient(0deg, #028ad2 0%, rgba(2, 138, 210, 0.95) 70%, white 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#028ad2",endColorstr="#ffffff",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#028ad2", endColorstr="#ffffff", GradientType=1);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -8033,9 +8033,29 @@ ul:last-child {
   width: 100%;
 }
 
+.navbar-brand {
+  color: #293C98;
+  font-size: 1.2em;
+  padding: 0;
+}
+
+.navbar-text {
+  box-sizing: border-box;
+  font-family: 'Neuzeit Grotesk', Tahoma, Arial, Helvetica, Sans-Serif;
+  text-decoration: none;
+  line-height: normal;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 2px #00000080;
+  width: 100%;
+  font-size: 1.5em;
+}
+
 #header {
   display: flex;
   flex-flow: row wrap;
+  margin-bottom: 1em;
 }
 
 #header .region-header-left,
@@ -8061,13 +8081,13 @@ ul:last-child {
 
 .main-container > .row .midbar {
   width: unset;
-  flex: 1 1 75%;
+  flex: 1 1 calc(50% - 30px);
 }
 
 .main-container > .row .sidebar-1,
 .main-container > .row .sidebar-2 {
   width: unset;
-  flex: 1 1 25%;
+  flex: 1 1 calc(25% - 30px);
 }
 
 #bottom {
@@ -8750,6 +8770,57 @@ nav.tabs {
   display: inline-block;
 }
 
+.block-views-blockfull-calendar-view-block-1 .view-header {
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+.block-views-blockfull-calendar-view-block-1 .view-header a {
+  color: red;
+  text-decoration: none;
+  line-height: 1.2em;
+}
+
+.block-views-blockfull-calendar-view-block-1 .view-content,
+.block-views-blockfull-calendar-view-block-1 ul.pager {
+  text-align: left;
+}
+
+.block-views-blockfull-calendar-view-block-1 .view-content a,
+.block-views-blockfull-calendar-view-block-1 .view-content a:visited,
+.block-views-blockfull-calendar-view-block-1 ul.pager a,
+.block-views-blockfull-calendar-view-block-1 ul.pager a:visited {
+  color: #000000;
+  text-decoration: none;
+  line-height: 1.6em;
+}
+
+.block-views-blockfull-calendar-view-block-1 .view-content a:hover,
+.block-views-blockfull-calendar-view-block-1 ul.pager a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.block-views-blockfull-calendar-view-block-1 .view-content {
+  font-size: 0.8em;
+}
+
+.block-views-blockfull-calendar-view-block-1 .view-content .views-row {
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+.block-views-blockfull-calendar-view-block-1 ul.pager {
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+.block-views-blockfull-calendar-view-block-1 ul.pager .pager-current {
+  color: #356982;
+}
+
 /********************* MAINTENANCE *********************/
 .maintenance-page main {
   text-align: center;
@@ -8834,7 +8905,8 @@ form#user-register-form .field--type-datetime .description {
   flex: 1 100%;
 }
 
-form#user-register-form #edit-group-user .form-type-textfield label, form#user-register-form #edit-group-user .form-type-textfield .label,
+form#user-register-form #edit-group-user .form-type-textfield label,
+form#user-register-form #edit-group-user .form-type-textfield .label,
 form#user-register-form #edit-group-user .form-type-select label,
 form#user-register-form #edit-group-user .form-type-select .label,
 form#user-register-form #edit-group-user .form-type-email label,
@@ -8846,7 +8918,8 @@ form#user-register-form #edit-group-user .field--type-datetime .label {
   flex: 0 0 136px;
 }
 
-form#user-register-form #edit-group-user .form-type-textfield input, form#user-register-form #edit-group-user .form-type-textfield .select-wrapper,
+form#user-register-form #edit-group-user .form-type-textfield input,
+form#user-register-form #edit-group-user .form-type-textfield .select-wrapper,
 form#user-register-form #edit-group-user .form-type-select input,
 form#user-register-form #edit-group-user .form-type-select .select-wrapper,
 form#user-register-form #edit-group-user .form-type-email input,
@@ -8858,7 +8931,8 @@ form#user-register-form #edit-group-user .field--type-datetime .select-wrapper {
   flex: 1 1 calc(100% - 136px);
 }
 
-form#user-register-form #edit-group-user-login-info .form-type-textfield label, form#user-register-form #edit-group-user-login-info .form-type-textfield .label,
+form#user-register-form #edit-group-user-login-info .form-type-textfield label,
+form#user-register-form #edit-group-user-login-info .form-type-textfield .label,
 form#user-register-form #edit-group-user-login-info .form-type-select label,
 form#user-register-form #edit-group-user-login-info .form-type-select .label,
 form#user-register-form #edit-group-user-login-info .form-type-email label,
@@ -8878,7 +8952,8 @@ form#user-register-form #edit-group-user-login-info .field--type-datetime input 
   flex: 1 1 calc(100% - 150px);
 }
 
-form#user-register-form #field-mailing-address-values div[class*="field-address-type"] label, form#user-register-form #field-mailing-address-values div[class*="field-address-type"] .label,
+form#user-register-form #field-mailing-address-values div[class*="field-address-type"] label,
+form#user-register-form #field-mailing-address-values div[class*="field-address-type"] .label,
 form#user-register-form #field-mailing-address-values div[class*="address-country-code"] label,
 form#user-register-form #field-mailing-address-values div[class*="address-country-code"] .label,
 form#user-register-form #field-mailing-address-values div[class*="address-locality"] label,
@@ -8890,7 +8965,8 @@ form#user-register-form #field-mailing-address-values div[class*="address-postal
   flex: 0 0 143px;
 }
 
-form#user-register-form #field-mailing-address-values div[class*="field-address-type"] input, form#user-register-form #field-mailing-address-values div[class*="field-address-type"] .select-wrapper,
+form#user-register-form #field-mailing-address-values div[class*="field-address-type"] input,
+form#user-register-form #field-mailing-address-values div[class*="field-address-type"] .select-wrapper,
 form#user-register-form #field-mailing-address-values div[class*="address-country-code"] input,
 form#user-register-form #field-mailing-address-values div[class*="address-country-code"] .select-wrapper,
 form#user-register-form #field-mailing-address-values div[class*="address-locality"] input,
@@ -8902,13 +8978,15 @@ form#user-register-form #field-mailing-address-values div[class*="address-postal
   flex: 1 1 calc(100% - 143px);
 }
 
-form#user-register-form #field-phone-values div[class*="subform-field-phone-number"] label, form#user-register-form #field-phone-values div[class*="subform-field-phone-number"] .label,
+form#user-register-form #field-phone-values div[class*="subform-field-phone-number"] label,
+form#user-register-form #field-phone-values div[class*="subform-field-phone-number"] .label,
 form#user-register-form #field-phone-values div[class*="subform-field-phone-type"] label,
 form#user-register-form #field-phone-values div[class*="subform-field-phone-type"] .label {
   flex: 0 0 155px;
 }
 
-form#user-register-form #field-phone-values div[class*="subform-field-phone-number"] input, form#user-register-form #field-phone-values div[class*="subform-field-phone-number"] .select-wrapper,
+form#user-register-form #field-phone-values div[class*="subform-field-phone-number"] input,
+form#user-register-form #field-phone-values div[class*="subform-field-phone-number"] .select-wrapper,
 form#user-register-form #field-phone-values div[class*="subform-field-phone-type"] input,
 form#user-register-form #field-phone-values div[class*="subform-field-phone-type"] .select-wrapper {
   flex: 1 1 calc(100% - 155px);
@@ -8948,7 +9026,8 @@ form#user-register-form .captcha {
   margin: auto;
 }
 
-.path-user .field--label, .path-user .field__label {
+.path-user .field--label,
+.path-user .field__label {
   font-weight: 500;
 }
 
