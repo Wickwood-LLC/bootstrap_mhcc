@@ -192,6 +192,7 @@ ul {
   text-align: center;
 
   .menu--main {
+    float: none;
     >li {
       margin-left: 5px;
       float: none;
@@ -963,6 +964,63 @@ nav.tabs {
 
 .no-bottom-margin-title .block-title {
   margin-bottom: 0;
+}
+
+.notice-block {
+    border: 2px solid #ae133e;
+    border-radius: 6px;
+    background: #FFF url(../images/notice-arrow.png) no-repeat;
+    margin: 5px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+    min-height: 47px;
+    position: relative;
+    overflow: hidden;
+    background-size: auto;
+
+    h3 {
+        display: inline-block;
+        font-size: 1.5em;
+        color: white;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 47px;
+        width: 184px;
+        flex: 0 0 184px;
+        margin: 0;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .block-content {
+        display: block;
+        flex-flow: row wrap;
+        align-items: center;
+        min-height: 45px;
+        padding: 0 0.5em;
+
+        .notice-content,
+        .views-row {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 5px;
+            overflow: hidden;
+            flex: 1;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+    }
+
+    @include breakpoint(678px) {
+      .block-content {
+        display: flex;
+      }
+    }
 }
 
 #edit-actions {

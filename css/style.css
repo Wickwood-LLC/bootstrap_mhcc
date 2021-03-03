@@ -8082,6 +8082,10 @@ ul:last-child {
   text-align: center;
 }
 
+#navbar .menu--main {
+  float: none;
+}
+
 #navbar .menu--main > li {
   margin-left: 5px;
   float: none;
@@ -8844,6 +8848,63 @@ nav.tabs {
 
 .no-bottom-margin-title .block-title {
   margin-bottom: 0;
+}
+
+.notice-block {
+  border: 2px solid #ae133e;
+  border-radius: 6px;
+  background: #FFF url(../images/notice-arrow.png) no-repeat;
+  margin: 5px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  min-height: 47px;
+  position: relative;
+  overflow: hidden;
+  background-size: auto;
+}
+
+.notice-block h3 {
+  display: inline-block;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 47px;
+  width: 184px;
+  flex: 0 0 184px;
+  margin: 0;
+}
+
+.notice-block h3 a {
+  color: white;
+  text-decoration: none;
+}
+
+.notice-block .block-content {
+  display: block;
+  flex-flow: row wrap;
+  align-items: center;
+  min-height: 45px;
+  padding: 0 0.5em;
+}
+
+.notice-block .block-content .notice-content,
+.notice-block .block-content .views-row {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+  overflow: hidden;
+  flex: 1;
+}
+
+.notice-block .block-content a {
+  color: red;
+  text-decoration: none;
+}
+
+@media (min-width: 678px) {
+  .notice-block .block-content {
+    display: flex;
+  }
 }
 
 #edit-actions {
