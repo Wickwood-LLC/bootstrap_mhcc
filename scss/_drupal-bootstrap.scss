@@ -336,19 +336,28 @@ ul {
 }
 
 // Content
-.main-container>.row {
-  display: flex;
-  flex-flow: row wrap;
+.main-container{
+  background: #E2EDF3;
+  border-radius: 10px;
+  border: 3px solid #9DC4D7;
+  padding: 5px;
+  margin: 5px auto;
+  box-sizing: border-box;
+  
+  >.row {
+    display: flex;
+    flex-flow: row wrap;
 
-  .midbar {
-    width: unset;
-    flex: 1 1 calc(50% - 30px);
-  }
+    .midbar {
+      width: unset;
+      flex: 1 1 calc(50% - 30px);
+    }
 
-  .sidebar-1,
-  .sidebar-2 {
-    width: unset;
-    flex: 1 1 calc(25% - 30px);
+    .sidebar-1,
+    .sidebar-2 {
+      width: unset;
+      flex: 1 1 calc(25% - 30px);
+    }
   }
 }
 
