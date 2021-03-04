@@ -316,6 +316,25 @@ ul {
   }
 }
 
+// Help
+.region-help {
+  background: #E2EDF3;
+  border-radius: 10px;
+  border: 3px solid #9DC4D7;
+  padding: 5px;
+  margin: 5px auto;
+  box-sizing: border-box;
+
+  .alert {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 // Content
 .main-container>.row {
   display: flex;
