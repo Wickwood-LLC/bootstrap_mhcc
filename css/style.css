@@ -8086,6 +8086,10 @@ ul:last-child {
   text-align: center;
 }
 
+#navbar .navbar-header {
+  float: none;
+}
+
 #navbar .menu--main {
   float: none;
 }
@@ -8110,17 +8114,27 @@ ul:last-child {
   text-shadow: 2px 2px 2px rgba(245, 245, 245, 0.5);
 }
 
-#navbar .menu--main > li:hover > a.menuparent {
+#navbar .menu--main > li:hover > a.dropdown-toggle {
   border-bottom: 0;
   border-radius: 4px 4px 0 0;
 }
 
-#navbar .menu--main > li:hover > a.menuparent + ul {
+#navbar .menu--main > li:hover > a.dropdown-toggle + ul {
   border-top-left-radius: 0;
 }
 
 #navbar .menu--main > li:first-child {
   margin-left: 0px;
+}
+
+#navbar .menu--main li.dropdown:hover > ul.dropdown-menu {
+  display: block;
+}
+
+#navbar .menu--main li.dropdown:hover > ul.dropdown-menu li.dropdown:hover > ul.dropdown-menu {
+  position: absolute;
+  left: 100%;
+  top: 0;
 }
 
 #navbar .menu--main a {
@@ -8148,13 +8162,7 @@ ul:last-child {
   }
 }
 
-#navbar .menu--main a .sf-sub-indicator {
-  display: inline-block;
-  position: static;
-  margin-left: 5px;
-}
-
-#navbar .menu--main li ul {
+#navbar .menu--main ul.dropdown-menu {
   background: #96C8DE;
   border-radius: 4px;
   border: 1px dotted rgba(40, 161, 204, 0.9);
@@ -8165,24 +8173,24 @@ ul:last-child {
   z-index: 1;
 }
 
-#navbar .menu--main li ul li:last-child a {
+#navbar .menu--main ul.dropdown-menu li:last-child a {
   border: 0px;
 }
 
-#navbar .menu--main li ul li:hover {
+#navbar .menu--main ul.dropdown-menu li:hover {
   background: #1A6884;
 }
 
-#navbar .menu--main li ul li:hover > ul {
+#navbar .menu--main ul.dropdown-menu li:hover > ul {
   left: calc(100% + 2px);
 }
 
-#navbar .menu--main li ul li:hover > a {
+#navbar .menu--main ul.dropdown-menu li:hover > a {
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-#navbar .menu--main li ul a {
+#navbar .menu--main ul.dropdown-menu li a {
   border-bottom: 1px dotted rgba(40, 161, 204, 0.9);
   text-align: left;
   color: #0C2F3C;
@@ -8190,6 +8198,10 @@ ul:last-child {
   text-decoration: none;
   text-shadow: 2px 2px 2px rgba(245, 245, 245, 0.5);
   white-space: nowrap;
+}
+
+#navbar .menu--main ul.dropdown-menu li a:hover {
+  background-color: unset;
 }
 
 .main-container > .row {
