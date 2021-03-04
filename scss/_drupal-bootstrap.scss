@@ -145,6 +145,10 @@ ul {
   color: #293C98;
   font-size: 1.2em;
   padding: 0;
+
+  &:hover {
+    color: #293C98;
+  }
 }
 
 .navbar-text {
@@ -906,6 +910,7 @@ nav.tabs {
     border-radius: 3px 3px 0 0;
     padding: 6px 5px;
     margin: 0 auto 2px;
+    text-align: center;
   }
 
   >h3.block-title {
@@ -914,7 +919,7 @@ nav.tabs {
   }
 
   >.block-content {
-    padding: 0.5em 1em 0 1em;
+    padding: 0 1em;
   }
 
   .more-link {

@@ -8039,6 +8039,10 @@ ul:last-child {
   padding: 0;
 }
 
+.navbar-brand:hover {
+  color: #293C98;
+}
+
 .navbar-text {
   box-sizing: border-box;
   font-family: 'Neuzeit Grotesk', Tahoma, Arial, Helvetica, Sans-Serif;
@@ -8784,6 +8788,7 @@ nav.tabs {
   border-radius: 3px 3px 0 0;
   padding: 6px 5px;
   margin: 0 auto 2px;
+  text-align: center;
 }
 
 .boxed > h3.block-title {
@@ -8807,7 +8812,7 @@ nav.tabs {
 }
 
 .boxed > .block-content {
-  padding: 0.5em 1em 0 1em;
+  padding: 0 1em;
 }
 
 .boxed .more-link {
