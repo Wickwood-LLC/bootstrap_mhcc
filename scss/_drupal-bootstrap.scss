@@ -343,7 +343,7 @@ ul {
   padding: 5px;
   margin: 5px auto;
   box-sizing: border-box;
-  
+
   >.row {
     display: flex;
     flex-flow: row wrap;
@@ -381,10 +381,33 @@ ul {
 // Footer.
 .footer {
   color: #FFF;
+  font-size: 0.8em;
   margin-top: 45px;
-  padding-top: 35px;
-  padding-bottom: 36px;
+  padding: 0.5em;
   border-top: 1px solid #E5E5E5;
+
+  .menu--footer {
+    text-align: center;
+    
+    li {
+      display: inline-block;
+      
+      a {
+        color: white;
+        padding: 0 0.5em;
+        
+        &:hover,
+        &:focus {
+          background-color: unset;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+#block-copyright p {
+  font-size: 1em;
 }
 
 // Paragraphs.

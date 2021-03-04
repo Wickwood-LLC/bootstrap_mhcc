@@ -8265,10 +8265,32 @@ ul:last-child {
 
 .footer {
   color: #FFF;
+  font-size: 0.8em;
   margin-top: 45px;
-  padding-top: 35px;
-  padding-bottom: 36px;
+  padding: 0.5em;
   border-top: 1px solid #E5E5E5;
+}
+
+.footer .menu--footer {
+  text-align: center;
+}
+
+.footer .menu--footer li {
+  display: inline-block;
+}
+
+.footer .menu--footer li a {
+  color: white;
+  padding: 0 0.5em;
+}
+
+.footer .menu--footer li a:hover, .footer .menu--footer li a:focus {
+  background-color: unset;
+  text-decoration: none;
+}
+
+#block-copyright p {
+  font-size: 1em;
 }
 
 p:last-child,
