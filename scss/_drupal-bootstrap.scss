@@ -1058,18 +1058,16 @@ nav.tabs {
     box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
     min-height: 47px;
     position: relative;
-    overflow: hidden;
     background-size: auto;
 
     h3 {
         display: inline-block;
-        font-size: 1.5em;
+        font-size: 1.2em;
         color: white;
         text-align: center;
         vertical-align: middle;
         line-height: 47px;
-        width: 184px;
-        flex: 0 0 184px;
+        width: 174px;
         margin: 0;
 
         a {
@@ -1080,18 +1078,15 @@ nav.tabs {
 
     .block-content {
         display: block;
-        flex-flow: row wrap;
-        align-items: center;
         min-height: 45px;
         padding: 0 0.5em;
 
         .notice-content,
         .views-row {
-            display: inline-block;
+            display: inline;
             vertical-align: middle;
             padding: 5px;
             overflow: hidden;
-            flex: 1;
         }
 
         a {
