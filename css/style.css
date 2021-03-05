@@ -8029,7 +8029,17 @@ ul:last-child {
   text-align: center;
 }
 
+.logo {
+  max-width: 377px;
+  max-height: 190px;
+}
+
 .logo img {
+  width: 100%;
+}
+
+#block-sitetitle {
+  display: inline-block;
   width: 100%;
 }
 
@@ -8037,6 +8047,7 @@ ul:last-child {
   color: #293C98;
   font-size: 1.2em;
   padding: 0;
+  width: 100%;
 }
 
 .navbar-brand:hover {

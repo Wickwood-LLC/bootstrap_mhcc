@@ -137,14 +137,24 @@ ul {
 }
 
 // Logo
-.logo img {
-  width: 100%;
+.logo {
+  max-width: 377px;
+  max-height: 190px;
+  
+  img {
+    width: 100%;
+  }
 }
 
+#block-sitetitle {
+  display: inline-block;
+  width: 100%;
+}
 .navbar-brand {
   color: #293C98;
   font-size: 1.2em;
   padding: 0;
+  width: 100%;
 
   &:hover {
     color: #293C98;
