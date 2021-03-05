@@ -8026,6 +8026,14 @@ ul:last-child {
 }
 
 .page-title {
+  background: #BBE3F2;
+  border-radius: 4px;
+  border: 1px solid #9DC4D7;
+  position: relative;
+  z-index: 1;
+  padding: 1px;
+  color: #0F3C4D;
+  margin: 5px 0px;
   text-align: center;
 }
 
