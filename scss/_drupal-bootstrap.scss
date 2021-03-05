@@ -1183,6 +1183,26 @@ nav.tabs {
 
 /********************* MAINTENANCE *********************/
 .maintenance-page {
+  .logo {
+    width: 50%;
+    display: inline-block;
+    float: none !important;
+  }
+  .navbar-brand {
+    box-sizing: content-box;
+    font-size: 2em;
+    line-height: normal;
+    height: auto;
+    display: inline-block;
+    float: none;
+    text-align: center;
+    color: #293C98;
+    font-weight: bold;
+    width: 100%;
+  }
+  .navbar-text {
+    color: #FFF;
+  }
   main {
     text-align: center;
     margin-top: 2em;

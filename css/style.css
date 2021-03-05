@@ -9062,6 +9062,29 @@ nav.tabs {
 }
 
 /********************* MAINTENANCE *********************/
+.maintenance-page .logo {
+  width: 50%;
+  display: inline-block;
+  float: none !important;
+}
+
+.maintenance-page .navbar-brand {
+  box-sizing: content-box;
+  font-size: 2em;
+  line-height: normal;
+  height: auto;
+  display: inline-block;
+  float: none;
+  text-align: center;
+  color: #293C98;
+  font-weight: bold;
+  width: 100%;
+}
+
+.maintenance-page .navbar-text {
+  color: #FFF;
+}
+
 .maintenance-page main {
   text-align: center;
   margin-top: 2em;
