@@ -54,6 +54,9 @@
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Header #}
 <header class="header {{ container }}" id="header">
+{% if page.header_top %}
+    {{ page.header_top }}
+{% endif %}
   {% if page.header_left %}
       {{ page.header_left }}
   {% endif %}

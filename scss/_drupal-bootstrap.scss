@@ -172,6 +172,11 @@ ul {
   margin-bottom: 1em;
   padding: 0;
 
+  .region-header-top {
+    flex: 100%;
+    margin-bottom: 0.5em;
+  }
+
   .region-header-left,
   .region-header-mid,
   .region-header-right {

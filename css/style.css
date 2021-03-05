@@ -8064,6 +8064,11 @@ ul:last-child {
   padding: 0;
 }
 
+#header .region-header-top {
+  flex: 100%;
+  margin-bottom: 0.5em;
+}
+
 #header .region-header-left,
 #header .region-header-mid,
 #header .region-header-right {
