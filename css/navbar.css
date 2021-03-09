@@ -3515,7 +3515,7 @@ select[multiple].input-lg,
   .form-inline .form-control {
     display: inline-block;
     width: auto;
-    vertical-align: middle;
+    vertical-align: text-top;
   }
   .form-inline .form-control-static {
     display: inline-block;
@@ -3534,7 +3534,7 @@ select[multiple].input-lg,
   }
   .form-inline .control-label {
     margin-bottom: 0;
-    vertical-align: middle;
+    vertical-align: baseline;
   }
   .form-inline .radio,
   .form-inline .checkbox {
@@ -7347,7 +7347,7 @@ button.close {
   .navbar-form .form-control {
     display: inline-block;
     width: auto;
-    vertical-align: middle;
+    vertical-align: text-top;
   }
   .navbar-form .form-control-static {
     display: inline-block;
@@ -7366,7 +7366,7 @@ button.close {
   }
   .navbar-form .control-label {
     margin-bottom: 0;
-    vertical-align: middle;
+    vertical-align: baseline;
   }
   .navbar-form .radio,
   .navbar-form .checkbox {

@@ -3515,7 +3515,7 @@ select[multiple].input-lg,
   .form-inline .form-control {
     display: inline-block;
     width: auto;
-    vertical-align: middle;
+    vertical-align: text-top;
   }
   .form-inline .form-control-static {
     display: inline-block;
@@ -3534,7 +3534,7 @@ select[multiple].input-lg,
   }
   .form-inline .control-label {
     margin-bottom: 0;
-    vertical-align: middle;
+    vertical-align: baseline;
   }
   .form-inline .radio,
   .form-inline .checkbox {
@@ -8639,7 +8639,8 @@ nav.tabs {
 }
 
 .layout .layout__region {
-  margin: 0.5em 0;
+  padding: 0.5em 0;
+  margin: 0;
 }
 
 .layout .layout__region:first-child {
@@ -8652,7 +8653,8 @@ nav.tabs {
 
 @media (min-width: 740px) {
   .layout .layout__region {
-    margin: 0 0.5em;
+    padding: 0 0.5em;
+    margin: 0;
   }
   .layout .layout__region:first-child {
     margin-left: 0;

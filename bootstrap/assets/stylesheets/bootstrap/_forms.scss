@@ -475,7 +475,7 @@ textarea.form-control {
     .form-control {
       display: inline-block;
       width: auto; // Prevent labels from stacking above inputs in `.form-group`
-      vertical-align: middle;
+      vertical-align: text-top;
     }
 
     // Make static controls behave like regular ones
@@ -501,7 +501,7 @@ textarea.form-control {
 
     .control-label {
       margin-bottom: 0;
-      vertical-align: middle;
+      vertical-align: baseline;
     }
 
     // Remove default margin on radios/checkboxes that were used for stacking, and

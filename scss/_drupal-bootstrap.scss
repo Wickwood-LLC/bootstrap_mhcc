@@ -766,7 +766,8 @@ nav.tabs {
   justify-content: space-evenly;
 
   .layout__region {
-    margin: 0.5em 0;
+    padding: 0.5em 0;
+    margin: 0;
 
     &:first-child {
       margin-top: 0;
@@ -777,7 +778,8 @@ nav.tabs {
     }
 
     @include breakpoint(740px) {
-      margin: 0 0.5em;
+      padding: 0 0.5em;
+      margin: 0;
 
       &:first-child {
         margin-left: 0;
