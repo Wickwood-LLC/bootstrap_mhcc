@@ -8250,6 +8250,16 @@ ul:last-child {
   box-sizing: border-box;
 }
 
+.main-container .region-content .boxed {
+  background: #e0e0e0;
+}
+
+.main-container .region-content .boxed > .block-title {
+  background: transparent;
+  border: none;
+  color: #333;
+}
+
 .main-container > .row {
   display: flex;
   flex-flow: row wrap;

@@ -362,6 +362,16 @@ ul {
     padding: .75em 1.5em;
     margin: 0px auto;
     box-sizing: border-box;
+
+    .boxed {
+      background: #e0e0e0;
+
+      > .block-title {
+        background: transparent;
+        border: none;
+        color: #333;
+      }
+    }
   }
 
   >.row {
