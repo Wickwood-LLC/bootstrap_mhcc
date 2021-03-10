@@ -8981,10 +8981,26 @@ nav.tabs {
   padding: 0 0.5em;
 }
 
+.notice-block .block-content .field--name-body {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 450px) {
+  .notice-block .block-content .field--name-body {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .notice-block .block-content .field--name-body h3 {
+    flex: 0 0 174px;
+  }
+}
+
 .notice-block .block-content .notice-content,
 .notice-block .block-content .views-row {
-  display: inline;
+  display: block;
   vertical-align: middle;
+  align-self: center;
   padding: 5px;
   overflow: hidden;
 }

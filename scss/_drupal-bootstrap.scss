@@ -1097,10 +1097,25 @@ nav.tabs {
         min-height: 45px;
         padding: 0 0.5em;
 
+        .field--name-body {
+          display: block;
+          width: 100%;
+
+          @include breakpoint(450px) {
+            display: flex;
+            flex-flow: row nowrap;
+
+            h3 {
+              flex: 0 0 174px;
+            }
+          }
+        }
+
         .notice-content,
         .views-row {
-            display: inline;
+            display: block;
             vertical-align: middle;
+            align-self: center;
             padding: 5px;
             overflow: hidden;
         }
