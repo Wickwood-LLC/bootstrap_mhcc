@@ -813,10 +813,44 @@ nav.tabs {
     }
   }
 
-  &.layout--twocol {
+  &.layout--twocol-section.layout--twocol-section--75-25 {
+    flex-flow: row wrap;
+
+    @include breakpoint(740px) {
+      flex-flow: row nowrap;
+    }
 
     >.layout__region--first,
     >.layout__region--second {
+      flex: 1 1 100%;
+    }
+
+    >.layout__region--first {
+      @include breakpoint(740px) {
+        flex: 0 1 75%;
+      }
+    }
+
+    >.layout__region--second {
+      order: -1;
+      @include breakpoint(740px) {
+        order: 0;
+        flex: 0 1 25%;
+      }
+    }
+  }
+
+  &.layout--twocol {
+    flex-flow: row wrap;
+
+    @include breakpoint(740px) {
+      flex-flow: row nowrap;
+    }
+
+    >.layout__region--first,
+    >.layout__region--second {
+      flex: 1 1 100%;
+
       @include breakpoint(40em) {
         flex: 1 1 100%;
       }
@@ -1490,14 +1524,23 @@ tr:first-child>td>.fc-day-grid-event {
   overflow: unset;
 }
 
-#views-exposed-form-full-calendar-view-page select,
-#views-exposed-form-full-calendar-view-page-1 select,
-#views-exposed-form-full-calendar-view-page-1 input,
-#views-exposed-form-full-calendar-view-page-3 select,
-#views-exposed-form-full-calendar-view-page-3 input {
-  overflow: auto;
-  width: 165px;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
+#views-exposed-form-full-calendar-view-page,
+#views-exposed-form-full-calendar-view-page-1,
+#views-exposed-form-full-calendar-view-page-3 {
+  .form-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 165px;
+  }
+
+  input,
+  select,
+  .select-wrapper {
+    overflow: auto;
+    width: 100%;
+    max-width: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
 }
