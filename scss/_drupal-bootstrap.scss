@@ -144,7 +144,7 @@ ul {
 .logo {
   max-width: 377px;
   max-height: 190px;
-  
+
   img {
     width: 100%;
   }
@@ -154,6 +154,7 @@ ul {
   display: inline-block;
   width: 100%;
 }
+
 .navbar-brand {
   color: #293C98;
   font-size: 1.2em;
@@ -254,10 +255,10 @@ ul {
       }
     }
 
-    li.dropdown:hover > ul.dropdown-menu {
+    li.dropdown:hover>ul.dropdown-menu {
       display: block;
 
-      li.dropdown:hover > ul.dropdown-menu {
+      li.dropdown:hover>ul.dropdown-menu {
         position: absolute;
         left: 100%;
         top: 0;
@@ -329,7 +330,7 @@ ul {
             background-color: unset;
           }
         }
-      }      
+      }
     }
   }
 }
@@ -346,7 +347,7 @@ ul {
   .alert {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -354,7 +355,7 @@ ul {
 }
 
 // Content
-.main-container{  
+.main-container {
   .region-content {
     background: #fff;
     border-radius: 10px;
@@ -366,7 +367,7 @@ ul {
     .boxed {
       background: #e0e0e0;
 
-      > .block-title {
+      >.block-title {
         background: transparent;
         border: none;
         color: #333;
@@ -388,9 +389,11 @@ ul {
       width: unset;
       flex: 1 1 calc(25% - 30px);
     }
+
     .sidebar-1 {
       padding: 0 0 0 0.5em;
     }
+
     .sidebar-2 {
       padding: 0 0.5em 0 0;
     }
@@ -424,14 +427,14 @@ ul {
 
   .menu--footer {
     text-align: center;
-    
+
     li {
       display: inline-block;
-      
+
       a {
         color: white;
         padding: 0 0.5em;
-        
+
         &:hover,
         &:focus {
           background-color: unset;
@@ -819,7 +822,7 @@ nav.tabs {
       }
 
       @include breakpoint(740px) {
-        flex: 0 1 calc(50% - 0.5em);
+        flex: 1 1 calc(50% - 0.5em);
         max-width: calc(50% - 0.5em);
       }
     }
@@ -1074,70 +1077,70 @@ nav.tabs {
 }
 
 .notice-block {
-    border: 2px solid #ae133e;
-    border-radius: 6px;
-    background: #FFF url(../images/notice-arrow.png) no-repeat;
-    margin: 5px auto;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
-    min-height: 47px;
-    position: relative;
-    background-size: auto;
+  border: 2px solid #ae133e;
+  border-radius: 6px;
+  background: #FFF url(../images/notice-arrow.png) no-repeat;
+  margin: 5px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+  min-height: 47px;
+  position: relative;
+  background-size: auto;
 
-    h3 {
-        display: inline-block;
-        font-size: 1.2em;
-        color: white;
-        text-align: center;
-        vertical-align: middle;
-        line-height: 47px;
-        width: 174px;
-        margin: 0;
+  h3 {
+    display: inline-block;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 47px;
+    width: 174px;
+    margin: 0;
 
-        a {
-            color: white;
-            text-decoration: none;
-        }
+    a {
+      color: white;
+      text-decoration: none;
     }
+  }
 
-    .block-content {
-        display: block;
-        min-height: 45px;
-        padding: 0 0.5em;
+  .block-content {
+    display: block;
+    min-height: 45px;
+    padding: 0 0.5em;
 
-        .field--name-body {
-          display: block;
-          width: 100%;
+    .field--name-body {
+      display: block;
+      width: 100%;
 
-          @include breakpoint(450px) {
-            display: flex;
-            flex-flow: row nowrap;
-
-            h3 {
-              flex: 0 0 174px;
-            }
-          }
-        }
-
-        .notice-content,
-        .views-row {
-            display: block;
-            vertical-align: middle;
-            align-self: center;
-            padding: 5px;
-            overflow: hidden;
-        }
-
-        a {
-            color: red;
-            text-decoration: none;
-        }
-    }
-
-    @include breakpoint(678px) {
-      .block-content {
+      @include breakpoint(450px) {
         display: flex;
+        flex-flow: row nowrap;
+
+        h3 {
+          flex: 0 0 174px;
+        }
       }
     }
+
+    .notice-content,
+    .views-row {
+      display: block;
+      vertical-align: middle;
+      align-self: center;
+      padding: 5px;
+      overflow: hidden;
+    }
+
+    a {
+      color: red;
+      text-decoration: none;
+    }
+  }
+
+  @include breakpoint(678px) {
+    .block-content {
+      display: flex;
+    }
+  }
 }
 
 #edit-actions {
@@ -1173,6 +1176,12 @@ nav.tabs {
   .form--inline>.form-item {
     float: none;
     display: inline-block;
+  }
+
+  .form-actions {
+    text-align: center;
+    margin-top: 0.5em;
+    width: 100%;
   }
 }
 
@@ -1236,6 +1245,7 @@ nav.tabs {
     display: inline-block;
     float: none !important;
   }
+
   .navbar-brand {
     box-sizing: content-box;
     font-size: 2em;
@@ -1248,9 +1258,11 @@ nav.tabs {
     font-weight: bold;
     width: 100%;
   }
+
   .navbar-text {
     color: #FFF;
   }
+
   main {
     text-align: center;
     margin-top: 2em;
@@ -1260,7 +1272,7 @@ nav.tabs {
     padding: .75em 1.5em;
     margin: 0px auto;
     box-sizing: border-box;
-    
+
     h1 {
       text-transform: capitalize;
       position: relative;
@@ -1466,4 +1478,26 @@ form#user-register-form {
   .block-field-blockparagraphphonefield-phone-type {
     margin-right: 0.3em;
   }
+}
+
+/********************* FULL CALENDAR *********************/
+tr:first-child>td>.fc-day-grid-event {
+  margin: 0.25em;
+}
+
+.fc-day-grid-event .fc-content {
+  white-space: unset;
+  overflow: unset;
+}
+
+#views-exposed-form-full-calendar-view-page select,
+#views-exposed-form-full-calendar-view-page-1 select,
+#views-exposed-form-full-calendar-view-page-1 input,
+#views-exposed-form-full-calendar-view-page-3 select,
+#views-exposed-form-full-calendar-view-page-3 input {
+  overflow: auto;
+  width: 165px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
 }

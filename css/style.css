@@ -8693,7 +8693,7 @@ nav.tabs {
 @media (min-width: 740px) {
   .layout.layout--twocol > .layout__region--first,
   .layout.layout--twocol > .layout__region--second {
-    flex: 0 1 calc(50% - 0.5em);
+    flex: 1 1 calc(50% - 0.5em);
     max-width: calc(50% - 0.5em);
   }
 }
@@ -9057,6 +9057,12 @@ nav.tabs {
   display: inline-block;
 }
 
+.views-exposed-form .form-actions {
+  text-align: center;
+  margin-top: 0.5em;
+  width: 100%;
+}
+
 .block-views-blockfull-calendar-view-block-1 .view-header {
   text-align: center;
   font-weight: bold;
@@ -9361,6 +9367,28 @@ form#user-register-form .captcha {
 
 .path-user .block-field-blockparagraphphonefield-phone-type {
   margin-right: 0.3em;
+}
+
+/********************* FULL CALENDAR *********************/
+tr:first-child > td > .fc-day-grid-event {
+  margin: 0.25em;
+}
+
+.fc-day-grid-event .fc-content {
+  white-space: unset;
+  overflow: unset;
+}
+
+#views-exposed-form-full-calendar-view-page select,
+#views-exposed-form-full-calendar-view-page-1 select,
+#views-exposed-form-full-calendar-view-page-1 input,
+#views-exposed-form-full-calendar-view-page-3 select,
+#views-exposed-form-full-calendar-view-page-3 input {
+  overflow: auto;
+  width: 165px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
 }
 
 .wt-row:before, .wt-row:after {
