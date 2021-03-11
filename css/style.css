@@ -8076,7 +8076,7 @@ ul:last-child {
   display: flex;
   flex-flow: row wrap;
   margin-bottom: 1em;
-  padding: 0;
+  padding: 0 1em;
 }
 
 #header .region-header-top {
@@ -8252,6 +8252,7 @@ ul:last-child {
 
 .main-container .region-content .boxed {
   background: #e0e0e0;
+  border-width: 1px;
 }
 
 .main-container .region-content .boxed > .block-title {
@@ -8687,7 +8688,7 @@ nav.tabs {
   flex-flow: row wrap;
 }
 
-@media (min-width: 740px) {
+@media (min-width: 900px) {
   .layout.layout--twocol-section.layout--twocol-section--75-25 {
     flex-flow: row nowrap;
   }
@@ -8698,7 +8699,7 @@ nav.tabs {
   flex: 1 1 100%;
 }
 
-@media (min-width: 740px) {
+@media (min-width: 900px) {
   .layout.layout--twocol-section.layout--twocol-section--75-25 > .layout__region--first {
     flex: 0 1 75%;
   }
@@ -8708,7 +8709,7 @@ nav.tabs {
   order: -1;
 }
 
-@media (min-width: 740px) {
+@media (min-width: 900px) {
   .layout.layout--twocol-section.layout--twocol-section--75-25 > .layout__region--second {
     order: 0;
     flex: 0 1 25%;
@@ -9417,6 +9418,89 @@ form#user-register-form .captcha {
 }
 
 /********************* FULL CALENDAR *********************/
+.view.view-full-calendar-view .view-header {
+  text-align: center;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+.view.view-full-calendar-view .view-header a {
+  color: red;
+  text-decoration: none;
+  line-height: 1.2em;
+}
+
+.view.view-full-calendar-view .view-content,
+.view.view-full-calendar-view ul.pager {
+  text-align: left;
+}
+
+.view.view-full-calendar-view .view-content a,
+.view.view-full-calendar-view .view-content a:visited,
+.view.view-full-calendar-view ul.pager a,
+.view.view-full-calendar-view ul.pager a:visited {
+  color: #000000;
+  text-decoration: none;
+  line-height: 1.6em;
+}
+
+.view.view-full-calendar-view .view-content a:hover,
+.view.view-full-calendar-view ul.pager a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.view.view-full-calendar-view .view-content > h3 {
+  background: #BBE3F2;
+  border-radius: 4px;
+  border: 1px solid #9DC4D7;
+  margin: 0 auto;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.view.view-full-calendar-view .view-content .views-row {
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+.view.view-full-calendar-view ul.pager {
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+.view.view-full-calendar-view ul.pager .pager-current {
+  color: #356982;
+}
+
+.view.view-full-calendar-view.view-display-id-block_5 div.views-row {
+  margin: 5px 15px 10px 35px;
+  display: list-item;
+  list-style-image: url("../images/bicycle-bullet.png");
+  line-height: 1.4em;
+}
+
+.view.view-full-calendar-view.view-display-id-block_5 div.views-row a {
+  text-decoration: none;
+  line-height: 1.4em;
+}
+
+.view.view-full-calendar-view.view-display-id-block_6 div.views-row {
+  margin: 5px 15px 5px 35px;
+  display: list-item;
+  list-style-image: url("../images/bicycle-bullet.png");
+}
+
+.view-mobile-full-calendar .views-row {
+  margin-bottom: 0.25em;
+}
+
+.view-mobile-full-calendar .views-row a {
+  line-height: inherit;
+}
+
 tr:first-child > td > .fc-day-grid-event {
   margin: 0.25em;
 }
@@ -9426,29 +9510,68 @@ tr:first-child > td > .fc-day-grid-event {
   overflow: unset;
 }
 
-#views-exposed-form-full-calendar-view-page .form-item,
-#views-exposed-form-full-calendar-view-page-1 .form-item,
-#views-exposed-form-full-calendar-view-page-3 .form-item {
+.fc-unthemed .fc-content,
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-list-view,
+.fc-unthemed .fc-popover,
+.fc-unthemed .fc-row,
+.fc-unthemed tbody,
+.fc-unthemed td,
+.fc-unthemed th,
+.fc-unthemed thead,
+.fc-unthemed .fc-list-heading td {
+  border-color: #888;
+}
+
+.fc-head {
+  background-color: #e0e0e0;
+}
+
+#views-exposed-form-full-calendar-view-block-4,
+#views-exposed-form-full-calendar-view-block-5,
+#views-exposed-form-full-calendar-view-block-6 {
+  text-align: center;
+}
+
+#views-exposed-form-full-calendar-view-block-4 .form-item,
+#views-exposed-form-full-calendar-view-block-5 .form-item,
+#views-exposed-form-full-calendar-view-block-6 .form-item {
   display: inline-block;
   vertical-align: top;
   width: 165px;
+  margin-right: 1em;
+  margin-bottom: 1em;
 }
 
-#views-exposed-form-full-calendar-view-page input,
-#views-exposed-form-full-calendar-view-page select,
-#views-exposed-form-full-calendar-view-page .select-wrapper,
-#views-exposed-form-full-calendar-view-page-1 input,
-#views-exposed-form-full-calendar-view-page-1 select,
-#views-exposed-form-full-calendar-view-page-1 .select-wrapper,
-#views-exposed-form-full-calendar-view-page-3 input,
-#views-exposed-form-full-calendar-view-page-3 select,
-#views-exposed-form-full-calendar-view-page-3 .select-wrapper {
+#views-exposed-form-full-calendar-view-block-4 input,
+#views-exposed-form-full-calendar-view-block-4 select,
+#views-exposed-form-full-calendar-view-block-4 .select-wrapper,
+#views-exposed-form-full-calendar-view-block-5 input,
+#views-exposed-form-full-calendar-view-block-5 select,
+#views-exposed-form-full-calendar-view-block-5 .select-wrapper,
+#views-exposed-form-full-calendar-view-block-6 input,
+#views-exposed-form-full-calendar-view-block-6 select,
+#views-exposed-form-full-calendar-view-block-6 .select-wrapper {
   overflow: auto;
   width: 100%;
   max-width: 165px;
   margin-left: auto;
   margin-right: auto;
-  height: auto;
+  height: 5em;
+}
+
+@media (min-width: 900px) {
+  #views-exposed-form-full-calendar-view-block-4 input,
+  #views-exposed-form-full-calendar-view-block-4 select,
+  #views-exposed-form-full-calendar-view-block-4 .select-wrapper,
+  #views-exposed-form-full-calendar-view-block-5 input,
+  #views-exposed-form-full-calendar-view-block-5 select,
+  #views-exposed-form-full-calendar-view-block-5 .select-wrapper,
+  #views-exposed-form-full-calendar-view-block-6 input,
+  #views-exposed-form-full-calendar-view-block-6 select,
+  #views-exposed-form-full-calendar-view-block-6 .select-wrapper {
+    height: auto;
+  }
 }
 
 .wt-row:before, .wt-row:after {

@@ -2448,6 +2448,17 @@
 		"oAP": "/favicon/site.webmanifest",
 		"oF": 0
 		},
+	"/images/bicycle-bullet.png": {
+		"ft": 32768,
+		"iS": 635,
+		"oA": 0,
+		"oAP": "/images/bicycle-bullet.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/bleeds.svg": {
 		"ft": 2097152,
 		"miP": 0,

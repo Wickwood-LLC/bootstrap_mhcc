@@ -185,7 +185,7 @@ ul {
   display: flex;
   flex-flow: row wrap;
   margin-bottom: 1em;
-  padding: 0;
+  padding: 0 1em;
 
   .region-header-top {
     flex: 100%;
@@ -366,6 +366,7 @@ ul {
 
     .boxed {
       background: #e0e0e0;
+      border-width: 1px;
 
       >.block-title {
         background: transparent;
@@ -816,7 +817,7 @@ nav.tabs {
   &.layout--twocol-section.layout--twocol-section--75-25 {
     flex-flow: row wrap;
 
-    @include breakpoint(740px) {
+    @include breakpoint(900px) {
       flex-flow: row nowrap;
     }
 
@@ -826,14 +827,15 @@ nav.tabs {
     }
 
     >.layout__region--first {
-      @include breakpoint(740px) {
+      @include breakpoint(900px) {
         flex: 0 1 75%;
       }
     }
 
     >.layout__region--second {
       order: -1;
-      @include breakpoint(740px) {
+
+      @include breakpoint(900px) {
         order: 0;
         flex: 0 1 25%;
       }
@@ -1515,6 +1517,96 @@ form#user-register-form {
 }
 
 /********************* FULL CALENDAR *********************/
+.view.view-full-calendar-view {
+  .view-header {
+    text-align: center;
+    font-weight: bold;
+    margin: 0.5em 0;
+
+    a {
+      color: red;
+      text-decoration: none;
+      line-height: 1.2em;
+    }
+  }
+
+  .view-content,
+  ul.pager {
+    text-align: left;
+
+    a,
+    a:visited {
+      color: #000000;
+      text-decoration: none;
+      line-height: 1.6em;
+    }
+
+    a:hover {
+      color: red;
+      text-decoration: none;
+    }
+  }
+
+  .view-content {
+    >h3 {
+      background: #BBE3F2;
+      border-radius: 4px;
+      border: 1px solid #9DC4D7;
+      margin: 0 auto;
+      padding: 5px;
+      margin-bottom: 5px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .views-row {
+      text-indent: -1em;
+      padding-left: 1em;
+    }
+  }
+
+  ul.pager {
+    text-align: center;
+    margin: 0.5em 0;
+
+    .pager-current {
+      color: #356982;
+    }
+  }
+
+  &.view-display-id-block_5 {
+    div.views-row {
+      margin: 5px 15px 10px 35px;
+      display: list-item;
+      list-style-image: url('../images/bicycle-bullet.png');
+      line-height: 1.4em;
+
+      a {
+        text-decoration: none;
+        line-height: 1.4em;
+      }
+    }
+  }
+
+  &.view-display-id-block_6 {
+    div.views-row {
+      margin: 5px 15px 5px 35px;
+      display: list-item;
+      list-style-image: url('../images/bicycle-bullet.png');
+    }
+  }
+}
+
+.view-mobile-full-calendar {
+  .views-row {
+    margin-bottom: 0.25em;
+
+    a {
+      line-height: inherit;
+    }
+  }
+}
+
 tr:first-child>td>.fc-day-grid-event {
   margin: 0.25em;
 }
@@ -1524,13 +1616,37 @@ tr:first-child>td>.fc-day-grid-event {
   overflow: unset;
 }
 
-#views-exposed-form-full-calendar-view-page,
-#views-exposed-form-full-calendar-view-page-1,
-#views-exposed-form-full-calendar-view-page-3 {
+.fc-unthemed {
+
+  .fc-content,
+  .fc-divider,
+  .fc-list-view,
+  .fc-popover,
+  .fc-row,
+  tbody,
+  td,
+  th,
+  thead,
+  .fc-list-heading td {
+    border-color: #888;
+  }
+}
+
+.fc-head {
+  background-color: #e0e0e0;
+}
+
+#views-exposed-form-full-calendar-view-block-4,
+#views-exposed-form-full-calendar-view-block-5,
+#views-exposed-form-full-calendar-view-block-6 {
+  text-align: center;
+
   .form-item {
     display: inline-block;
     vertical-align: top;
     width: 165px;
+    margin-right: 1em;
+    margin-bottom: 1em;
   }
 
   input,
@@ -1541,6 +1657,10 @@ tr:first-child>td>.fc-day-grid-event {
     max-width: 165px;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
+    height: 5em;
+
+    @include breakpoint (900px) {
+      height: auto;
+    }
   }
 }
