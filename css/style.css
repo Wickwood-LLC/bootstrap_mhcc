@@ -8269,6 +8269,7 @@ ul:last-child {
 .main-container > .row .midbar {
   width: unset;
   flex: 1 1 calc(50% - 30px);
+  max-width: 100%;
 }
 
 .main-container > .row .sidebar-1,
