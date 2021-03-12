@@ -1665,3 +1665,26 @@ tr:first-child>td>.fc-day-grid-event {
     }
   }
 }
+
+/********************* SLICK SLIDER *********************/
+.slick__slide {
+  .slide__caption {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    top: unset;
+    background-color: #00000080;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+  }
+
+  #slideshow-title {
+    h2 {
+      margin: 0;
+      
+      a:hover {
+        color: $link-color;
+      }
+    }
+  }
+}
