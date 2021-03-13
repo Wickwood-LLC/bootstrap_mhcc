@@ -1670,12 +1670,17 @@ tr:first-child>td>.fc-day-grid-event {
 .slick__slide {
   .slide__caption {
     width: 100%;
-    position: absolute;
+    position: static;
     bottom: 0;
     top: unset;
     background-color: #00000080;
     color: white;
     text-shadow: 1px 1px 1px #000000;
+    padding: 0.5em;
+
+    @include breakpoint(600px) {
+      position: absolute;
+    }
   }
 
   #slideshow-title {
@@ -1687,4 +1692,9 @@ tr:first-child>td>.fc-day-grid-event {
       }
     }
   }
+}
+
+.slick-dots {
+  margin-top: 0.5em;
+  position: static;
 }

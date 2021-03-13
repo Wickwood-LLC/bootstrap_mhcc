@@ -9578,12 +9578,19 @@ tr:first-child > td > .fc-day-grid-event {
 /********************* SLICK SLIDER *********************/
 .slick__slide .slide__caption {
   width: 100%;
-  position: absolute;
+  position: static;
   bottom: 0;
   top: unset;
   background-color: #00000080;
   color: white;
   text-shadow: 1px 1px 1px #000000;
+  padding: 0.5em;
+}
+
+@media (min-width: 600px) {
+  .slick__slide .slide__caption {
+    position: absolute;
+  }
 }
 
 .slick__slide #slideshow-title h2 {
@@ -9592,6 +9599,11 @@ tr:first-child > td > .fc-day-grid-event {
 
 .slick__slide #slideshow-title h2 a:hover {
   color: #058ad2;
+}
+
+.slick-dots {
+  margin-top: 0.5em;
+  position: static;
 }
 
 .wt-row:before, .wt-row:after {
