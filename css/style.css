@@ -8286,6 +8286,14 @@ ul:last-child {
   padding: 0 0.5em 0 0;
 }
 
+article[about="/calendar/rides"] .layout--onecol {
+  margin: 0;
+}
+
+article[about="/calendar/rides"] .layout__region {
+  padding: 0;
+}
+
 #bottom {
   display: flex;
   flex-flow: row wrap;
@@ -9421,7 +9429,6 @@ form#user-register-form .captcha {
 /********************* FULL CALENDAR *********************/
 .view.view-full-calendar-view .view-header {
   text-align: center;
-  font-weight: bold;
   margin: 0.5em 0;
 }
 
@@ -9539,9 +9546,9 @@ tr:first-child > td > .fc-day-grid-event {
 #views-exposed-form-full-calendar-view-block-6 .form-item {
   display: inline-block;
   vertical-align: top;
-  width: 165px;
-  margin-right: 1em;
-  margin-bottom: 1em;
+  width: 150px;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 #views-exposed-form-full-calendar-view-block-4 input,
@@ -9553,26 +9560,50 @@ tr:first-child > td > .fc-day-grid-event {
 #views-exposed-form-full-calendar-view-block-6 input,
 #views-exposed-form-full-calendar-view-block-6 select,
 #views-exposed-form-full-calendar-view-block-6 .select-wrapper {
+  max-width: 100%;
+}
+
+#views-exposed-form-full-calendar-view-block-4 select[multiple],
+#views-exposed-form-full-calendar-view-block-5 select[multiple],
+#views-exposed-form-full-calendar-view-block-6 select[multiple] {
   overflow: auto;
   width: 100%;
-  max-width: 165px;
+  max-width: 150px;
   margin-left: auto;
   margin-right: auto;
-  height: 5em;
+  height: 2.2em;
 }
 
 @media (min-width: 900px) {
-  #views-exposed-form-full-calendar-view-block-4 input,
-  #views-exposed-form-full-calendar-view-block-4 select,
-  #views-exposed-form-full-calendar-view-block-4 .select-wrapper,
-  #views-exposed-form-full-calendar-view-block-5 input,
-  #views-exposed-form-full-calendar-view-block-5 select,
-  #views-exposed-form-full-calendar-view-block-5 .select-wrapper,
-  #views-exposed-form-full-calendar-view-block-6 input,
-  #views-exposed-form-full-calendar-view-block-6 select,
-  #views-exposed-form-full-calendar-view-block-6 .select-wrapper {
+  #views-exposed-form-full-calendar-view-block-4 select[multiple],
+  #views-exposed-form-full-calendar-view-block-5 select[multiple],
+  #views-exposed-form-full-calendar-view-block-6 select[multiple] {
     height: auto;
   }
+}
+
+#views-exposed-form-full-calendar-view-block-4 .form-item-field-no-repeat-date-and-time-value-value,
+#views-exposed-form-full-calendar-view-block-4 .form-item-field-no-repeat-date-and-time-value-min,
+#views-exposed-form-full-calendar-view-block-4 .form-item-field-no-repeat-date-and-time-value-max,
+#views-exposed-form-full-calendar-view-block-5 .form-item-field-no-repeat-date-and-time-value-value,
+#views-exposed-form-full-calendar-view-block-5 .form-item-field-no-repeat-date-and-time-value-min,
+#views-exposed-form-full-calendar-view-block-5 .form-item-field-no-repeat-date-and-time-value-max,
+#views-exposed-form-full-calendar-view-block-6 .form-item-field-no-repeat-date-and-time-value-value,
+#views-exposed-form-full-calendar-view-block-6 .form-item-field-no-repeat-date-and-time-value-min,
+#views-exposed-form-full-calendar-view-block-6 .form-item-field-no-repeat-date-and-time-value-max {
+  vertical-align: bottom;
+}
+
+#views-exposed-form-full-calendar-view-block-4 .form-item-field-no-repeat-date-and-time-value-value label,
+#views-exposed-form-full-calendar-view-block-4 .form-item-field-no-repeat-date-and-time-value-min label,
+#views-exposed-form-full-calendar-view-block-4 .form-item-field-no-repeat-date-and-time-value-max label,
+#views-exposed-form-full-calendar-view-block-5 .form-item-field-no-repeat-date-and-time-value-value label,
+#views-exposed-form-full-calendar-view-block-5 .form-item-field-no-repeat-date-and-time-value-min label,
+#views-exposed-form-full-calendar-view-block-5 .form-item-field-no-repeat-date-and-time-value-max label,
+#views-exposed-form-full-calendar-view-block-6 .form-item-field-no-repeat-date-and-time-value-value label,
+#views-exposed-form-full-calendar-view-block-6 .form-item-field-no-repeat-date-and-time-value-min label,
+#views-exposed-form-full-calendar-view-block-6 .form-item-field-no-repeat-date-and-time-value-max label {
+  display: none;
 }
 
 /********************* SLICK SLIDER *********************/

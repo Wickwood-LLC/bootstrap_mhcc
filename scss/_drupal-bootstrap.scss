@@ -402,6 +402,15 @@ ul {
   }
 }
 
+article[about="/calendar/rides"] {
+  .layout--onecol {
+    margin: 0;
+  }
+  .layout__region {
+    padding: 0;
+  }
+}
+
 // Bottom.
 #bottom {
   display: flex;
@@ -1521,7 +1530,6 @@ form#user-register-form {
 .view.view-full-calendar-view {
   .view-header {
     text-align: center;
-    font-weight: bold;
     margin: 0.5em 0;
 
     a {
@@ -1645,23 +1653,37 @@ tr:first-child>td>.fc-day-grid-event {
   .form-item {
     display: inline-block;
     vertical-align: top;
-    width: 165px;
-    margin-right: 1em;
-    margin-bottom: 1em;
+    width: 150px;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
   }
 
   input,
   select,
   .select-wrapper {
+    max-width: 100%;
+  }
+
+  select[multiple] {
     overflow: auto;
     width: 100%;
-    max-width: 165px;
+    max-width: 150px;
     margin-left: auto;
     margin-right: auto;
-    height: 5em;
+    height: 2.2em;
 
     @include breakpoint (900px) {
       height: auto;
+    }
+  }
+
+  .form-item-field-no-repeat-date-and-time-value-value,
+  .form-item-field-no-repeat-date-and-time-value-min,
+  .form-item-field-no-repeat-date-and-time-value-max {
+    vertical-align: bottom;
+    
+    label {
+      display: none;
     }
   }
 }
