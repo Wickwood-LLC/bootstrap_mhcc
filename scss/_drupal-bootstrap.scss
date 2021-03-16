@@ -150,16 +150,19 @@ ul {
   }
 }
 
-#block-sitetitle {
-  display: inline-block;
-  width: 100%;
-}
-
 .navbar-brand {
   color: #293C98;
-  font-size: 1.2em;
+  height: auto;
+  font-family: 'Neuzeit Grotesk', Tahoma, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
   padding: 0;
-  width: 100%;
+  margin: 0;
+  line-height: 1.2em;
+
+  font-size: 20px; // backup size
+  @include fluid-type(320px, 519px, 20px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  @include fluid-type(520px, 692px, 19px, 34px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  @include fluid-type(693px, 879px, 30px, 42px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  @include fluid-type(880px, 1200px, 16px, 26px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 
   &:hover {
     color: #293C98;
@@ -192,20 +195,130 @@ ul {
     margin-bottom: 0.5em;
   }
 
-  .region-header-left,
-  .region-header-mid,
-  .region-header-right {
-    flex: 1 1 30%;
-  }
-
-  .region-header-mid {
-    padding: 0 1em;
-    box-sizing: content-box;
-  }
-
   .region-header-bottom {
     flex: 100%;
     margin-top: 0.5em;
+  }
+
+  .region-header-left,
+  .region-header-mid,
+  .region-header-right {
+    flex: 1 1 100%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .region-header-left {
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+
+    .logo {
+      flex: 0 1 200px;
+    }
+
+    #block-sitetitle {
+      flex: 1 1 100%;
+
+      .navbar-brand {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  @include breakpoint(520px) {
+    .region-header-left {
+      .logo {
+        margin-left: 10%;
+      }
+
+      #block-sitetitle {
+        flex: 1 1 0;
+        margin-left: 10px;
+        margin-right: 10%;
+        margin-top: 25px;
+        text-align: left;
+
+        .navbar-brand {
+          width: auto;
+          text-align: unset;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(575px) {
+    .region-header-mid {
+      flex: 3 1 345px;
+      align-items: center;
+      display: flex;
+    }
+
+    .region-header-right {
+      flex: 2 1 auto;
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  @include breakpoint(680px) {
+    .region-header-left {
+      flex: 1 100%;
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    .region-header-mid,
+    .region-header-right {
+      align-content: center;
+      justify-content: center;
+    }
+  }
+
+  @include breakpoint(693px) {
+    .region-header-left {
+      .logo {
+        margin-left: 0;
+      }
+
+      #block-sitetitle {
+        flex: 0 auto;
+        margin-right: 0;
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  @include breakpoint(880px) {
+
+    .region-header-left,
+    .region-header-mid,
+    .region-header-right {
+      flex: 1 1 0;
+      display: flex;
+      align-items: center;
+      align-content: center;
+    }
+
+    .region-header-left {
+      .logo,
+      #block-sitetitle {
+        flex: 1 1 100%;
+        margin-left: 0;
+        margin-top: 0;
+
+        .navbar-brand {
+          text-align: center;
+          width: 100%;
+        }
+      }      
+    }
+
+    .region-header-mid {
+      flex: 0 0 345px;
+    }
   }
 }
 
@@ -406,6 +519,7 @@ article[about="/calendar/rides"] {
   .layout--onecol {
     margin: 0;
   }
+
   .layout__region {
     padding: 0;
   }
@@ -1681,7 +1795,7 @@ tr:first-child>td>.fc-day-grid-event {
   .form-item-field-no-repeat-date-and-time-value-min,
   .form-item-field-no-repeat-date-and-time-value-max {
     vertical-align: bottom;
-    
+
     label {
       display: none;
     }
@@ -1708,7 +1822,7 @@ tr:first-child>td>.fc-day-grid-event {
   #slideshow-title {
     h2 {
       margin: 0;
-      
+
       a:hover {
         color: $link-color;
       }
