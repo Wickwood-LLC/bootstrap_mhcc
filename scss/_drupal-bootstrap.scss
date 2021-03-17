@@ -226,6 +226,9 @@ ul {
       }
     }
   }
+  .region-header-right {
+    max-width: 33%;
+  }
 
   @include breakpoint(520px) {
     .region-header-left {
@@ -1392,6 +1395,10 @@ nav.tabs {
       color: #356982;
     }
   }
+}
+
+#block-views-block-simpleads-block-1 {
+  max-width: 100%;
 }
 
 /********************* MAINTENANCE *********************/

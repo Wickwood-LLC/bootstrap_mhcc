@@ -8130,6 +8130,10 @@ ul:last-child {
   text-align: center;
 }
 
+#header .region-header-right {
+  max-width: 33%;
+}
+
 @media (min-width: 520px) {
   #header .region-header-left .logo {
     margin-left: 10%;
@@ -9276,6 +9280,10 @@ nav.tabs {
 
 .block-views-blockfull-calendar-view-block-1 ul.pager .pager-current {
   color: #356982;
+}
+
+#block-views-block-simpleads-block-1 {
+  max-width: 100%;
 }
 
 /********************* MAINTENANCE *********************/
