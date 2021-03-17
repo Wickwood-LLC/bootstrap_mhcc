@@ -8371,6 +8371,13 @@ ul:last-child {
   color: #333;
 }
 
+.main-container .region-content .block-field-blocknodepagefield-media-files-for-download.boxed {
+  background: white;
+  border: #9dc4d7 solid 1px;
+  border-radius: 5px;
+  padding: 0em .5em;
+}
+
 .main-container > .row {
   display: flex;
   flex-flow: row wrap;
