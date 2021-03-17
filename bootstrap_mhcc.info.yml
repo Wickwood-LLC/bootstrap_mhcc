@@ -33,3 +33,9 @@ libraries-extend:
 
 ckeditor_stylesheets:
   - css/ckeditor-styles.css
+
+libraries-override:
+  core/drupal.dialog.off_canvas:
+    css:
+      base:
+        core/misc/dialog/off-canvas.reset.css: false
