@@ -8824,14 +8824,41 @@ nav.tabs {
   }
 }
 
-.layout.layout--twocol-section.layout--twocol-section--75-25 > .layout__region--second {
-  order: -1;
+@media (min-width: 900px) {
+  .layout.layout--twocol-section.layout--twocol-section--75-25 > .layout__region--second {
+    flex: 0 1 25%;
+  }
+}
+
+.layout.layout--twocol-section.rtlb:not(.layout-builder__layout) {
+  display: flex;
+}
+
+.layout.layout--twocol-section.rtlb:not(.layout-builder__layout) > .layout__region--first {
+  order: 1;
+  float: none;
 }
 
 @media (min-width: 900px) {
-  .layout.layout--twocol-section.layout--twocol-section--75-25 > .layout__region--second {
+  .layout.layout--twocol-section.rtlb:not(.layout-builder__layout) > .layout__region--first {
     order: 0;
-    flex: 0 1 25%;
+    float: none;
+  }
+}
+
+.layout.layout--twocol-section.ltrb:not(.layout-builder__layout) {
+  display: flex;
+}
+
+.layout.layout--twocol-section.ltrb:not(.layout-builder__layout) > .layout__region--first {
+  order: 0;
+  float: none;
+}
+
+@media (min-width: 900px) {
+  .layout.layout--twocol-section.ltrb:not(.layout-builder__layout) > .layout__region--first {
+    order: 0;
+    float: none;
   }
 }
 
@@ -8900,38 +8927,6 @@ nav.tabs {
 @media (min-width: 40em) {
   .layout.layout--threecol-section--25-50-25 > .layout__region--second {
     flex: 0 1 calc(50% - 1em);
-  }
-}
-
-@media (min-width: 740px) {
-  .rtlb:not(.layout-builder__layout) {
-    display: block;
-  }
-  .rtlb:not(.layout-builder__layout) > .layout__region--first {
-    float: right;
-    margin-left: 1em;
-    margin-right: 0;
-    margin-bottom: 1em;
-    width: 50%;
-  }
-  .rtlb:not(.layout-builder__layout) > .layout__region--second {
-    margin: 0;
-  }
-}
-
-@media (min-width: 740px) {
-  .ltrb:not(.layout-builder__layout) {
-    display: block;
-  }
-  .ltrb:not(.layout-builder__layout) > .layout__region--first {
-    float: left;
-    margin-left: 0;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    width: 50%;
-  }
-  .ltrb:not(.layout-builder__layout) > .layout__region--second {
-    margin: 0;
   }
 }
 
