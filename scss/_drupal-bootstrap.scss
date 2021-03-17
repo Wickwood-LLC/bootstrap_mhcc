@@ -1834,3 +1834,34 @@ tr:first-child>td>.fc-day-grid-event {
   margin-top: 0.5em;
   position: static;
 }
+
+/********************* OFF-CANVAS *********************/
+#drupal-off-canvas {
+  .form-item {
+    display: block;
+  }
+
+  .button {
+    color: $btn-default-color;
+    background-color: $btn-default-bg;
+    border-color: $btn-default-border;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+
+    &:hover {
+      background-color: darken($btn-default-bg, 10%);
+      border-color: darken($btn-default-border, 10%);
+    }
+
+    &.button--primary {
+      color: $btn-primary-color;
+      background-color: $btn-primary-bg;
+      border-color: $btn-primary-border;
+      
+      &:hover {
+        background-color: darken($btn-primary-bg, 10%);
+        border-color: darken($btn-primary-border, 10%);
+      }
+    }
+  }
+}

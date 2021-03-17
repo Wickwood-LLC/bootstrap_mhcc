@@ -9739,6 +9739,35 @@ tr:first-child > td > .fc-day-grid-event {
   position: static;
 }
 
+/********************* OFF-CANVAS *********************/
+#drupal-off-canvas .form-item {
+  display: block;
+}
+
+#drupal-off-canvas .button {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+}
+
+#drupal-off-canvas .button:hover {
+  background-color: #e6e5e5;
+  border-color: #b3b2b2;
+}
+
+#drupal-off-canvas .button.button--primary {
+  color: #fff;
+  background-color: #77BBCF;
+  border-color: #64b2c8;
+}
+
+#drupal-off-canvas .button.button--primary:hover {
+  background-color: #51a8c2;
+  border-color: #419db8;
+}
+
 .wt-row:before, .wt-row:after {
   content: " ";
   display: table;
