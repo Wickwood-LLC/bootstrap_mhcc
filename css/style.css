@@ -8131,7 +8131,7 @@ ul:last-child {
 }
 
 #header .region-header-right {
-  max-width: 33%;
+  max-width: 100%;
 }
 
 @media (min-width: 520px) {
@@ -8174,6 +8174,7 @@ ul:last-child {
   #header .region-header-right {
     align-content: center;
     justify-content: center;
+    max-width: 50%;
   }
 }
 
@@ -8208,6 +8209,9 @@ ul:last-child {
   #header .region-header-left #block-sitetitle .navbar-brand {
     text-align: center;
     width: 100%;
+  }
+  #header .region-header-right {
+    max-width: calc(100% / 3);
   }
   #header .region-header-mid {
     flex: 0 0 345px;

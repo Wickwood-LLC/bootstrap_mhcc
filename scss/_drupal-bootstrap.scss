@@ -227,7 +227,7 @@ ul {
     }
   }
   .region-header-right {
-    max-width: 33%;
+    max-width: 100%;
   }
 
   @include breakpoint(520px) {
@@ -276,6 +276,7 @@ ul {
     .region-header-right {
       align-content: center;
       justify-content: center;
+      max-width: 50%;
     }
   }
 
@@ -317,6 +318,9 @@ ul {
           width: 100%;
         }
       }      
+    }
+    .region-header-right {
+      max-width: calc(100% / 3);
     }
 
     .region-header-mid {
