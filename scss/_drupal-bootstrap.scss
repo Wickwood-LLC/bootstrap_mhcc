@@ -343,6 +343,8 @@ ul {
 
   .menu--main {
     float: none;
+    font-size: 14px;
+    @include fluid-type(320px, 1020px, 14px, 16px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 
     >li {
       margin-left: 5px;

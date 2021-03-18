@@ -8254,6 +8254,19 @@ ul:last-child {
 
 #navbar .menu--main {
   float: none;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  #navbar .menu--main {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 700));
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  #navbar .menu--main {
+    font-size: 16px;
+  }
 }
 
 #navbar .menu--main > li {
