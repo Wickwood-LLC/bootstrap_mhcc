@@ -1047,34 +1047,6 @@ nav.tabs {
     }
   }
 
-  &.layout--twocol-section {
-    &.rtlb:not(.layout-builder__layout) {
-      display: flex;
-      >.layout__region--first {
-        order: 1;
-        float: none;
-
-        @include breakpoint(900px) {
-          order: 0;
-          float: none;
-        }
-      }
-    }
-
-    &.ltrb:not(.layout-builder__layout) {
-      display: flex;
-      >.layout__region--first {
-        order: 0;
-        float: none;
-
-        @include breakpoint(900px) {
-          order: 0;
-          float: none;
-        }
-      }
-    }
-  }
-
   &.layout--twocol {
     flex-flow: row wrap;
 

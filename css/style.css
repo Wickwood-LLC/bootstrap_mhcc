@@ -8942,38 +8942,6 @@ nav.tabs {
   }
 }
 
-.layout.layout--twocol-section.rtlb:not(.layout-builder__layout) {
-  display: flex;
-}
-
-.layout.layout--twocol-section.rtlb:not(.layout-builder__layout) > .layout__region--first {
-  order: 1;
-  float: none;
-}
-
-@media (min-width: 900px) {
-  .layout.layout--twocol-section.rtlb:not(.layout-builder__layout) > .layout__region--first {
-    order: 0;
-    float: none;
-  }
-}
-
-.layout.layout--twocol-section.ltrb:not(.layout-builder__layout) {
-  display: flex;
-}
-
-.layout.layout--twocol-section.ltrb:not(.layout-builder__layout) > .layout__region--first {
-  order: 0;
-  float: none;
-}
-
-@media (min-width: 900px) {
-  .layout.layout--twocol-section.ltrb:not(.layout-builder__layout) > .layout__region--first {
-    order: 0;
-    float: none;
-  }
-}
-
 .layout.layout--twocol {
   flex-flow: row wrap;
 }
