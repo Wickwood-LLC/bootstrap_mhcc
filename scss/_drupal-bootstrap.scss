@@ -309,6 +309,8 @@ ul {
     }
 
     .region-header-left {
+      max-width: calc(100% / 3);
+
       .logo,
       #block-sitetitle {
         flex: 1 1 100%;
@@ -493,7 +495,7 @@ ul {
       background: #96C8DE;
       border: 1px dotted rgba(40, 161, 204, 0.9);
       border-radius: 4px 0 0 4px;
-      box-shadow: 0px 7px 7px rgba(0, 0, 0, 50%);
+      box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.5);
       width: auto;
       margin: 0;
 
@@ -505,7 +507,7 @@ ul {
           border-bottom: 1px dotted rgba(40, 161, 204, 0.9);
           color: #0C2F3C;
           text-decoration: none;
-          text-shadow: 2px 2px 2px rgba(245, 245, 245, 50%);
+          text-shadow: 2px 2px 2px rgba(245, 245, 245, 0.5);
           white-space: nowrap;
           height: 41px;
           line-height: 41px;
@@ -1153,15 +1155,19 @@ nav.tabs {
 
 .block-social-sharing-block {
   position: fixed;
-  top: 150px;
-  left: -282px;
+  top: 90px;
+  left: -298px;
   padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 0;
   background-color: white;
-  width: 282px;
+  width: 298px;
   transition: 0.5s;
-  z-index: 5;
+  z-index: 15;
+  text-align: center;
+  background: #96C8DE;
+  border: 1px dotted rgba(40, 161, 204, 0.9);
+  border-radius: 0 4px 4px 0;
+  margin: 0;
+  text-shadow: 1px 1px 0px whitesmoke;
 
   @include breakpoint(980px) {
     top: 200px;
@@ -1180,22 +1186,30 @@ nav.tabs {
   }
 
   &:before {
-    display: table;
+    display: block;
     content: '\f1e0' !important;
     font-family: 'Font Awesome 5 Pro';
     font-size: 24px;
     position: absolute;
-    right: -36px;
-    width: 36px;
-    height: 36px;
+    right: -42px;
     background-color: white;
     top: -1px;
-    box-sizing: border-box;
+    box-sizing: content-box;
     text-align: center;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 30px -3px #383838;
     opacity: 1;
     transition: all 1s ease 0.5s;
+    margin: 0;
+    border-radius: 0 4px 4px 0;
+    color: black;
+    background: #96C8DE;
+    padding: 10px;
+    border: 1px dotted rgba(40, 161, 204, 0.9);
+    border-right: 0;
+    box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    line-height: 14px;
+    width: 22px;
+    height: 14px;
   }
 
   .block-title {
@@ -1204,6 +1218,21 @@ nav.tabs {
     margin-top: 0;
     text-align: center;
     @include fluid-type(320px, 1200px, 18px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  }
+
+  .social-media-sharing {
+    li {
+      display: inline-block;
+      margin-right: 15px;
+      list-style: none;
+      list-style-type: none;
+      box-shadow: 1px 1px 0px 0px #777777;
+      border-radius: 21px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -1215,9 +1244,10 @@ nav.tabs {
   border: 3px solid #9DC4D7;
 
   >.block-title {
-    background: #7FCAE6;
-    background: linear-gradient(to bottom, #7FCAE6 0, #84CCE7 40%, #84CCE7 85%, #61BEE0 100%) no-repeat;
-    border-radius: 3px 3px 0 0;
+    background: #BBE3F2;
+    border-radius: 4px;
+    border: 1px solid #9DC4D7;
+    color: #333;
     padding: 6px 5px;
     margin: 0 auto 2px;
     text-align: center;
