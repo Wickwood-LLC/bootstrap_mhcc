@@ -9065,12 +9065,6 @@ nav.tabs {
   text-shadow: 1px 1px 0px whitesmoke;
 }
 
-@media (min-width: 980px) {
-  .block-social-sharing-block {
-    top: 200px;
-  }
-}
-
 .block-social-sharing-block:hover, .block-social-sharing-block:focus, .block-social-sharing-block:active {
   left: 0;
   box-shadow: 2px 3px 10px 0 #333;

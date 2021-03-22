@@ -1170,10 +1170,6 @@ nav.tabs {
   margin: 0;
   text-shadow: 1px 1px 0px whitesmoke;
 
-  @include breakpoint(980px) {
-    top: 200px;
-  }
-
   &:hover,
   &:focus,
   &:active {
