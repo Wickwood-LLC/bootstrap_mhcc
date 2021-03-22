@@ -461,7 +461,7 @@ ul {
     }
   }
 
-  @include breakpoint(0px 767px) {
+  @include breakpoint(0px $grid-float-breakpoint-max) {
     position: fixed;
     top: 90px;
     right: 0;

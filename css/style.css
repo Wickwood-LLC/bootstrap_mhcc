@@ -1796,7 +1796,7 @@ dd {
   clear: both;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 880px) {
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -4193,7 +4193,7 @@ tbody.collapse.in {
   margin-bottom: 2px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 880px) {
   .navbar-right .dropdown-menu {
     right: 0;
     left: auto;
@@ -7478,7 +7478,7 @@ body.navbar-is-fixed-bottom {
   padding-right: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 880px) {
   .navbar .logo {
     margin-right: 0;
     padding-left: 0;
@@ -8381,7 +8381,7 @@ ul:last-child {
   background-color: unset;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 879px) {
   #navbar {
     position: fixed;
     top: 90px;
