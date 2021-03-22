@@ -9784,7 +9784,8 @@ tr:first-child > td > .fc-day-grid-event {
 #views-exposed-form-full-calendar-view-block-4 select[multiple],
 #views-exposed-form-full-calendar-view-block-5 select[multiple],
 #views-exposed-form-full-calendar-view-block-6 select[multiple] {
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: revert;
   width: 100%;
   max-width: 150px;
   margin-left: auto;
