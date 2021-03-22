@@ -8262,11 +8262,23 @@ ul:last-child {
 
 @media screen and (min-width: 320px) {
   #navbar .menu--main {
-    font-size: calc(14px + 2 * ((100vw - 320px) / 700));
+    font-size: calc(14px + 2 * ((100vw - 320px) / 559));
   }
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 879px) {
+  #navbar .menu--main {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  #navbar .menu--main {
+    font-size: calc(14px + 2 * ((100vw - 880px) / 320));
+  }
+}
+
+@media screen and (min-width: 1200px) {
   #navbar .menu--main {
     font-size: 16px;
   }
@@ -8336,7 +8348,7 @@ ul:last-child {
 
 @media (min-width: 827px) {
   #navbar .menu--main a {
-    padding: 0 10px;
+    padding: 0 0.5em;
   }
 }
 

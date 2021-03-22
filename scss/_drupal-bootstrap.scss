@@ -347,7 +347,8 @@ ul {
   .menu--main {
     float: none;
     font-size: 14px;
-    @include fluid-type(320px, 1020px, 14px, 16px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type(320px, $grid-float-breakpoint-max, 14px, 16px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type($grid-float-breakpoint, 1200px, 14px, 16px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 
     >li {
       margin-left: 5px;
@@ -411,7 +412,7 @@ ul {
       margin: 0 auto;
 
       @include breakpoint(827px) {
-        padding: 0 10px;
+        padding: 0 0.5em;
       }
     }
 
