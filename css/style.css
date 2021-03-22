@@ -8113,7 +8113,6 @@ ul:last-child {
 #header {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 1em;
   padding: 0 1em;
 }
 
@@ -8127,12 +8126,10 @@ ul:last-child {
 
 #header .region-header-top {
   flex: 100%;
-  margin-bottom: 0.5em;
 }
 
 #header .region-header-bottom {
   flex: 100%;
-  margin-top: 0.5em;
 }
 
 #header .region-header-left,
@@ -8249,6 +8246,7 @@ ul:last-child {
   background-color: unset;
   border: unset;
   text-align: center;
+  margin-bottom: 0;
 }
 
 #navbar .navbar-header {

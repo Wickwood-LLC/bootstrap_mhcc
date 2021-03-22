@@ -189,7 +189,6 @@ ul {
 #header {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 1em;
   padding: 0 1em;
 
   .boxed {
@@ -202,12 +201,10 @@ ul {
 
   .region-header-top {
     flex: 100%;
-    margin-bottom: 0.5em;
   }
 
   .region-header-bottom {
     flex: 100%;
-    margin-top: 0.5em;
   }
 
   .region-header-left,
@@ -339,6 +336,7 @@ ul {
   background-color: unset;
   border: unset;
   text-align: center;
+  margin-bottom: 0;
 
   .navbar-header {
     float: none;
