@@ -192,6 +192,14 @@ ul {
   margin-bottom: 1em;
   padding: 0 1em;
 
+  .boxed {
+    width: 100%;
+
+    > .block-content {
+      padding: 0;
+    }
+  }
+
   .region-header-top {
     flex: 100%;
     margin-bottom: 0.5em;
@@ -306,10 +314,10 @@ ul {
       display: flex;
       align-items: center;
       align-content: center;
+      max-width: calc(100% / 3);
     }
 
     .region-header-left {
-      max-width: calc(100% / 3);
 
       .logo,
       #block-sitetitle {
@@ -322,13 +330,6 @@ ul {
           width: 100%;
         }
       }      
-    }
-    .region-header-right {
-      max-width: calc(100% / 3);
-    }
-
-    .region-header-mid {
-      flex: 0 0 345px;
     }
   }
 }

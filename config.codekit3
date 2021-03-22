@@ -2490,6 +2490,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/js/bootstrap_mhcc.scripts.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/js/bootstrap_mhcc.scripts-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
 	"/logo.png": {
 		"ft": 32768,
 		"iS": 29112,

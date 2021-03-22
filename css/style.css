@@ -8117,6 +8117,14 @@ ul:last-child {
   padding: 0 1em;
 }
 
+#header .boxed {
+  width: 100%;
+}
+
+#header .boxed > .block-content {
+  padding: 0;
+}
+
 #header .region-header-top {
   flex: 100%;
   margin-bottom: 0.5em;
@@ -8222,8 +8230,6 @@ ul:last-child {
     display: flex;
     align-items: center;
     align-content: center;
-  }
-  #header .region-header-left {
     max-width: calc(100% / 3);
   }
   #header .region-header-left .logo,
@@ -8236,12 +8242,6 @@ ul:last-child {
   #header .region-header-left #block-sitetitle .navbar-brand {
     text-align: center;
     width: 100%;
-  }
-  #header .region-header-right {
-    max-width: calc(100% / 3);
-  }
-  #header .region-header-mid {
-    flex: 0 0 345px;
   }
 }
 
