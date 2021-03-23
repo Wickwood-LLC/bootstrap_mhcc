@@ -8113,7 +8113,7 @@ ul:last-child {
 #header {
   display: flex;
   flex-flow: row wrap;
-  padding: 0 1em;
+  padding: 0;
 }
 
 #header .boxed {
@@ -8288,6 +8288,10 @@ ul:last-child {
   display: inline-block;
 }
 
+#navbar .menu--main > li:hover {
+  background: #1A6884;
+}
+
 #navbar .menu--main > li > a {
   text-decoration: none;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
@@ -8402,7 +8406,7 @@ ul:last-child {
     margin: 0;
     border-radius: 4px 0 0 4px;
     color: black;
-    background: #96C8DE;
+    background: white;
     padding: 10px;
     border: 1px dotted rgba(40, 161, 204, 0.9);
     border-right: 0;
@@ -8411,6 +8415,17 @@ ul:last-child {
   }
   #navbar .navbar-toggle[aria-expanded="true"] {
     border-radius: 4px 0 0 0;
+  }
+  #navbar .navbar-toggle .icon-bar {
+    background-color: black;
+    box-shadow: 1px 1px 0px whitesmoke;
+  }
+  #navbar .navbar-toggle:hover {
+    background: #1A6884;
+  }
+  #navbar .navbar-toggle:hover .icon-bar {
+    background-color: white;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
   }
   #navbar .navbar-collapse {
     padding: 0;
@@ -9068,7 +9083,6 @@ nav.tabs {
   transition: 0.5s;
   z-index: 15;
   text-align: center;
-  background: #96C8DE;
   border: 1px dotted rgba(40, 161, 204, 0.9);
   border-radius: 0 4px 4px 0;
   margin: 0;
@@ -9101,7 +9115,6 @@ nav.tabs {
   margin: 0;
   border-radius: 0 4px 4px 0;
   color: black;
-  background: #96C8DE;
   padding: 10px;
   border: 1px dotted rgba(40, 161, 204, 0.9);
   border-right: 0;

@@ -189,7 +189,7 @@ ul {
 #header {
   display: flex;
   flex-flow: row wrap;
-  padding: 0 1em;
+  padding: 0;
 
   .boxed {
     width: 100%;
@@ -353,6 +353,10 @@ ul {
       float: none;
       display: inline-block;
 
+      &:hover {
+        background: #1A6884;
+      }
+
       >a {
         text-decoration: none;
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
@@ -470,7 +474,7 @@ ul {
       margin: 0;
       border-radius: 4px 0 0 4px;
       color: black;
-      background: #96C8DE;
+      background: white;
       padding: 10px;
       border: 1px dotted rgba(40, 161, 204, 0.9);
       border-right: 0;
@@ -479,6 +483,20 @@ ul {
 
       &[aria-expanded="true"]{
         border-radius: 4px 0 0 0;
+      }
+
+      .icon-bar {
+        background-color: black;
+        box-shadow: 1px 1px 0px whitesmoke;
+      }
+
+      &:hover {
+        background: #1A6884;
+
+        .icon-bar {
+          background-color: white;
+          box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+        }
       }
     }
 
@@ -1163,7 +1181,6 @@ nav.tabs {
   transition: 0.5s;
   z-index: 15;
   text-align: center;
-  background: #96C8DE;
   border: 1px dotted rgba(40, 161, 204, 0.9);
   border-radius: 0 4px 4px 0;
   margin: 0;
@@ -1197,7 +1214,6 @@ nav.tabs {
     margin: 0;
     border-radius: 0 4px 4px 0;
     color: black;
-    background: #96C8DE;
     padding: 10px;
     border: 1px dotted rgba(40, 161, 204, 0.9);
     border-right: 0;
