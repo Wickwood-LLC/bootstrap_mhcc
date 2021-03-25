@@ -9207,7 +9207,7 @@ nav.tabs {
 }
 
 .boxed-columns > .layout__region {
-  border: 1px solid #5c9630;
+  border: 1px solid #0e8fd4;
   border-radius: 8px;
   padding: 0.5em;
 }
@@ -9670,8 +9670,27 @@ form#user-register-form .captcha {
   }
 }
 
+.path-user .block-field-blockuseruserfield-occupation .field__items,
+.path-user .block-field-blockuseruserfield-interests .field__items,
+.path-user .block-field-blockuseruserfield-website .field__items {
+  display: inline;
+}
+
 .path-user .block-field-blockparagraphphonefield-phone-type {
   margin-right: 0.3em;
+}
+
+.path-user .block-field-blockuseruserfield-mailing-address .address {
+  margin-left: 1em;
+}
+
+.path-user .block-field-blockuseruserfield-membership-order-status .field__item {
+  text-transform: capitalize;
+}
+
+.path-user .block-field-blockuseruserfield-other-information .field__item,
+.path-user .block-field-blockuseruserfield-user-management-notes .field__item {
+  margin-left: 1em;
 }
 
 /********************* FULL CALENDAR *********************/

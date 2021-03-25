@@ -1287,7 +1287,7 @@ nav.tabs {
 }
 
 .boxed-columns>.layout__region {
-  border: 1px solid #5c9630;
+  border: 1px solid #0e8fd4;
   border-radius: 8px;
   padding: 0.5em;
 }
@@ -1744,8 +1744,31 @@ form#user-register-form {
     }
   }
 
+  .block-field-blockuseruserfield-occupation,
+  .block-field-blockuseruserfield-interests,
+  .block-field-blockuseruserfield-website {
+    .field__items {
+      display: inline;
+    }
+  }
   .block-field-blockparagraphphonefield-phone-type {
     margin-right: 0.3em;
+  }
+  .block-field-blockuseruserfield-mailing-address {
+    .address {
+      margin-left: 1em;
+    }
+  }
+  .block-field-blockuseruserfield-membership-order-status {
+    .field__item {
+      text-transform: capitalize;
+    }
+  }
+  .block-field-blockuseruserfield-other-information,
+  .block-field-blockuseruserfield-user-management-notes {
+    .field__item {
+      margin-left: 1em;
+    }
   }
 }
 
