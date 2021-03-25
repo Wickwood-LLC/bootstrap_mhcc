@@ -8898,7 +8898,7 @@ nav.tabs {
 .layout {
   position: relative;
   margin-bottom: 1em;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .layout .layout__region {
@@ -8976,6 +8976,10 @@ nav.tabs {
   }
 }
 
+.layout.layout--twocol > .layout__region--first {
+  margin-bottom: 1em;
+}
+
 .layout.layout--twocol > .layout__region--first,
 .layout.layout--twocol > .layout__region--second {
   flex: 1 1 100%;
@@ -8999,6 +9003,7 @@ nav.tabs {
 @media (min-width: 740px) {
   .layout.layout--twocol > .layout__region--first {
     margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -9650,7 +9655,19 @@ form#user-register-form .captcha {
 
 .path-user .field--label,
 .path-user .field__label {
-  font-weight: 500;
+  font-weight: bold;
+}
+
+.path-user .block-field-blockuseruserfield-occupation,
+.path-user .block-field-blockuseruserfield-license-plate {
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .path-user .block-field-blockuseruserfield-occupation,
+  .path-user .block-field-blockuseruserfield-license-plate {
+    text-align: left;
+  }
 }
 
 .path-user .block-field-blockparagraphphonefield-phone-type {

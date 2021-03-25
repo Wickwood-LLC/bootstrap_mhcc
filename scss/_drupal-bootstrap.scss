@@ -998,7 +998,7 @@ nav.tabs {
 .layout {
   position: relative;
   margin-bottom: 1em;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
   .layout__region {
     padding: 0.5em 0;
@@ -1070,6 +1070,10 @@ nav.tabs {
       flex-flow: row nowrap;
     }
 
+    >.layout__region--first {
+      margin-bottom: 1em;
+    }
+
     >.layout__region--first,
     >.layout__region--second {
       flex: 1 1 100%;
@@ -1087,6 +1091,7 @@ nav.tabs {
     >.layout__region--first {
       @include breakpoint(740px) {
         margin-left: 0;
+        margin-bottom: 0;
       }
     }
 
@@ -1727,7 +1732,16 @@ form#user-register-form {
 
   .field--label,
   .field__label {
-    font-weight: 500;
+    font-weight: bold;
+  }
+
+  .block-field-blockuseruserfield-occupation,
+  .block-field-blockuseruserfield-license-plate {
+    text-align: center;
+
+    @include breakpoint(640px) {
+      text-align: left;
+    }
   }
 
   .block-field-blockparagraphphonefield-phone-type {
