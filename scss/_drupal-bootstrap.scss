@@ -127,6 +127,12 @@ ul {
   }
 }
 
+.field.field--name-field-canceled {
+  font-weight: bold;
+  color: red;
+  text-transform: capitalize;
+}
+
 .unpublished {
   color: red;
   text-align: center;
@@ -592,6 +598,17 @@ ul {
         background: transparent;
         border: none;
         color: #333;
+      }
+
+      .boxed {
+        background: white;
+        border-width: 2px;
+        margin: 0;
+        margin-bottom: 0.5em;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -1179,6 +1196,28 @@ nav.tabs {
   margin-bottom: 1em;
 }
 
+.block-entity-viewnode {
+  margin-bottom: 0.5em;
+  .ride-features,
+  .actual-ride-features {
+    .field {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    .field__label {
+      width: 11em;
+    }
+    .field__item {
+      flex: calc(100% - 11em);
+      min-width: 150px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .block-social-sharing-block {
   position: fixed;
   top: 90px;
@@ -1550,6 +1589,10 @@ nav.tabs {
     }
   }
 }
+
+
+/********************* PAGES *********************/
+
 
 
 /********************* FORMS *********************/
