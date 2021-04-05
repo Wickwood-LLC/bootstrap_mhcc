@@ -76,23 +76,36 @@
     'clearfix',
   ]
 %}
+{% 
+  set view_modes_modded = [
+    'actual_ride_features',
+    'number_of_riders',
+    'other_ride_info',
+    'ride_features',
+    'weather',
+  ] 
+%}
 <article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes.addClass('node-title') }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+  {% if view_mode not in view_modes_modded %}
 
-  {% if display_submitted %}
-    <footer>
-      <div{{ author_attributes.addClass('author') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
+    {{ title_prefix }}
+    {% if label and not page %}
+      <h2{{ title_attributes.addClass('node-title') }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+    {{ title_suffix }}
+
+    {% if display_submitted %}
+      <footer>
+        <div{{ author_attributes.addClass('author') }}>
+          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+          {{ metadata }}
+        </div>
+      </footer>
+    {% endif %}
+
   {% endif %}
 
   <div{{ content_attributes.addClass('content') }}>
