@@ -2918,13 +2918,6 @@
 		"oAP": "/templates/node--mhcc-ride-report--number-of-riders.html.twig",
 		"oF": 0
 		},
-	"/templates/node--mhcc-ride-report--weather.html.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/templates/node--mhcc-ride-report--weather.html.twig",
-		"oF": 0
-		},
 	"/templates/node.html.twig": {
 		"cB": 0,
 		"ft": 8192,
