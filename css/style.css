@@ -9269,6 +9269,40 @@ nav.tabs {
   color: #e24f4c;
 }
 
+.boxed-fieldset {
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+}
+
+.boxed-fieldset:last-child {
+  margin-bottom: 0;
+}
+
+.boxed-fieldset .block-title {
+  font-weight: bold;
+  margin: 0;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+@media screen and (min-width: 320px) {
+  .boxed-fieldset .block-title {
+    font-size: calc(20px + 10 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .boxed-fieldset .block-title {
+    font-size: 30px;
+  }
+}
+
+.boxed-fieldset .block-content {
+  padding: 1rem;
+}
+
 .boxed-columns > .layout__region {
   border: 1px solid #0e8fd4;
   border-radius: 8px;

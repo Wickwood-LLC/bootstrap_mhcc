@@ -1348,6 +1348,28 @@ nav.tabs {
   }
 }
 
+.boxed-fieldset {
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .block-title {
+    font-weight: bold;
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    @include fluid-type(320px, 1200px, 20px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  }
+  .block-content {
+    padding: 1rem;
+  }
+}
+
 .boxed-columns>.layout__region {
   border: 1px solid #0e8fd4;
   border-radius: 8px;
