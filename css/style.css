@@ -3198,9 +3198,10 @@ fieldset[disabled]
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
-  position: absolute;
+  position: static;
   margin-top: 4px \9;
-  margin-left: -20px;
+  margin-left: unset;
+  margin-right: 0.2em;
 }
 
 .radio + .radio,
@@ -7948,6 +7949,24 @@ ul:last-child {
   margin-bottom: 0;
 }
 
+table {
+  border: 3px solid #9cc3d7;
+  margin: 1em auto;
+}
+
+table tr:nth-child(odd) {
+  background-color: rgba(226, 219, 219, 0.81);
+  border: 1px solid #9cc3d7;
+}
+
+table tr:nth-child(even) {
+  background-color: white;
+}
+
+table td {
+  padding: 5px;
+}
+
 .align-center {
   text-align: center;
 }
@@ -9221,6 +9240,22 @@ nav.tabs {
   margin: 0;
 }
 
+.panel .panel-title {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 320px) {
+  .panel .panel-title {
+    font-size: calc(20px + 10 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .panel .panel-title {
+    font-size: 30px;
+  }
+}
+
 .boxed {
   background: #D7E7EF;
   border-radius: 6px;
@@ -9281,26 +9316,18 @@ nav.tabs {
 }
 
 .boxed-fieldset .block-title {
-  font-weight: bold;
   margin: 0;
   padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 5px 5px 0 0;
   border-bottom: 1px solid #ccc;
-}
-
-@media screen and (min-width: 320px) {
-  .boxed-fieldset .block-title {
-    font-size: calc(20px + 10 * ((100vw - 320px) / 880));
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .boxed-fieldset .block-title {
-    font-size: 30px;
-  }
+  line-height: 1.1;
 }
 
 .boxed-fieldset .block-content {
   padding: 1rem;
+  background-color: #FFF;
+  border-radius: 0 0 5px 5px;
 }
 
 .boxed-columns > .layout__region {
@@ -9781,6 +9808,19 @@ form#user-register-form .captcha {
 .path-user .block-field-blockuseruserfield-other-information .field__item,
 .path-user .block-field-blockuseruserfield-user-management-notes .field__item {
   margin-left: 1em;
+}
+
+#edit-ride-waiver-text-1 {
+  height: 200px;
+  overflow-y: scroll;
+  border: 2px solid #9DC4D7;
+  border-radius: 4px;
+  background: white;
+  padding: 1em 2.5%;
+}
+
+#edit-ride-waiver-text-1 table {
+  width: 80%;
 }
 
 /********************* FULL CALENDAR *********************/
