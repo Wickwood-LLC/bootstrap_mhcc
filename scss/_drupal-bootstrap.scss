@@ -1250,6 +1250,32 @@ nav.tabs {
   }
 }
 
+.block-field-blocknoderide-eventfield-starting-location {
+  .node-title {
+    text-align: left;
+
+    margin-top: -0.5rem;
+  }
+  .layout {
+    margin-bottom: 0;
+
+    .layout__region {
+      padding: 0;
+    }
+  }
+
+  .block-field-blocknodestarting-locationfield-location-address {
+    .block-content {
+      padding: 0 0 0.5em 0;
+    }
+  }
+  .block-field-blocknodestarting-locationbody {
+    .block-content {
+      padding: 0;
+    }
+  }
+}
+
 .block-social-sharing-block {
   position: fixed;
   top: 90px;

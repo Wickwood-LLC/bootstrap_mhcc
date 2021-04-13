@@ -9156,6 +9156,27 @@ nav.tabs {
   margin-top: 0px;
 }
 
+.block-field-blocknoderide-eventfield-starting-location .node-title {
+  text-align: left;
+  margin-top: -0.5rem;
+}
+
+.block-field-blocknoderide-eventfield-starting-location .layout {
+  margin-bottom: 0;
+}
+
+.block-field-blocknoderide-eventfield-starting-location .layout .layout__region {
+  padding: 0;
+}
+
+.block-field-blocknoderide-eventfield-starting-location .block-field-blocknodestarting-locationfield-location-address .block-content {
+  padding: 0 0 0.5em 0;
+}
+
+.block-field-blocknoderide-eventfield-starting-location .block-field-blocknodestarting-locationbody .block-content {
+  padding: 0;
+}
+
 .block-social-sharing-block {
   position: fixed;
   top: 90px;
