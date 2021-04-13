@@ -1327,13 +1327,6 @@ nav.tabs {
   }
 }
 
-.panel {
-  .panel-title {
-    font-weight: bold;
-    @include fluid-type(320px, 1200px, 20px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
-  }
-}
-
 .boxed {
   background: #D7E7EF;
   border-radius: 6px;
@@ -1416,7 +1409,7 @@ nav.tabs {
   }
 }
 
-.centered-title .block-title {
+.centered-title > .block-title {
   text-align: center;
 }
 

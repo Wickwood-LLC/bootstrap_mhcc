@@ -9240,22 +9240,6 @@ nav.tabs {
   margin: 0;
 }
 
-.panel .panel-title {
-  font-weight: bold;
-}
-
-@media screen and (min-width: 320px) {
-  .panel .panel-title {
-    font-size: calc(20px + 10 * ((100vw - 320px) / 880));
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .panel .panel-title {
-    font-size: 30px;
-  }
-}
-
 .boxed {
   background: #D7E7EF;
   border-radius: 6px;
@@ -9348,7 +9332,7 @@ nav.tabs {
   padding-right: 0;
 }
 
-.centered-title .block-title {
+.centered-title > .block-title {
   text-align: center;
 }
 
