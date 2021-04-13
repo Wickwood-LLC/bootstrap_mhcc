@@ -100,6 +100,10 @@ table {
 }
 
 .extlink {
+  font-size: .65em;
+  vertical-align: super;
+  margin-left: .15em;
+
   .svg-inline--fa.fa-w-16 {
     width: 0.8em;
     margin-left: 0.2em;
@@ -119,6 +123,12 @@ table {
 .file > span,
 .glyphicon-file {
   color: $link-color;
+} 
+.file > span,
+.file > span:first-child
+.file > span:last-child {
+  border: 0px;
+  @include fluid-type(320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);font-size: 1em;
 }
 .text-primary {
   color: $link-color;

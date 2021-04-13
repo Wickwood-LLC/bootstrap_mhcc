@@ -7976,6 +7976,12 @@ table td {
   margin-right: auto;
 }
 
+.extlink {
+  font-size: .65em;
+  vertical-align: super;
+  margin-left: .15em;
+}
+
 .extlink .svg-inline--fa.fa-w-16 {
   width: 0.8em;
   margin-left: 0.2em;
@@ -7994,6 +8000,25 @@ table td {
 .file > span,
 .glyphicon-file {
   color: #058ad2;
+}
+
+.file > span,
+.file > span:first-child .file > span:last-child {
+  border: 0px;
+}
+
+@media screen and (min-width: 320px) {
+  .file > span,
+  .file > span:first-child .file > span:last-child {
+    font-size: calc(16px + 4 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .file > span,
+  .file > span:first-child .file > span:last-child {
+    font-size: 20px;
+  }
 }
 
 .text-primary {
