@@ -125,7 +125,7 @@ table {
   color: $link-color;
 } 
 .file > span,
-.file > span:first-child
+.file > span:first-child,
 .file > span:last-child {
   border: 0px;
   @include fluid-type(320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);font-size: 1em;
@@ -1417,6 +1417,8 @@ nav.tabs {
     border-radius: 5px 5px 0 0;
     border-bottom: 1px solid #ccc;
     line-height: 1.1;
+    font-weight: bold;
+    @include fluid-type(320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
   }
   .block-content {
     padding: 1rem;

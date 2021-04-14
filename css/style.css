@@ -8003,20 +8003,23 @@ table td {
 }
 
 .file > span,
-.file > span:first-child .file > span:last-child {
+.file > span:first-child,
+.file > span:last-child {
   border: 0px;
 }
 
 @media screen and (min-width: 320px) {
   .file > span,
-  .file > span:first-child .file > span:last-child {
+  .file > span:first-child,
+  .file > span:last-child {
     font-size: calc(16px + 4 * ((100vw - 320px) / 880));
   }
 }
 
 @media screen and (min-width: 1200px) {
   .file > span,
-  .file > span:first-child .file > span:last-child {
+  .file > span:first-child,
+  .file > span:last-child {
     font-size: 20px;
   }
 }
@@ -9352,6 +9355,19 @@ nav.tabs {
   border-radius: 5px 5px 0 0;
   border-bottom: 1px solid #ccc;
   line-height: 1.1;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 320px) {
+  .boxed-fieldset .block-title {
+    font-size: calc(16px + 4 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .boxed-fieldset .block-title {
+    font-size: 20px;
+  }
 }
 
 .boxed-fieldset .block-content {
