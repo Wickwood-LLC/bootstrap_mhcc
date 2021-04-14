@@ -1410,7 +1410,7 @@ nav.tabs {
     margin-bottom: 0;
   }
 
-  .block-title {
+  > .block-title {
     margin: 0;
     padding: 1rem;
     background-color: #f5f5f5;
@@ -1420,7 +1420,7 @@ nav.tabs {
     font-weight: bold;
     @include fluid-type(320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
   }
-  .block-content {
+  > .block-content {
     padding: 1rem;
     background-color: #FFF;
     border-radius: 0 0 5px 5px;
