@@ -120,6 +120,9 @@ table {
   }
 }
 
+.file {
+  font-weight: normal;
+}
 .file > span,
 .glyphicon-file {
   color: $link-color;
