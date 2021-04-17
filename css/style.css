@@ -9098,6 +9098,33 @@ nav.tabs {
   }
 }
 
+.layout.layout--twocol-bricks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.layout.layout--twocol-bricks > .layout__region {
+  flex: 0 1 100%;
+}
+
+@media (min-width: 40em) {
+  .layout.layout--twocol-bricks > .layout__region--first-above,
+  .layout.layout--twocol-bricks > .layout__region--second-above,
+  .layout.layout--twocol-bricks > .layout__region--first-below,
+  .layout.layout--twocol-bricks > .layout__region--second-below {
+    flex: 0 1 50%;
+    max-width: 49%;
+  }
+  .layout.layout--twocol-bricks > .layout__region--first-above,
+  .layout.layout--twocol-bricks > .layout__region--first-below {
+    margin-right: 1%;
+  }
+  .layout.layout--twocol-bricks > .layout__region--second-above,
+  .layout.layout--twocol-bricks > .layout__region--second-below {
+    margin-left: 1%;
+  }
+}
+
 @media (min-width: 40em) {
   .layout.layout--threecol-section--33-34-33 > .layout__region--first,
   .layout.layout--threecol-section--33-34-33 > .layout__region--third {
@@ -9339,6 +9366,10 @@ nav.tabs {
 
 .boxed .more-link a {
   color: #e24f4c;
+}
+
+fieldset:not(.fieldgroup) {
+  padding: 2em 1.2em 1em;
 }
 
 .boxed-fieldset {
