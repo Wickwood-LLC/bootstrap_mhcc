@@ -2121,36 +2121,92 @@ tr:first-child>td>.fc-day-grid-event {
 }
 
 /********************* SLICK SLIDER *********************/
-.slick__slide {
-  .slide__caption {
-    width: 100%;
-    position: static;
-    bottom: 0;
-    top: unset;
-    background-color: #00000080;
-    color: white;
-    text-shadow: 1px 1px 1px #000000;
-    padding: 0.5em;
-
-    @include breakpoint(600px) {
-      position: absolute;
-    }
+.slick {
+  .slick-track {
+    display: flex;
   }
 
-  #slideshow-title {
-    h2 {
-      margin: 0;
+  .slick__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
 
-      a:hover {
-        color: $link-color;
+    .slide__caption {
+      width: 100%;
+      position: static;
+      bottom: 0;
+      top: unset;
+      background-color: #00000080;
+      color: white;
+      text-shadow: 1px 1px 1px #000000;
+      padding: 0.5em;
+
+      @include breakpoint(600px) {
+        position: absolute;
+      }
+    }
+
+    #slideshow-title {
+      h2 {
+        margin: 0;
+
+        a:hover {
+          color: $link-color;
+        }
       }
     }
   }
-}
 
-.slick-dots {
-  margin-top: 0.5em;
-  position: static;
+  .slide__media img {
+    margin: auto;
+  }
+
+  .slick__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: unset;
+    bottom: 0px;
+    position: relative;
+    top: unset;
+
+    .slick-arrow {
+      border: 0;
+      border-radius: 50%;
+      font-size: 1em;
+      height: 42px;
+      pointer-events: auto;
+      position: relative;
+      top: unset;
+      transform: unset;
+      width: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:before {
+        color: #333;
+      }
+      &:hover::before {
+        color: transparentize($brand-primary, 0.29);
+      }
+    }
+    .slick-dots {
+      position: relative;
+      bottom: unset;
+      display: flex;
+      width: unset;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-align: center;
+
+      li {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 /********************* OFF-CANVAS *********************/
