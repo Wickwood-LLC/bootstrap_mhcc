@@ -10090,6 +10090,10 @@ tr:first-child > td > .fc-day-grid-event {
   display: flex;
 }
 
+.slick .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
 .slick .slick__slide {
   display: flex;
   align-items: center;
@@ -10131,7 +10135,7 @@ tr:first-child > td > .fc-day-grid-event {
   align-items: center;
   justify-content: center;
   height: unset;
-  bottom: 0px;
+  bottom: -1.5em;
   position: relative;
   top: unset;
 }
@@ -10154,6 +10158,7 @@ tr:first-child > td > .fc-day-grid-event {
 
 .slick .slick__arrow .slick-arrow:before {
   color: #333;
+  font-size: 36px;
 }
 
 .slick .slick__arrow .slick-arrow:hover::before {
@@ -10173,6 +10178,10 @@ tr:first-child > td > .fc-day-grid-event {
 
 .slick .slick__arrow .slick-dots li {
   margin-bottom: 0;
+}
+
+.slick .slick__arrow .slick-dots li button:before {
+  font-size: 1.5rem;
 }
 
 /********************* OFF-CANVAS *********************/

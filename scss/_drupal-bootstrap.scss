@@ -2126,6 +2126,10 @@ tr:first-child>td>.fc-day-grid-event {
     display: flex;
   }
 
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+
   .slick__slide {
     display: flex;
     align-items: center;
@@ -2167,7 +2171,7 @@ tr:first-child>td>.fc-day-grid-event {
     align-items: center;
     justify-content: center;
     height: unset;
-    bottom: 0px;
+    bottom: -1.5em;
     position: relative;
     top: unset;
 
@@ -2187,6 +2191,7 @@ tr:first-child>td>.fc-day-grid-event {
 
       &:before {
         color: #333;
+        font-size: 36px;
       }
       &:hover::before {
         color: transparentize($brand-primary, 0.29);
@@ -2204,6 +2209,10 @@ tr:first-child>td>.fc-day-grid-event {
 
       li {
         margin-bottom: 0;
+
+        button:before {
+          font-size: 1.5rem;
+        }
       }
     }
   }
