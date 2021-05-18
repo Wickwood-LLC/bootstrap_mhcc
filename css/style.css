@@ -9027,6 +9027,11 @@ nav.tabs {
   line-height: 0;
 }
 
+.page-node-type-bikeabout-post .block-views-blockcontent-image-slideshow-block-2 {
+  float: left;
+  margin-right: 1em;
+}
+
 /********************* LAYOUTS *********************/
 .layout {
   position: relative;
