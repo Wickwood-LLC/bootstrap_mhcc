@@ -2480,6 +2480,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/images/postauthoricon.png": {
+		"ft": 32768,
+		"iS": 208,
+		"oA": 0,
+		"oAP": "/images/postauthoricon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/required.svg": {
 		"ft": 2097152,
 		"miP": 0,

@@ -8979,6 +8979,54 @@ nav.tabs {
   text-align: center;
 }
 
+.page-node-type-bikeabout-post .post-header {
+  text-align: center;
+}
+
+.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type:before {
+  content: " - ";
+  display: inline-block;
+}
+
+.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type .block-content {
+  display: inline-block;
+}
+
+.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postuid {
+  display: inline-block;
+}
+
+.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postuid:before {
+  content: " - ";
+  display: inline-block;
+  font-weight: bold;
+}
+
+.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postuid .block-content {
+  display: inline-block;
+}
+
+.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postuid .block-content:before {
+  content: url(../images/postauthoricon.png);
+  margin-right: 0;
+  bottom: 2px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  line-height: 0;
+}
+
 /********************* LAYOUTS *********************/
 .layout {
   position: relative;
