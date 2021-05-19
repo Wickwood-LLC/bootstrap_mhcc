@@ -622,12 +622,12 @@ table {
     background: #fff;
     border-radius: 10px;
     border: 3px solid #9DC4D7;
-    padding: .75em 1.5em;
+    padding: .75em 0.5em;
     margin: 0px auto;
     box-sizing: border-box;
 
     .boxed {
-      background: #e0e0e0;
+      background: #efefef;
       border-width: 1px;
 
       >.block-title {
@@ -1100,8 +1100,46 @@ nav.tabs {
       }
     }
   }
+
   .block-views-blockcontent-image-slideshow-block-2 {
     width: 100%;
+  }
+
+  .view-bikeabout-issue-selection {
+    text-align: center;
+    
+    select {
+      max-width: 100%;
+    }
+  }
+
+  .block-views-blockbikeabout-posts-block-2 {
+    .view-content {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: baseline;
+    }
+
+    .views-row {
+      flex: 1 1 150px;
+      padding: 0.5em;
+      
+      + .views-row {
+        margin-top: 1em;
+      }
+    }
+
+    .views-field-field-feature-media a {
+      display: flex;
+      justify-content: center;
+    }
+    .views-field-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 0.8em;
+      margin-top: 0.2em;
+    }
   }
 }
 
@@ -1159,6 +1197,7 @@ nav.tabs {
     >.layout__region--first,
     >.layout__region--second {
       flex: 1 1 100%;
+      max-width: 100%;
     }
 
     >.layout__region--first {
