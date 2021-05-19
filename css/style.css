@@ -9028,8 +9028,7 @@ nav.tabs {
 }
 
 .page-node-type-bikeabout-post .block-views-blockcontent-image-slideshow-block-2 {
-  float: left;
-  margin-right: 1em;
+  width: 100%;
 }
 
 /********************* LAYOUTS *********************/
@@ -9095,12 +9094,14 @@ nav.tabs {
 @media (min-width: 900px) {
   .layout.layout--twocol-section.layout--twocol-section--75-25 > .layout__region--first {
     flex: 0 1 75%;
+    max-width: 75%;
   }
 }
 
 @media (min-width: 900px) {
   .layout.layout--twocol-section.layout--twocol-section--75-25 > .layout__region--second {
     flex: 0 1 25%;
+    max-width: 25%;
   }
 }
 

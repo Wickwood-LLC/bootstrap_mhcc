@@ -1101,8 +1101,7 @@ nav.tabs {
     }
   }
   .block-views-blockcontent-image-slideshow-block-2 {
-    float: left;
-    margin-right: 1em;
+    width: 100%;
   }
 }
 
@@ -1165,12 +1164,14 @@ nav.tabs {
     >.layout__region--first {
       @include breakpoint(900px) {
         flex: 0 1 75%;
+        max-width: 75%;
       }
     }
 
     >.layout__region--second {
       @include breakpoint(900px) {
         flex: 0 1 25%;
+        max-width: 25%;
       }
     }
   }
