@@ -1059,10 +1059,20 @@ nav.tabs {
 }
 
 .page-node-type-bikeabout-post {
-  .block-field-blocknodebikeabout-postfield-bikeabout-issue {
+  .block-field-blocknodebikeabout-postuid {
     display: inline-block;
-    font-weight: bold;
+
+    &:before {
+      content: 'By:';
+      display: inline;
+      font-weight: bold;
+    }
+    .block-content {
+      display: inline;
+    }
+
   }
+  .block-field-blocknodebikeabout-postfield-bikeabout-issue,
   .block-field-blocknodebikeabout-postfield-bikeabout-post-type {
     display: inline-block;
     font-weight: bold;
@@ -1074,31 +1084,6 @@ nav.tabs {
 
     .block-content {
       display: inline-block;
-    }
-  }
-  .block-field-blocknodebikeabout-postuid {
-    display: inline-block;
-
-    &:before {
-      content: " - ";
-      display: inline-block;
-      font-weight: bold;
-    }
-
-
-    .block-content {
-      display: inline-block;
-
-      &:before {
-        content: url(../images/postauthoricon.png);
-        margin-right: 0;
-        bottom: 2px;
-        position: relative;
-        display: inline-block;
-        vertical-align: middle;
-        font-size: 0;
-        line-height: 0;
-      }
     }
   }
 

@@ -8983,48 +8983,35 @@ nav.tabs {
   text-align: center;
 }
 
-.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue {
-  display: inline-block;
-  font-weight: bold;
-}
-
-.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type {
-  display: inline-block;
-  font-weight: bold;
-}
-
-.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type:before {
-  content: " - ";
-  display: inline-block;
-}
-
-.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type .block-content {
-  display: inline-block;
-}
-
 .page-node-type-bikeabout-post .block-field-blocknodebikeabout-postuid {
   display: inline-block;
 }
 
 .page-node-type-bikeabout-post .block-field-blocknodebikeabout-postuid:before {
-  content: " - ";
-  display: inline-block;
+  content: 'By:';
+  display: inline;
   font-weight: bold;
 }
 
 .page-node-type-bikeabout-post .block-field-blocknodebikeabout-postuid .block-content {
+  display: inline;
+}
+
+.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue,
+.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue:before,
+.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type:before {
+  content: " - ";
   display: inline-block;
 }
 
-.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postuid .block-content:before {
-  content: url(../images/postauthoricon.png);
-  margin-right: 0;
-  bottom: 2px;
-  position: relative;
+.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue .block-content,
+.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type .block-content {
   display: inline-block;
-  vertical-align: middle;
-  font-size: 0;
-  line-height: 0;
 }
 
 .page-node-type-bikeabout-post .block-views-blockcontent-image-slideshow-block-2 {
