@@ -8979,11 +8979,7 @@ nav.tabs {
   text-align: center;
 }
 
-.page-node-type-bikeabout-post .main-container .region-content {
-  padding: .75em 0.5em;
-}
-
-.page-node-type-bikeabout-post .post-header {
+.post-header {
   text-align: center;
 }
 
@@ -9069,6 +9065,34 @@ nav.tabs {
   font-weight: bold;
   font-size: 0.8em;
   margin-top: 0.2em;
+}
+
+.page-node-type-article .block-field-blocknodearticleuid {
+  display: inline-block;
+  padding: 0 0.5em;
+}
+
+.page-node-type-article .block-field-blocknodearticleuid:before {
+  content: 'By:';
+  display: inline;
+  font-weight: bold;
+}
+
+.page-node-type-article .block-field-blocknodearticleuid .block-content {
+  display: inline;
+}
+
+.page-node-type-article .block-field-blocknodearticlepublished-at {
+  display: inline-block;
+  padding: 0 0.5em;
+}
+
+.page-node-type-article .block-views-blockarticles-block-3 ul {
+  padding-left: 1em;
+}
+
+.page-node-type-article .block-views-blockarticles-block-4 table {
+  margin: 0;
 }
 
 /********************* LAYOUTS *********************/
@@ -9450,7 +9474,8 @@ nav.tabs {
 }
 
 .boxed > .block-content {
-  padding: 0 1em;
+  padding: 0 0.5em;
+  font-size: 0.9em;
 }
 
 .boxed .more-link {
@@ -9461,6 +9486,29 @@ nav.tabs {
 
 .boxed .more-link a {
   color: #e24f4c;
+}
+
+.boxed table {
+  margin: 0;
+  border-collapse: separate;
+  border-radius: 6px;
+  border-width: 2px;
+}
+
+.boxed table tr:first-child td:first-child {
+  border-top-left-radius: 6px;
+}
+
+.boxed table tr:first-child td:last-child {
+  border-top-right-radius: 6px;
+}
+
+.boxed table tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+
+.boxed table tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
 }
 
 fieldset:not(.fieldgroup) {

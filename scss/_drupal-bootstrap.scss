@@ -1054,10 +1054,11 @@ nav.tabs {
   }
 }
 
+.post-header {
+  text-align: center;
+}
+
 .page-node-type-bikeabout-post {
-  .post-header {
-    text-align: center;
-  }
   .block-field-blocknodebikeabout-postfield-bikeabout-issue {
     display: inline-block;
     font-weight: bold;
@@ -1139,6 +1140,38 @@ nav.tabs {
       font-weight: bold;
       font-size: 0.8em;
       margin-top: 0.2em;
+    }
+  }
+}
+
+.page-node-type-article {
+  .block-field-blocknodearticleuid {
+    display: inline-block;
+    padding: 0 0.5em;
+
+    &:before {
+      content: 'By:';
+      display: inline;
+      font-weight: bold;
+    }
+    .block-content {
+      display: inline;
+    }
+  }
+
+  .block-field-blocknodearticlepublished-at {
+    display: inline-block;
+    padding: 0 0.5em;
+  }
+
+  .block-views-blockarticles-block-3 {
+    ul {
+      padding-left: 1em;
+    }
+  }
+  .block-views-blockarticles-block-4 {
+    table {
+      margin: 0;
     }
   }
 }
@@ -1509,7 +1542,8 @@ nav.tabs {
   }
 
   >.block-content {
-    padding: 0 1em;
+    padding: 0 0.5em;
+    font-size: 0.9em;
   }
 
   .more-link {
@@ -1519,6 +1553,30 @@ nav.tabs {
 
     a {
       color: #e24f4c;
+    }
+  }
+
+  table {
+    margin: 0;
+    border-collapse: separate;
+    border-radius: 6px;
+    border-width: 2px;
+
+    tr:first-child {
+      td:first-child {
+        border-top-left-radius: 6px;
+      }
+      td:last-child {
+        border-top-right-radius: 6px;
+      }
+    }
+    tr:last-child {
+      td:first-child {
+        border-bottom-left-radius: 6px;
+      }
+      td:last-child {
+        border-bottom-right-radius: 6px;
+      }
     }
   }
 }
