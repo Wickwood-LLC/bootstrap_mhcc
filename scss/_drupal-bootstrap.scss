@@ -1144,7 +1144,8 @@ nav.tabs {
   }
 }
 
-.page-node-type-article {
+.page-node-type-article,
+.page-node-type-news {
   .block-field-blocknodearticleuid {
     display: inline-block;
     padding: 0 0.5em;
@@ -1164,12 +1165,14 @@ nav.tabs {
     padding: 0 0.5em;
   }
 
-  .block-views-blockarticles-block-3 {
+  .block-views-blockarticles-block-3,
+  .block-views-blocknews-block-3 {
     ul {
       padding-left: 1em;
     }
   }
-  .block-views-blockarticles-block-4 {
+  .block-views-blockarticles-block-4,
+  .block-views-blocknews-block-4 {
     table {
       margin: 0;
     }
