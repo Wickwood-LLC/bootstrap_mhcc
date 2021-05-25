@@ -1131,7 +1131,8 @@ nav.tabs {
 
 .page-node-type-article,
 .page-node-type-news {
-  .block-field-blocknodearticleuid {
+  .block-field-blocknodearticleuid,
+  .block-field-blocknodenewsuid {
     display: inline-block;
     padding: 0 0.5em;
 
@@ -1145,7 +1146,8 @@ nav.tabs {
     }
   }
 
-  .block-field-blocknodearticlepublished-at {
+  .block-field-blocknodearticlepublished-at,
+  .block-field-blocknodenewspublished-at {
     display: inline-block;
     padding: 0 0.5em;
   }

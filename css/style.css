@@ -9055,25 +9055,33 @@ nav.tabs {
 }
 
 .page-node-type-article .block-field-blocknodearticleuid,
-.page-node-type-news .block-field-blocknodearticleuid {
+.page-node-type-article .block-field-blocknodenewsuid,
+.page-node-type-news .block-field-blocknodearticleuid,
+.page-node-type-news .block-field-blocknodenewsuid {
   display: inline-block;
   padding: 0 0.5em;
 }
 
 .page-node-type-article .block-field-blocknodearticleuid:before,
-.page-node-type-news .block-field-blocknodearticleuid:before {
+.page-node-type-article .block-field-blocknodenewsuid:before,
+.page-node-type-news .block-field-blocknodearticleuid:before,
+.page-node-type-news .block-field-blocknodenewsuid:before {
   content: 'By:';
   display: inline;
   font-weight: bold;
 }
 
 .page-node-type-article .block-field-blocknodearticleuid .block-content,
-.page-node-type-news .block-field-blocknodearticleuid .block-content {
+.page-node-type-article .block-field-blocknodenewsuid .block-content,
+.page-node-type-news .block-field-blocknodearticleuid .block-content,
+.page-node-type-news .block-field-blocknodenewsuid .block-content {
   display: inline;
 }
 
 .page-node-type-article .block-field-blocknodearticlepublished-at,
-.page-node-type-news .block-field-blocknodearticlepublished-at {
+.page-node-type-article .block-field-blocknodenewspublished-at,
+.page-node-type-news .block-field-blocknodearticlepublished-at,
+.page-node-type-news .block-field-blocknodenewspublished-at {
   display: inline-block;
   padding: 0 0.5em;
 }
