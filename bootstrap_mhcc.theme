@@ -1,6 +1,7 @@
 <?php
 
 use Drupal\Core\Render\Markup;
+use Drupal\Core\Url;
 
 /**
  * @file
@@ -30,4 +31,40 @@ function bootstrap_mhcc_preprocess_maintenance_page(&$variables) {
 
 function bootstrap_mhcc_bootstrap_colorize_text_alter(array &$texts) {
   $texts['matches'][t('Apply')->render()] = 'success';
+}
+
+/**
+ * Prepares variables for username templates.
+ *
+ * Default template: username.html.twig.
+ *
+ * Modules that make any changes to variables like 'name' or 'extra' must ensure
+ * that the final string is safe.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - account: The user account (\Drupal\Core\Session\AccountInterface).
+ */
+function bootstrap_mhcc_preprocess_username(&$variables) {
+  $external = FALSE;
+  if ($variables['uid'] && $variables['profile_access']) {
+    // We are linking to a local user.
+    $variables['attributes']['title'] = t('Contact Author');
+  }
+  elseif (!empty($account->homepage)) {
+    $external = TRUE;
+  }
+
+  // We have a link path, so we should generate a URL.
+  if (isset($variables['link_path'])) {
+    if ($external) {
+      $variables['attributes']['href'] = Url::fromUri($variables['link_path'], $variables['link_options'])
+        ->toString();
+    }
+    else {
+      $variables['attributes']['href'] = Url::fromRoute('entity.user.canonical', [
+        'user' => $variables['uid'],
+      ])->toString() . '/contact';
+    }
+  }
 }
