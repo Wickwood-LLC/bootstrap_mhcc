@@ -62,11 +62,10 @@ function bootstrap_mhcc_preprocess_username(&$variables) {
         ->toString();
     }
     else {
-      $variables['attributes']['href'] = Url::fromRoute('entity.user.canonical', [
+      $variables['attributes']['href'] = '/' . Url::fromRoute('entity.user.canonical', [
         'user' => $variables['uid'],
-      ])->toString() . '/contact';
+      ])->getInternalPath() . '/contact';
     }
+    $variables['attributes']['target'] = '_blank';
   }
-
-  dump(Url::fromRoute('entity.user.canonical', ['user' => $variables['uid'],]));
 }
