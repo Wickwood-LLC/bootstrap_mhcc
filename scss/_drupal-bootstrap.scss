@@ -1056,6 +1056,27 @@ nav.tabs {
 
 .post-header {
   text-align: center;
+
+  .block-field-blocknodearticleuid,
+  .block-field-blocknodenewsuid {
+    display: inline-block;
+    padding: 0 0.5em;
+
+    &:before {
+      content: 'By:';
+      display: inline;
+      font-weight: bold;
+    }
+    .block-content {
+      display: inline;
+    }
+  }
+
+  .block-field-blocknodearticlepublished-at,
+  .block-field-blocknodenewspublished-at {
+    display: inline-block;
+    padding: 0 0.5em;
+  }
 }
 
 .page-node-type-bikeabout-post {
@@ -1131,27 +1152,6 @@ nav.tabs {
 
 .page-node-type-article,
 .page-node-type-news {
-  .block-field-blocknodearticleuid,
-  .block-field-blocknodenewsuid {
-    display: inline-block;
-    padding: 0 0.5em;
-
-    &:before {
-      content: 'By:';
-      display: inline;
-      font-weight: bold;
-    }
-    .block-content {
-      display: inline;
-    }
-  }
-
-  .block-field-blocknodearticlepublished-at,
-  .block-field-blocknodenewspublished-at {
-    display: inline-block;
-    padding: 0 0.5em;
-  }
-
   .block-views-blockarticles-block-3,
   .block-views-blocknews-block-3 {
     ul {
@@ -1804,6 +1804,42 @@ fieldset:not(.fieldgroup) {
 
 #block-views-block-simpleads-block-1 {
   max-width: 100%;
+}
+
+.view-articles.view-display-id-page_1 {
+  .view-header,
+  .view-footer {
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .views-row {
+    .node-title a {
+      color: black;
+      
+      &:hover {
+        color: $link-color
+      }
+    }
+
+    .block-extra-field-blocknodearticlelinks {
+      text-align: right;
+      font-weight: bold;
+
+      a {
+        color: red;
+      }
+    }
+
+    &:after {
+      content: '';
+      width: 80%;
+      display: block;
+      border-bottom: 5px double gray;
+      text-align: center;
+      margin: auto;
+    }
+  }
 }
 
 /********************* MAINTENANCE *********************/
