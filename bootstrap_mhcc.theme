@@ -67,4 +67,6 @@ function bootstrap_mhcc_preprocess_username(&$variables) {
       ])->toString() . '/contact';
     }
   }
+
+  dump(Url::fromRoute('entity.user.canonical', ['user' => $variables['uid'],]));
 }
