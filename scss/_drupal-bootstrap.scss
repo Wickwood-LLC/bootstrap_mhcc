@@ -1806,7 +1806,8 @@ fieldset:not(.fieldgroup) {
   max-width: 100%;
 }
 
-.view-articles.view-display-id-page_1 {
+.view-articles.view-display-id-page_1,
+.view-news.view-display-id-page_1 {
   .view-header,
   .view-footer {
     font-size: 0.9em;
@@ -1822,7 +1823,8 @@ fieldset:not(.fieldgroup) {
       }
     }
 
-    .block-extra-field-blocknodearticlelinks {
+    .block-extra-field-blocknodearticlelinks,
+    .block-extra-field-blocknodenewslinks {
       text-align: right;
       font-weight: bold;
 
