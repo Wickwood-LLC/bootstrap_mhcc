@@ -23,13 +23,13 @@
  */
 #}
 {% if link_path -%}
+  {# <{{ label_tag|default('div') }}{{ title_attributes.addClass(title_classes) }}>{{ label }}</{{ label_tag|default('div') }}> #}
   <a{{ attributes }}>
-    <{{ label_tag|default('div') }}{{ title_attributes.addClass(title_classes) }}>{{ label }}</{{ label_tag|default('div') }}>
     {{ name }}{{ extra }}
   </a>
 {%- else -%}
   <span{{ attributes }}>
-    <{{ label_tag|default('div') }}{{ title_attributes.addClass(title_classes) }}>{{ label }}</{{ label_tag|default('div') }}>
+    {# <{{ label_tag|default('div') }}{{ title_attributes.addClass(title_classes) }}>{{ label }}</{{ label_tag|default('div') }}> #}
     {{ name }}{{ extra }}
   </span>
 {%- endif -%}

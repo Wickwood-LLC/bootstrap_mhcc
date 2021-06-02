@@ -68,7 +68,4 @@ function bootstrap_mhcc_preprocess_username(&$variables) {
     }
     $variables['attributes']['target'] = '_blank';
   }
-
-  $variables['label'] = 'By';
-  dump($variables);
 }
