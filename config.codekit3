@@ -2915,13 +2915,6 @@
 		"oAP": "/templates/field/field-item-list.html.twig",
 		"oF": 0
 		},
-	"/templates/field/username.html.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/templates/field/username.html.twig",
-		"oF": 0
-		},
 	"/templates/html.html.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -2967,6 +2960,13 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"/templates/username.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/username.html.twig",
+		"oF": 0
 		}
 	},
 "hooks": [
