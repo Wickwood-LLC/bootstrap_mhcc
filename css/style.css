@@ -9004,6 +9004,10 @@ nav.tabs {
   display: inline;
 }
 
+.post-header .block-field-blocknodeclassifieduid:before {
+  content: 'Offered By:';
+}
+
 .post-header .block-field-blocknodearticlepublished-at,
 .post-header .block-field-blocknodenewspublished-at,
 .post-header .block-field-blocknodeclassifiedpublished-at {

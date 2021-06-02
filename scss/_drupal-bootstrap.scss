@@ -1072,6 +1072,11 @@ nav.tabs {
       display: inline;
     }
   }
+  .block-field-blocknodeclassifieduid {
+    &:before {
+      content: 'Offered By:';
+    }
+  }
 
   .block-field-blocknodearticlepublished-at,
   .block-field-blocknodenewspublished-at,
