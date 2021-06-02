@@ -1058,7 +1058,8 @@ nav.tabs {
   text-align: center;
 
   .block-field-blocknodearticleuid,
-  .block-field-blocknodenewsuid {
+  .block-field-blocknodenewsuid,
+  .block-field-blocknodeclassifieduid {
     display: inline-block;
     padding: 0 0.5em;
 
@@ -1073,7 +1074,8 @@ nav.tabs {
   }
 
   .block-field-blocknodearticlepublished-at,
-  .block-field-blocknodenewspublished-at {
+  .block-field-blocknodenewspublished-at,
+  .block-field-blocknodeclassifiedpublished-at {
     display: inline-block;
     padding: 0 0.5em;
   }
