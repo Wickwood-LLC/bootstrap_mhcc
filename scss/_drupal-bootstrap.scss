@@ -626,6 +626,13 @@ table {
     margin: 0px auto;
     box-sizing: border-box;
 
+    .path-frontpage & {
+      background: #fff;
+      border-radius: 10px;
+      border: 3px solid #9DC4D7;
+      padding: .75em 0.5em;
+    }
+
     .boxed {
       background: #efefef;
       border-width: 1px;
@@ -2311,6 +2318,13 @@ tr:first-child>td>.fc-day-grid-event {
     display: flex;
   }
 
+  .slide__content, .grid__content {
+    background: #fff;
+    border-radius: 10px;
+    border: 3px solid #9DC4D7;
+    width: 100%;
+  }
+
   .slick-dotted.slick-slider {
     margin-bottom: 0;
   }
@@ -2321,22 +2335,34 @@ tr:first-child>td>.fc-day-grid-event {
     justify-content: center;
     height: inherit;
 
+    .slide__media {
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
+
+      .field--name-field-media-oembed-video {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
     .slide__caption {
       width: 100%;
       position: static;
       bottom: 0;
       top: unset;
-      background-color: #00000080;
-      color: white;
-      text-shadow: 1px 1px 1px #000000;
       padding: 0.5em;
-
-      @include breakpoint(600px) {
-        position: absolute;
-      }
     }
 
-    #slideshow-title {
+    .views-field-title-html {
       h2 {
         margin: 0;
 
@@ -2349,6 +2375,7 @@ tr:first-child>td>.fc-day-grid-event {
 
   .slide__media img {
     margin: auto;
+    width: 100%
   }
 
   .slick__arrow {

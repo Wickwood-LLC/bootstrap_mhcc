@@ -8570,6 +8570,13 @@ table td {
   box-sizing: border-box;
 }
 
+.path-frontpage .main-container .region-content {
+  background: #fff;
+  border-radius: 10px;
+  border: 3px solid #9DC4D7;
+  padding: .75em 0.5em;
+}
+
 .main-container .region-content .boxed {
   background: #efefef;
   border-width: 1px;
@@ -10281,6 +10288,13 @@ tr:first-child > td > .fc-day-grid-event {
   display: flex;
 }
 
+.slick .slide__content, .slick .grid__content {
+  background: #fff;
+  border-radius: 10px;
+  border: 3px solid #9DC4D7;
+  width: 100%;
+}
+
 .slick .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
@@ -10292,33 +10306,44 @@ tr:first-child > td > .fc-day-grid-event {
   height: inherit;
 }
 
+.slick .slick__slide .slide__media {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.slick .slick__slide .slide__media .field--name-field-media-oembed-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.slick .slick__slide .slide__media .field--name-field-media-oembed-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .slick .slick__slide .slide__caption {
   width: 100%;
   position: static;
   bottom: 0;
   top: unset;
-  background-color: #00000080;
-  color: white;
-  text-shadow: 1px 1px 1px #000000;
   padding: 0.5em;
 }
 
-@media (min-width: 600px) {
-  .slick .slick__slide .slide__caption {
-    position: absolute;
-  }
-}
-
-.slick .slick__slide #slideshow-title h2 {
+.slick .slick__slide .views-field-title-html h2 {
   margin: 0;
 }
 
-.slick .slick__slide #slideshow-title h2 a:hover {
+.slick .slick__slide .views-field-title-html h2 a:hover {
   color: #058ad2;
 }
 
 .slick .slide__media img {
   margin: auto;
+  width: 100%;
 }
 
 .slick .slick__arrow {
