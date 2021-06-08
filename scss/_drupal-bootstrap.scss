@@ -74,9 +74,17 @@ ul {
   }
 }
 
-table {
+table,
+.table {
   border: 3px solid #9cc3d7;
   margin: 1em auto;
+
+  > thead > tr > th {
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 3px solid #9cc3d7;
+    background-color: #bae2f1;
+  }
 
   tr:nth-child(odd) {
     background-color: rgba(226, 219, 219, 0.81);
