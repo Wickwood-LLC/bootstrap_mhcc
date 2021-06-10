@@ -9721,25 +9721,32 @@ fieldset:not(.fieldgroup) {
   width: 100%;
 }
 
-.view-mhcc-ride-starting-locations .views-exposed-form .form-inline {
+.view-mhcc-ride-starting-locations .views-exposed-form .form-inline,
+.view-user-management .views-exposed-form .form-inline {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 1rem;
 }
 
-.view-mhcc-ride-starting-locations .views-exposed-form .form-inline:before {
+.view-mhcc-ride-starting-locations .views-exposed-form .form-inline:before,
+.view-user-management .views-exposed-form .form-inline:before {
   display: none;
 }
 
-.view-mhcc-ride-starting-locations .views-exposed-form .form-item label {
+.view-mhcc-ride-starting-locations .views-exposed-form .form-item label,
+.view-user-management .views-exposed-form .form-item label {
   display: block;
 }
 
-.view-mhcc-ride-starting-locations .views-exposed-form .form-item .select-wrapper, .view-mhcc-ride-starting-locations .views-exposed-form .form-item select, .view-mhcc-ride-starting-locations .views-exposed-form .form-item .form-text {
+.view-mhcc-ride-starting-locations .views-exposed-form .form-item .select-wrapper, .view-mhcc-ride-starting-locations .views-exposed-form .form-item select, .view-mhcc-ride-starting-locations .views-exposed-form .form-item .form-text,
+.view-user-management .views-exposed-form .form-item .select-wrapper,
+.view-user-management .views-exposed-form .form-item select,
+.view-user-management .views-exposed-form .form-item .form-text {
   width: 100%;
 }
 
-.view-mhcc-ride-starting-locations .views-exposed-form #edit-actions {
+.view-mhcc-ride-starting-locations .views-exposed-form #edit-actions,
+.view-user-management .views-exposed-form #edit-actions {
   text-align: right;
   align-self: end;
 }

@@ -1769,7 +1769,8 @@ fieldset:not(.fieldgroup) {
     width: 100%;
   }
 
-  .view-mhcc-ride-starting-locations & {
+  .view-mhcc-ride-starting-locations &,
+  .view-user-management & {
     .form-inline {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
