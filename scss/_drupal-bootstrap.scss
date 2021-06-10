@@ -1826,6 +1826,7 @@ fieldset:not(.fieldgroup) {
 
 #block-views-block-simpleads-block-1 {
   max-width: 100%;
+  width: 100%;
 }
 
 .view-articles.view-display-id-page_1,
@@ -2326,12 +2327,14 @@ tr:first-child>td>.fc-day-grid-event {
     display: flex;
   }
 
-  .slide__content, .grid__content {
-    background: #fff;
-    border-radius: 10px;
-    border: 3px solid #9DC4D7;
-    width: 100%;
-    height: 100%;
+  &.slick--view--front-page-slideshow {
+    .slide__content, .grid__content {
+      background: #fff;
+      border-radius: 10px;
+      border: 3px solid #9DC4D7;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .slick-dotted.slick-slider {

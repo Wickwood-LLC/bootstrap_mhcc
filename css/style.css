@@ -9772,6 +9772,7 @@ fieldset:not(.fieldgroup) {
 
 #block-views-block-simpleads-block-1 {
   max-width: 100%;
+  width: 100%;
 }
 
 .view-articles.view-display-id-page_1 .view-header,
@@ -10300,7 +10301,7 @@ tr:first-child > td > .fc-day-grid-event {
   display: flex;
 }
 
-.slick .slide__content, .slick .grid__content {
+.slick.slick--view--front-page-slideshow .slide__content, .slick.slick--view--front-page-slideshow .grid__content {
   background: #fff;
   border-radius: 10px;
   border: 3px solid #9DC4D7;
