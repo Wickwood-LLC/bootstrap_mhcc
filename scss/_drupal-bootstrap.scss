@@ -78,6 +78,27 @@ table,
 .table {
   border: 3px solid #9cc3d7;
   margin: 1em auto;
+  margin: 0;
+  border-collapse: separate;
+  border-radius: 6px;
+  border-width: 2px;
+
+  tr:first-child {
+    td:first-child {
+      border-top-left-radius: 6px;
+    }
+    td:last-child {
+      border-top-right-radius: 6px;
+    }
+  }
+  tr:last-child {
+    td:first-child {
+      border-bottom-left-radius: 6px;
+    }
+    td:last-child {
+      border-bottom-right-radius: 6px;
+    }
+  }
 
   > thead > tr > th {
     text-align: center;
@@ -1567,30 +1588,6 @@ nav.tabs {
       color: #e24f4c;
     }
   }
-
-  table {
-    margin: 0;
-    border-collapse: separate;
-    border-radius: 6px;
-    border-width: 2px;
-
-    tr:first-child {
-      td:first-child {
-        border-top-left-radius: 6px;
-      }
-      td:last-child {
-        border-top-right-radius: 6px;
-      }
-    }
-    tr:last-child {
-      td:first-child {
-        border-bottom-left-radius: 6px;
-      }
-      td:last-child {
-        border-bottom-right-radius: 6px;
-      }
-    }
-  }
 }
 
 fieldset:not(.fieldgroup) {
@@ -1768,6 +1765,26 @@ fieldset:not(.fieldgroup) {
     text-align: center;
     margin-top: 0.5em;
     width: 100%;
+  }
+
+  .view-mhcc-ride-starting-locations & {
+    .form-inline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-gap: 1rem;
+    }
+    .form-item {
+      label {
+        display: block;
+      }
+      .select-wrapper, select {
+        width: 100%;
+      }
+    }
+    #edit-actions {
+      text-align: right;
+      align-self: end;
+    }
   }
 }
 

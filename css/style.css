@@ -7953,6 +7953,30 @@ table,
 .table {
   border: 3px solid #9cc3d7;
   margin: 1em auto;
+  margin: 0;
+  border-collapse: separate;
+  border-radius: 6px;
+  border-width: 2px;
+}
+
+table tr:first-child td:first-child,
+.table tr:first-child td:first-child {
+  border-top-left-radius: 6px;
+}
+
+table tr:first-child td:last-child,
+.table tr:first-child td:last-child {
+  border-top-right-radius: 6px;
+}
+
+table tr:last-child td:first-child,
+.table tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+
+table tr:last-child td:last-child,
+.table tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
 }
 
 table > thead > tr > th,
@@ -9512,29 +9536,6 @@ nav.tabs {
   color: #e24f4c;
 }
 
-.boxed table {
-  margin: 0;
-  border-collapse: separate;
-  border-radius: 6px;
-  border-width: 2px;
-}
-
-.boxed table tr:first-child td:first-child {
-  border-top-left-radius: 6px;
-}
-
-.boxed table tr:first-child td:last-child {
-  border-top-right-radius: 6px;
-}
-
-.boxed table tr:last-child td:first-child {
-  border-bottom-left-radius: 6px;
-}
-
-.boxed table tr:last-child td:last-child {
-  border-bottom-right-radius: 6px;
-}
-
 fieldset:not(.fieldgroup) {
   padding: 2em 1.2em 1em;
 }
@@ -9714,6 +9715,25 @@ fieldset:not(.fieldgroup) {
   text-align: center;
   margin-top: 0.5em;
   width: 100%;
+}
+
+.view-mhcc-ride-starting-locations .views-exposed-form .form-inline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 1rem;
+}
+
+.view-mhcc-ride-starting-locations .views-exposed-form .form-item label {
+  display: block;
+}
+
+.view-mhcc-ride-starting-locations .views-exposed-form .form-item .select-wrapper, .view-mhcc-ride-starting-locations .views-exposed-form .form-item select {
+  width: 100%;
+}
+
+.view-mhcc-ride-starting-locations .views-exposed-form #edit-actions {
+  text-align: right;
+  align-self: end;
 }
 
 .block-views-blockfull-calendar-view-block-1 .view-header {
