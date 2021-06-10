@@ -9727,11 +9727,15 @@ fieldset:not(.fieldgroup) {
   grid-gap: 1rem;
 }
 
+.view-mhcc-ride-starting-locations .views-exposed-form .form-inline:before {
+  display: none;
+}
+
 .view-mhcc-ride-starting-locations .views-exposed-form .form-item label {
   display: block;
 }
 
-.view-mhcc-ride-starting-locations .views-exposed-form .form-item .select-wrapper, .view-mhcc-ride-starting-locations .views-exposed-form .form-item select {
+.view-mhcc-ride-starting-locations .views-exposed-form .form-item .select-wrapper, .view-mhcc-ride-starting-locations .views-exposed-form .form-item select, .view-mhcc-ride-starting-locations .views-exposed-form .form-item .form-text {
   width: 100%;
 }
 
