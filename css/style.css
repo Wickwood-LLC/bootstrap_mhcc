@@ -3166,7 +3166,7 @@ textarea.form-control {
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 0.75rem;
 }
 
 .radio,
@@ -7522,7 +7522,7 @@ body.navbar-is-fixed-bottom {
  * Progress bar styles.
  */
 .progress-wrapper {
-  margin-bottom: 15px;
+  margin-bottom: 0.75rem;
 }
 
 .progress-wrapper:last-child .progress {
@@ -9725,7 +9725,7 @@ fieldset:not(.fieldgroup) {
 .view-user-management .views-exposed-form .form-inline {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 0.5rem 1rem;
 }
 
 .view-mhcc-ride-starting-locations .views-exposed-form .form-inline:before,
