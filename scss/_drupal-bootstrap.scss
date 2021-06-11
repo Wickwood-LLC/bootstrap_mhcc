@@ -78,7 +78,7 @@ table,
 .table {
   border: 3px solid #9cc3d7;
   margin: 1em auto;
-  margin: 0;
+  margin: 0 auto;
   border-collapse: separate;
   border-radius: 6px;
   border-width: 2px;
@@ -197,6 +197,7 @@ table,
 .field.field--name-field-canceled {
   font-weight: bold;
   color: red;
+  text-align: center;
   text-transform: capitalize;
 }
 
@@ -1454,7 +1455,7 @@ nav.tabs {
 .block-field-blocknoderide-eventfield-starting-location {
   .node-title {
     text-align: left;
-
+    font-size: 1em;
     margin-top: -0.5rem;
   }
   .layout {
