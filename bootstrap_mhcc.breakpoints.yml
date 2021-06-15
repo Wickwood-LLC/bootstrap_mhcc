@@ -1,0 +1,32 @@
+bootstrap_mhcc.bikeabout_headers.bikeabout_small_screen:
+  label: BikeAbout Small Screen
+  mediaQuery: '(max-width: 572px)'
+  weight: 0
+  multipliers:
+    - 1x
+  group: bootstrap_mhcc.bikeabout_headers
+
+bootstrap_mhcc.bikeabout_headers.bikeabout_large_screen:
+  label: BikeAbout Large Screen
+  mediaQuery: '(min-width: 573px)'
+  weight: 1
+  multipliers:
+    - 1x
+  group: bootstrap_mhcc.bikeabout_headers
+
+# Content Image Slideshow 6
+bootstrap_mhcc.desktop_mobile_breakpoints.mobile:
+  label: Mobile
+  mediaQuery: '(max-width: 692px)'
+  weight: 0
+  multipliers:
+    - 1x
+  group: bootstrap_wwm_base.desktop_mobile_breakpoints
+
+bootstrap_mhcc.desktop_mobile_breakpoints.desktop:
+  label: Desktop
+  mediaQuery: '(min-width: 693px)'
+  weight: 1
+  multipliers:
+    - 1x
+  group: bootstrap_wwm_base.desktop_mobile_breakpoints

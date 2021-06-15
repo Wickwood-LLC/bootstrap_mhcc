@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/.idea": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/.idea",
+		"oF": 0
+		},
 	"/bootstrap/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
@@ -1754,6 +1760,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/bootstrap/test/test_helper_rails.rb",
+		"oF": 0
+		},
+	"/bootstrap_mhcc.breakpoints.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/bootstrap_mhcc.breakpoints.yml",
 		"oF": 0
 		},
 	"/bootstrap_mhcc.info.yml": {
