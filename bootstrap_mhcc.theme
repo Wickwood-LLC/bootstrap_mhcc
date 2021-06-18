@@ -23,6 +23,9 @@ function bootstrap_mhcc_preprocess_html(&$variables) {
 
 function bootstrap_mhcc_preprocess_page(&$variables) {
   $variables['site_name'] = Markup::create(strip_tags(html_entity_decode(\Drupal::config('system.site')->get('name'))));
+
+  $node = \Drupal::routeMatch()->getParameter('node');
+  var_dump($node);
 }
 
 function bootstrap_mhcc_preprocess_maintenance_page(&$variables) {

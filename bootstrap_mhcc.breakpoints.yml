@@ -1,3 +1,4 @@
+# BikeAbout Headers
 bootstrap_mhcc.bikeabout_headers.bikeabout_small_screen:
   label: BikeAbout Small Screen
   mediaQuery: '(max-width: 572px)'
@@ -14,7 +15,7 @@ bootstrap_mhcc.bikeabout_headers.bikeabout_large_screen:
     - 1x
   group: bootstrap_mhcc.bikeabout_headers
 
-# Content Image Slideshow 6
+# Desktop - Mobile Breakpoints
 bootstrap_mhcc.desktop_mobile_breakpoints.mobile:
   label: Mobile
   mediaQuery: '(max-width: 692px)'
