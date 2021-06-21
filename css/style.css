@@ -9713,50 +9713,50 @@ fieldset:not(.fieldgroup) {
 }
 
 /********************* VIEWS *********************/
+.views-exposed-form .form--inline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 0.5rem 1rem;
+}
+
+.views-exposed-form .form--inline:before {
+  display: none;
+}
+
 .views-exposed-form .form--inline > .form-item {
   float: none;
   display: inline-block;
   max-width: 100%;
 }
 
+.views-exposed-form .form--inline > .form-item label {
+  display: block;
+}
+
+.views-exposed-form .form--inline > .form-item .select-wrapper, .views-exposed-form .form--inline > .form-item select, .views-exposed-form .form--inline > .form-item .form-text {
+  width: 100%;
+}
+
 .views-exposed-form .form--inline .select-wrapper {
   max-width: 100%;
 }
 
-.views-exposed-form .form-actions {
-  text-align: center;
-  margin-top: 0.5em;
-  width: 100%;
+@media (min-width: 900px) {
+  .layout__region--second .block-views[data-rlb-load-for-breakpoints="bootstrap_mhcc.desktop_mobile_breakpoints.desktop"] .views-exposed-form .form--inline {
+    display: block;
+  }
 }
 
-.view-mhcc-ride-starting-locations .views-exposed-form .form-inline,
-.view-user-management .views-exposed-form .form-inline {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-gap: 0.5rem 1rem;
-}
-
-.view-mhcc-ride-starting-locations .views-exposed-form .form-inline:before,
-.view-user-management .views-exposed-form .form-inline:before {
-  display: none;
-}
-
-.view-mhcc-ride-starting-locations .views-exposed-form .form-item label,
-.view-user-management .views-exposed-form .form-item label {
-  display: block;
-}
-
-.view-mhcc-ride-starting-locations .views-exposed-form .form-item .select-wrapper, .view-mhcc-ride-starting-locations .views-exposed-form .form-item select, .view-mhcc-ride-starting-locations .views-exposed-form .form-item .form-text,
-.view-user-management .views-exposed-form .form-item .select-wrapper,
-.view-user-management .views-exposed-form .form-item select,
-.view-user-management .views-exposed-form .form-item .form-text {
-  width: 100%;
-}
-
-.view-mhcc-ride-starting-locations .views-exposed-form #edit-actions,
-.view-user-management .views-exposed-form #edit-actions {
+.views-exposed-form #edit-actions {
   text-align: right;
   align-self: end;
+}
+
+.view-mhcc-ride-starting-locations .views-exposed-form {
+  background: #efefef;
+  border-radius: 6px;
+  padding: 7px;
+  border: 1px solid #9DC4D7;
 }
 
 .block-views-blockfull-calendar-view-block-1 .view-header {

@@ -1760,35 +1760,19 @@ fieldset:not(.fieldgroup) {
 /********************* VIEWS *********************/
 .views-exposed-form {
   .form--inline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 0.5rem 1rem;
+
+    &:before {
+      display: none;
+    }
+
     >.form-item {
       float: none;
       display: inline-block;
       max-width: 100%;
-    }
 
-    .select-wrapper {
-      max-width: 100%;
-    }
-  }
-
-  .form-actions {
-    text-align: center;
-    margin-top: 0.5em;
-    width: 100%;
-  }
-
-  .view-mhcc-ride-starting-locations &,
-  .view-user-management & {
-    .form-inline {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      grid-gap: 0.5rem 1rem;
-
-      &:before {
-        display: none;
-      }
-    }
-    .form-item {
       label {
         display: block;
       }
@@ -1796,10 +1780,28 @@ fieldset:not(.fieldgroup) {
         width: 100%;
       }
     }
-    #edit-actions {
-      text-align: right;
-      align-self: end;
+
+    .select-wrapper {
+      max-width: 100%;
     }
+
+    .layout__region--second .block-views[data-rlb-load-for-breakpoints="bootstrap_mhcc.desktop_mobile_breakpoints.desktop"  ] & {
+      @include breakpoint(900px) {
+        display: block;
+      }
+    }
+  }
+
+  #edit-actions {
+    text-align: right;
+    align-self: end;
+  }
+
+  .view-mhcc-ride-starting-locations & {
+    background: #efefef;
+    border-radius: 6px;
+    padding: 7px;
+    border: 1px solid #9DC4D7;
   }
 }
 
