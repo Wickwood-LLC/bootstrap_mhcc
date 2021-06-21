@@ -9831,25 +9831,31 @@ fieldset:not(.fieldgroup) {
 .view-articles.view-display-id-page_1 .view-header,
 .view-articles.view-display-id-page_1 .view-footer,
 .view-news.view-display-id-page_1 .view-header,
-.view-news.view-display-id-page_1 .view-footer {
+.view-news.view-display-id-page_1 .view-footer,
+.view-bikeabout-posts.view-display-id-block_1 .view-header,
+.view-bikeabout-posts.view-display-id-block_1 .view-footer {
   font-size: 0.9em;
   text-align: center;
 }
 
 .view-articles.view-display-id-page_1 .views-row .node-title a,
-.view-news.view-display-id-page_1 .views-row .node-title a {
+.view-news.view-display-id-page_1 .views-row .node-title a,
+.view-bikeabout-posts.view-display-id-block_1 .views-row .node-title a {
   color: black;
 }
 
 .view-articles.view-display-id-page_1 .views-row .node-title a:hover,
-.view-news.view-display-id-page_1 .views-row .node-title a:hover {
+.view-news.view-display-id-page_1 .views-row .node-title a:hover,
+.view-bikeabout-posts.view-display-id-block_1 .views-row .node-title a:hover {
   color: #058ad2;
 }
 
 .view-articles.view-display-id-page_1 .views-row .block-extra-field-blocknodearticlelinks,
 .view-articles.view-display-id-page_1 .views-row .block-extra-field-blocknodenewslinks,
 .view-news.view-display-id-page_1 .views-row .block-extra-field-blocknodearticlelinks,
-.view-news.view-display-id-page_1 .views-row .block-extra-field-blocknodenewslinks {
+.view-news.view-display-id-page_1 .views-row .block-extra-field-blocknodenewslinks,
+.view-bikeabout-posts.view-display-id-block_1 .views-row .block-extra-field-blocknodearticlelinks,
+.view-bikeabout-posts.view-display-id-block_1 .views-row .block-extra-field-blocknodenewslinks {
   text-align: right;
   font-weight: bold;
 }
@@ -9857,12 +9863,15 @@ fieldset:not(.fieldgroup) {
 .view-articles.view-display-id-page_1 .views-row .block-extra-field-blocknodearticlelinks a,
 .view-articles.view-display-id-page_1 .views-row .block-extra-field-blocknodenewslinks a,
 .view-news.view-display-id-page_1 .views-row .block-extra-field-blocknodearticlelinks a,
-.view-news.view-display-id-page_1 .views-row .block-extra-field-blocknodenewslinks a {
+.view-news.view-display-id-page_1 .views-row .block-extra-field-blocknodenewslinks a,
+.view-bikeabout-posts.view-display-id-block_1 .views-row .block-extra-field-blocknodearticlelinks a,
+.view-bikeabout-posts.view-display-id-block_1 .views-row .block-extra-field-blocknodenewslinks a {
   color: red;
 }
 
 .view-articles.view-display-id-page_1 .views-row:after,
-.view-news.view-display-id-page_1 .views-row:after {
+.view-news.view-display-id-page_1 .views-row:after,
+.view-bikeabout-posts.view-display-id-block_1 .views-row:after {
   content: '';
   width: 80%;
   display: block;
