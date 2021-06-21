@@ -9011,7 +9011,8 @@ nav.tabs {
 .field--label-inline .field__label,
 .field--label-inline > .field--item,
 .field--label-inline .field__item,
-.field--label-inline .field--items {
+.field--label-inline .field--items,
+.field--label-inline .field__items {
   display: inline;
   float: none;
   padding-right: 0;
@@ -9064,71 +9065,80 @@ nav.tabs {
   padding: 0 0.5em;
 }
 
-.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postuid {
+@media (min-width: 740px) {
+  .node.bikeabout-post.teaser .layout--twocol-section .layout__region--first {
+    flex: 0 1 0;
+  }
+  .node.bikeabout-post.teaser .layout--twocol-section .layout__region--second {
+    flex: 1 1 50%;
+  }
+}
+
+.node.bikeabout-post .block-field-blocknodebikeabout-postuid {
   display: inline-block;
 }
 
-.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postuid:before {
+.node.bikeabout-post .block-field-blocknodebikeabout-postuid:before {
   content: 'By:';
   display: inline;
   font-weight: bold;
 }
 
-.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postuid .block-content {
+.node.bikeabout-post .block-field-blocknodebikeabout-postuid .block-content {
   display: inline;
 }
 
-.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue,
-.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type {
+.node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue,
+.node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type {
   display: inline-block;
   font-weight: bold;
 }
 
-.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue:before,
-.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type:before {
+.node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue:before,
+.node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type:before {
   content: " - ";
   display: inline-block;
 }
 
-.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue .block-content,
-.page-node-type-bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type .block-content {
+.node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue .block-content,
+.node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type .block-content {
   display: inline-block;
 }
 
-.page-node-type-bikeabout-post .block-views-blockcontent-image-slideshow-block-2 {
+.node.bikeabout-post .block-views-blockcontent-image-slideshow-block-2 {
   width: 100%;
 }
 
-.page-node-type-bikeabout-post .view-bikeabout-issue-selection {
+.node.bikeabout-post .view-bikeabout-issue-selection {
   text-align: center;
 }
 
-.page-node-type-bikeabout-post .view-bikeabout-issue-selection select {
+.node.bikeabout-post .view-bikeabout-issue-selection select {
   max-width: 100%;
 }
 
-.page-node-type-bikeabout-post .block-views-blockbikeabout-posts-block-2 .view-content {
+.node.bikeabout-post .block-views-blockbikeabout-posts-block-2 .view-content {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: baseline;
 }
 
-.page-node-type-bikeabout-post .block-views-blockbikeabout-posts-block-2 .views-row {
+.node.bikeabout-post .block-views-blockbikeabout-posts-block-2 .views-row {
   flex: 1 1 150px;
   padding: 0.5em;
 }
 
-.page-node-type-bikeabout-post .block-views-blockbikeabout-posts-block-2 .views-row + .views-row {
+.node.bikeabout-post .block-views-blockbikeabout-posts-block-2 .views-row + .views-row {
   margin-top: 1em;
 }
 
-.page-node-type-bikeabout-post .block-views-blockbikeabout-posts-block-2 .views-field-field-feature-media a {
+.node.bikeabout-post .block-views-blockbikeabout-posts-block-2 .views-field-field-feature-media a {
   display: flex;
   justify-content: center;
 }
 
-.page-node-type-bikeabout-post .block-views-blockbikeabout-posts-block-2 .views-field-title {
+.node.bikeabout-post .block-views-blockbikeabout-posts-block-2 .views-field-title {
   text-align: center;
   font-weight: bold;
   font-size: 0.8em;

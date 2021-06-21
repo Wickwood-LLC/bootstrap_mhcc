@@ -1070,7 +1070,8 @@ nav.tabs {
   .field__label,
   >.field--item,
   .field__item,
-  .field--items {
+  .field--items,
+  .field__items {
     display: inline;
     float: none;
     padding-right: 0;
@@ -1125,7 +1126,20 @@ nav.tabs {
   }
 }
 
-.page-node-type-bikeabout-post {
+.node.bikeabout-post {
+  &.teaser {
+    .layout--twocol-section {
+      @include breakpoint(740px) {
+        .layout__region--first {
+          flex: 0 1 0;
+        }
+        .layout__region--second {
+          flex: 1 1 50%;
+        }
+      }
+    }
+  }
+
   .block-field-blocknodebikeabout-postuid {
     display: inline-block;
 
