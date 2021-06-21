@@ -157,7 +157,7 @@ table,
 .file > span,
 .glyphicon-file {
   color: $link-color;
-} 
+}
 .file > span,
 .file > span:first-child,
 .file > span:last-child {
@@ -407,7 +407,7 @@ table,
           text-align: center;
           width: 100%;
         }
-      }      
+      }
     }
   }
 }
@@ -597,7 +597,7 @@ table,
       > li {
         display: block;
         margin: 0;
-        
+
         > a {
           border-bottom: 1px dotted rgba(40, 161, 204, 0.9);
           color: #0C2F3C;
@@ -619,7 +619,7 @@ table,
           z-index: 20;
           right: 0;
           left: unset;
-          
+
           a {
             padding: 0 10px;
           }
@@ -1160,7 +1160,7 @@ nav.tabs {
 
   .view-bikeabout-issue-selection {
     text-align: center;
-    
+
     select {
       max-width: 100%;
     }
@@ -1177,7 +1177,7 @@ nav.tabs {
     .views-row {
       flex: 1 1 150px;
       padding: 0.5em;
-      
+
       + .views-row {
         margin-top: 1em;
       }
@@ -1423,7 +1423,7 @@ nav.tabs {
 
 .block-entity-viewnode {
   margin-bottom: 0.5em;
-  
+
   .ride-features,
   .actual-ride-features {
     @include breakpoint(450px) {
@@ -1759,9 +1759,16 @@ fieldset:not(.fieldgroup) {
 
 /********************* VIEWS *********************/
 .views-exposed-form {
-  .form--inline>.form-item {
-    float: none;
-    display: inline-block;
+  .form--inline {
+    >.form-item {
+      float: none;
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    .select-wrapper {
+      max-width: 100%;
+    }
   }
 
   .form-actions {
@@ -1865,7 +1872,7 @@ fieldset:not(.fieldgroup) {
   .views-row {
     .node-title a {
       color: black;
-      
+
       &:hover {
         color: $link-color
       }
@@ -2498,7 +2505,7 @@ tr:first-child>td>.fc-day-grid-event {
       color: $btn-primary-color;
       background-color: $btn-primary-bg;
       border-color: $btn-primary-border;
-      
+
       &:hover {
         background-color: darken($btn-primary-bg, 10%);
         border-color: darken($btn-primary-border, 10%);
