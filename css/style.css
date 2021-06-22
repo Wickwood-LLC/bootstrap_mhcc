@@ -9046,6 +9046,7 @@ nav.tabs {
 
 .post-header [class*="uid"] .block-content {
   display: inline;
+  font-weight: bold;
 }
 
 .post-header .block-field-blocknodeclassifieduid:before {
