@@ -1097,9 +1097,7 @@ nav.tabs {
 .post-header {
   text-align: center;
 
-  .block-field-blocknodearticleuid,
-  .block-field-blocknodenewsuid,
-  .block-field-blocknodeclassifieduid {
+  [class*="uid"] {
     display: inline-block;
     padding: 0 0.5em;
 
@@ -1964,7 +1962,24 @@ fieldset:not(.fieldgroup) {
 
 
 /********************* PAGES *********************/
+.list-view {
+  @include breakpoint(900px) {
+    [class*="block-views-exposed-filter"] {
+      float: right;
+      position: relative;
+      width: 25%;
+      z-index: 1;
 
+      .views-exposed-form .form--inline {
+        display: block;
+      }
+    }
+  }
+
+  .views-row {
+    overflow: auto;
+  }
+}
 
 
 /********************* FORMS *********************/

@@ -9033,24 +9033,18 @@ nav.tabs {
   text-align: center;
 }
 
-.post-header .block-field-blocknodearticleuid,
-.post-header .block-field-blocknodenewsuid,
-.post-header .block-field-blocknodeclassifieduid {
+.post-header [class*="uid"] {
   display: inline-block;
   padding: 0 0.5em;
 }
 
-.post-header .block-field-blocknodearticleuid:before,
-.post-header .block-field-blocknodenewsuid:before,
-.post-header .block-field-blocknodeclassifieduid:before {
+.post-header [class*="uid"]:before {
   content: 'By:';
   display: inline;
   font-weight: bold;
 }
 
-.post-header .block-field-blocknodearticleuid .block-content,
-.post-header .block-field-blocknodenewsuid .block-content,
-.post-header .block-field-blocknodeclassifieduid .block-content {
+.post-header [class*="uid"] .block-content {
   display: inline;
 }
 
@@ -9925,6 +9919,22 @@ fieldset:not(.fieldgroup) {
 }
 
 /********************* PAGES *********************/
+@media (min-width: 900px) {
+  .list-view [class*="block-views-exposed-filter"] {
+    float: right;
+    position: relative;
+    width: 25%;
+    z-index: 1;
+  }
+  .list-view [class*="block-views-exposed-filter"] .views-exposed-form .form--inline {
+    display: block;
+  }
+}
+
+.list-view .views-row {
+  overflow: auto;
+}
+
 /********************* FORMS *********************/
 form#user-login-form,
 form#user-pass {
