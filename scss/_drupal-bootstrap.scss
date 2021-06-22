@@ -1893,8 +1893,7 @@ fieldset:not(.fieldgroup) {
       }
     }
 
-    .block-extra-field-blocknodearticlelinks,
-    .block-extra-field-blocknodenewslinks {
+    [class*="block-extra-field"] {
       text-align: right;
       font-weight: bold;
 

@@ -9844,22 +9844,16 @@ fieldset:not(.fieldgroup) {
   color: #058ad2;
 }
 
-.view-articles.view-display-id-page_1 .views-row .block-extra-field-blocknodearticlelinks,
-.view-articles.view-display-id-page_1 .views-row .block-extra-field-blocknodenewslinks,
-.view-news.view-display-id-page_1 .views-row .block-extra-field-blocknodearticlelinks,
-.view-news.view-display-id-page_1 .views-row .block-extra-field-blocknodenewslinks,
-.view-bikeabout-posts.view-display-id-block_1 .views-row .block-extra-field-blocknodearticlelinks,
-.view-bikeabout-posts.view-display-id-block_1 .views-row .block-extra-field-blocknodenewslinks {
+.view-articles.view-display-id-page_1 .views-row [class*="block-extra-field"],
+.view-news.view-display-id-page_1 .views-row [class*="block-extra-field"],
+.view-bikeabout-posts.view-display-id-block_1 .views-row [class*="block-extra-field"] {
   text-align: right;
   font-weight: bold;
 }
 
-.view-articles.view-display-id-page_1 .views-row .block-extra-field-blocknodearticlelinks a,
-.view-articles.view-display-id-page_1 .views-row .block-extra-field-blocknodenewslinks a,
-.view-news.view-display-id-page_1 .views-row .block-extra-field-blocknodearticlelinks a,
-.view-news.view-display-id-page_1 .views-row .block-extra-field-blocknodenewslinks a,
-.view-bikeabout-posts.view-display-id-block_1 .views-row .block-extra-field-blocknodearticlelinks a,
-.view-bikeabout-posts.view-display-id-block_1 .views-row .block-extra-field-blocknodenewslinks a {
+.view-articles.view-display-id-page_1 .views-row [class*="block-extra-field"] a,
+.view-news.view-display-id-page_1 .views-row [class*="block-extra-field"] a,
+.view-bikeabout-posts.view-display-id-block_1 .views-row [class*="block-extra-field"] a {
   color: red;
 }
 
