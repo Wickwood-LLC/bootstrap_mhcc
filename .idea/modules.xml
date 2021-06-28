@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/../adminimal_wwm/.idea/adminimal_wwm.iml" filepath="$PROJECT_DIR$/../adminimal_wwm/.idea/adminimal_wwm.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/bootstrap_mhcc.iml" filepath="$PROJECT_DIR$/.idea/bootstrap_mhcc.iml" />
       <module fileurl="file://$PROJECT_DIR$/../bootstrap_wwm_base/.idea/bootstrap_wwm_base.iml" filepath="$PROJECT_DIR$/../bootstrap_wwm_base/.idea/bootstrap_wwm_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../modules/contrib/fdk/.idea/fdk.iml" filepath="$PROJECT_DIR$/../../modules/contrib/fdk/.idea/fdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../modules/contrib/media_entity_browser/.idea/media_entity_browser.iml" filepath="$PROJECT_DIR$/../../modules/contrib/media_entity_browser/.idea/media_entity_browser.iml" />
     </modules>
   </component>

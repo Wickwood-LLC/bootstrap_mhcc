@@ -8,5 +8,6 @@
     <orderEntry type="module" module-name="adminimal_wwm" />
     <orderEntry type="module" module-name="media_entity_browser" />
     <orderEntry type="module" module-name="adminimal_mhcc" />
+    <orderEntry type="module" module-name="fdk" />
   </component>
 </module>

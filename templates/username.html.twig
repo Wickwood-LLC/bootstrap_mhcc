@@ -22,14 +22,39 @@
  * @see template_preprocess_username()
  */
 #}
-{% if link_path -%}
-  {# <{{ label_tag|default('div') }}{{ title_attributes.addClass(title_classes) }}>{{ label }}</{{ label_tag|default('div') }}> #}
-  <a{{ attributes }}>
+{%
+  set classes = [
+  'field',
+  'field--name-' ~ field_name|clean_class,
+  'field--type-' ~ field_type|clean_class,
+  'field--label-' ~ label_display,
+]
+%}
+{%
+  set title_classes = [
+  'field__label',
+  label_display == 'visually_hidden' ? 'visually-hidden',
+]
+%}
+
+{% if label_hidden %}
+  <{{ field_wrapper_tag }}{{ attributes.addClass(classes) }}>
     {{ name }}{{ extra }}
-  </a>
-{%- else -%}
-  <span{{ attributes }}>
-    {# <{{ label_tag|default('div') }}{{ title_attributes.addClass(title_classes) }}>{{ label }}</{{ label_tag|default('div') }}> #}
-    {{ name }}{{ extra }}
-  </span>
-{%- endif -%}
+  </{{ field_wrapper_tag }}>
+{% else %}
+  <{{ field_wrapper_tag }}{{ attributes.addClass(classes) }}>
+    <{{ label_tag|default('div') }}{{ title_attributes.addClass(title_classes) }}>{{ label }}</{{ label_tag|default('div') }}>
+    <{{ field_item_wrapper_tag }}{{ attributes }}>{{ name }}{{ extra }}</{{ field_item_wrapper_tag }}>
+  </{{ field_wrapper_tag }}>
+{% endif %}
+{#{% if link_path -%}#}
+{#   <{{ label_tag|default('div') }}{{ title_attributes.addClass(title_classes) }}>{{ label }}:</{{ label_tag|default('div') }}>#}
+{#  <a{{ attributes }}>#}
+{#    {{ name }}{{ extra }}#}
+{#  </a>#}
+{#{%- else -%}#}
+{#  <span{{ attributes }}>#}
+{#     <{{ label_tag|default('div') }}{{ title_attributes.addClass(title_classes) }}>{{ label }}</{{ label_tag|default('div') }}>#}
+{#    {{ name }}{{ extra }}#}
+{#  </span>#}
+{#{%- endif -%}#}

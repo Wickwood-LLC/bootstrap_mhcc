@@ -1,18 +1,25 @@
 <?php
 
+use Drupal\Core\Render\Element;
 use Drupal\Core\Render\Markup;
+use Drupal\Core\Session\AnonymousUserSession;
+use Drupal\Core\Template\Attribute;
+use Drupal\Core\Template\AttributeHelper;
 use Drupal\Core\Url;
+use Drupal\node\NodeInterface;
 
 /**
  * @file
  * Bootstrap sub-theme.
  *
  * Place your custom PHP code in this file.
+ *
+ * @param $variables
  */
 
 function bootstrap_mhcc_preprocess_html(&$variables) {
-	$node = \Drupal::routeMatch()->getParameter('node');
-	if ($node instanceof \Drupal\node\NodeInterface) {
+	$node = Drupal::routeMatch()->getParameter('node');
+	if ($node instanceof NodeInterface) {
 	  // You can get nid and anything else you need from the node object.
 	  $variables['is_published'] = $node->isPublished();
   }
@@ -21,14 +28,23 @@ function bootstrap_mhcc_preprocess_html(&$variables) {
   }
 }
 
+/**
+ * @param $variables
+ */
 function bootstrap_mhcc_preprocess_page(&$variables) {
-  $variables['site_name'] = Markup::create(strip_tags(html_entity_decode(\Drupal::config('system.site')->get('name'))));
+  $variables['site_name'] = Markup::create(strip_tags(html_entity_decode(Drupal::config('system.site')->get('name'))));
 }
 
+/**
+ * @param $variables
+ */
 function bootstrap_mhcc_preprocess_maintenance_page(&$variables) {
-  $variables['site_name'] = Markup::create(strip_tags(html_entity_decode(\Drupal::config('system.site')->get('name'))));
+  $variables['site_name'] = Markup::create(strip_tags(html_entity_decode(Drupal::config('system.site')->get('name'))));
 }
 
+/**
+ * @param array $texts
+ */
 function bootstrap_mhcc_bootstrap_colorize_text_alter(array &$texts) {
   $texts['matches'][t('Apply')->render()] = 'success';
 }
@@ -41,11 +57,32 @@ function bootstrap_mhcc_bootstrap_colorize_text_alter(array &$texts) {
  * Modules that make any changes to variables like 'name' or 'extra' must ensure
  * that the final string is safe.
  *
+ * Implements template_preprocess_username()
+ *
  * @param array $variables
  *   An associative array containing:
  *   - account: The user account (\Drupal\Core\Session\AccountInterface).
+ *
  */
 function bootstrap_mhcc_preprocess_username(&$variables) {
+  $account = $variables['account'] ?: new AnonymousUserSession();
+
+  // Creating variables for the template.
+  $variables['label_display'] = 'inline';
+  $variables['label_hidden'] = false;
+  $variables['label_tag'] = 'div';
+  $variables['field_wrapper_tag'] = 'div';
+  $variables['field_item_wrapper_tag'] = 'div';
+
+  // Always set the field label - allow themes to decide whether to display it.
+  // In addition the label should be rendered but hidden to support screen
+  // readers.
+  $variables['label'] = 'Author';
+  static $default_attributes;
+  if (!isset($default_attributes)) {
+    $default_attributes = new Attribute();
+  }
+
   $external = FALSE;
   if ($variables['uid'] && $variables['profile_access']) {
     // We are linking to a local user.
@@ -68,4 +105,5 @@ function bootstrap_mhcc_preprocess_username(&$variables) {
     }
     $variables['attributes']['target'] = '_blank';
   }
+
 }
