@@ -1,14 +1,14 @@
 <?php
 
-use Drupal\Core\Entity\EntityType;
+use \Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\FormatterBase;
+use Drupal\Core\Field\FormatterInterface;
 use Drupal\Core\Render\Markup;
 use Drupal\Core\Session\AnonymousUserSession;
 use Drupal\Core\Template\Attribute;
 use Drupal\Core\Template\AttributeHelper;
 use Drupal\Core\Url;
-use Drupal\field\Entity\FieldStorageConfig;
 use Drupal\node\NodeInterface;
-use Drupal\user\Plugin\Field\FieldFormatter\AuthorFormatter;
 
 /**
  * @file
@@ -52,6 +52,23 @@ function bootstrap_mhcc_bootstrap_colorize_text_alter(array &$texts) {
 }
 
 /**
+ * Helper function to return the currently loaded entity from the URL (controller).
+ * Returns NULL if the currently loaded page is no entity.
+ *
+ * @return \Drupal\Core\Entity\EntityInterface
+ */
+function _get_current_controller_entity()
+{
+  $currentRouteParameters = \Drupal::routeMatch()->getParameters();
+  foreach ($currentRouteParameters as $param) {
+    if ($param instanceof \Drupal\Core\Entity\EntityInterface) {
+      return $param;
+    }
+  }
+  return NULL;
+}
+
+/**
  * Prepares variables for username templates.
  *
  * Default template: username.html.twig.
@@ -64,17 +81,21 @@ function bootstrap_mhcc_bootstrap_colorize_text_alter(array &$texts) {
  * @param array $variables
  *   An associative array containing:
  *   - account: The user account (\Drupal\Core\Session\AccountInterface).
- *
  */
 function bootstrap_mhcc_preprocess_username(&$variables) {
-  $node = Drupal::routeMatch()->getParameter('node');
-  $label = ($node->getFieldDefinition('uid')->getLabel());
-//  kint($node->getFieldDefinition('uid')->getPropertyDefinitions());
+  $entity = _get_current_controller_entity();
+  $label = ($entity->getFieldDefinition('uid')->getLabel());
   $account = $variables['account'] ?: new AnonymousUserSession();
+//  $item = \Drupal\Core\Field\FieldItemInterface::propertyDefinitions($entity->getFieldDefinition('uid'));
+//  kint($item);
+//  $field = FormatterInterface::viewElements($entity, 'en');
 
   // Creating variables for the template.
+  $variables['entity_type'] = $entity->getEntityTypeId();
+  $variables['field_name'] = $entity->get('uid')->getName();
+  $variables['field_type'] = $entity->getFieldDefinition('uid')->getType();
 //  $variables['label_display'] = 'inline';
-//  $variables['label_hidden'] = false;
+//  $variables['label_hidden'] = $variables['label_display'] === 'hidden';
   $variables['label_tag'] = 'div';
   $variables['field_wrapper_tag'] = 'div';
   $variables['field_item_wrapper_tag'] = 'div';
@@ -111,7 +132,8 @@ function bootstrap_mhcc_preprocess_username(&$variables) {
     $variables['attributes']['target'] = '_blank';
   }
 
-  kint($variables);
+//  kint($variables);
+
 }
 
 /**
@@ -173,5 +195,5 @@ function bootstrap_mhcc_preprocess_field(&$variables, $hook) {
     $delta++;
   }
 
-  kint($variables);
+//  kint($variables);
 }
