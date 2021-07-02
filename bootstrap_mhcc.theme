@@ -1,8 +1,6 @@
 <?php
 
-use \Drupal\Core\Entity\EntityTypeInterface;
-use Drupal\Core\Field\FormatterBase;
-use Drupal\Core\Field\FormatterInterface;
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Render\Markup;
 use Drupal\Core\Session\AnonymousUserSession;
 use Drupal\Core\Template\Attribute;
@@ -59,9 +57,9 @@ function bootstrap_mhcc_bootstrap_colorize_text_alter(array &$texts) {
  */
 function _get_current_controller_entity()
 {
-  $currentRouteParameters = \Drupal::routeMatch()->getParameters();
+  $currentRouteParameters = Drupal::routeMatch()->getParameters();
   foreach ($currentRouteParameters as $param) {
-    if ($param instanceof \Drupal\Core\Entity\EntityInterface) {
+    if ($param instanceof EntityInterface) {
       return $param;
     }
   }
@@ -84,18 +82,15 @@ function _get_current_controller_entity()
  */
 function bootstrap_mhcc_preprocess_username(&$variables) {
   $entity = _get_current_controller_entity();
-  $label = ($entity->getFieldDefinition('uid')->getLabel());
   $account = $variables['account'] ?: new AnonymousUserSession();
-//  $item = \Drupal\Core\Field\FieldItemInterface::propertyDefinitions($entity->getFieldDefinition('uid'));
-//  kint($item);
-//  $field = FormatterInterface::viewElements($entity, 'en');
+  $field = $entity->getFieldDefinition('uid')->toArray();
 
   // Creating variables for the template.
   $variables['entity_type'] = $entity->getEntityTypeId();
   $variables['field_name'] = $entity->get('uid')->getName();
   $variables['field_type'] = $entity->getFieldDefinition('uid')->getType();
-//  $variables['label_display'] = 'inline';
-//  $variables['label_hidden'] = $variables['label_display'] === 'hidden';
+  $variables['label_display'] = $field['display']['view']['options']['label'];
+  $variables['label_hidden'] = $variables['label_display'] === 'hidden';
   $variables['label_tag'] = 'div';
   $variables['field_wrapper_tag'] = 'div';
   $variables['field_item_wrapper_tag'] = 'div';
@@ -103,7 +98,7 @@ function bootstrap_mhcc_preprocess_username(&$variables) {
   // Always set the field label - allow themes to decide whether to display it.
   // In addition the label should be rendered but hidden to support screen n
   // readers.
-  $variables['label'] = $label;
+  $variables['label'] = $field['label'];
   static $default_attributes;
   if (!isset($default_attributes)) {
     $default_attributes = new Attribute();
@@ -131,9 +126,6 @@ function bootstrap_mhcc_preprocess_username(&$variables) {
     }
     $variables['attributes']['target'] = '_blank';
   }
-
-//  kint($variables);
-
 }
 
 /**
@@ -161,7 +153,16 @@ function bootstrap_mhcc_preprocess_field(&$variables, $hook) {
   // Always set the field label - allow themes to decide whether to display it.
   // In addition the label should be rendered but hidden to support screen
   // readers.
-  $variables['label'] = $element['#title'];
+  if ($element['#field_name'] === "uid" && $element['#formatter'] === "entity_reference_formatter") {
+    $variables['label'] = $element['#title'];
+    $variables['attributes']['href'] = '/' . Url::fromRoute('entity.user.canonical', [
+        'user' => $variables['uid'],
+      ])->getInternalPath() . '/contact';
+    $variables['label_display'] = $element['#label_display'];
+    $variables['label_hidden'] = $element['#label_display'] === 'hidden';
+  } else {
+    $variables['label'] = $element['#title'];
+  }
   $variables['multiple'] = $element['#is_multiple'];
   static $default_attributes;
   if (!isset($default_attributes)) {
@@ -194,6 +195,4 @@ function bootstrap_mhcc_preprocess_field(&$variables, $hook) {
     $variables['items'][$delta]['attributes'] = !empty($element['#items'][$delta]->_attributes) ? new Attribute($element['#items'][$delta]->_attributes) : clone $default_attributes;
     $delta++;
   }
-
-//  kint($variables);
 }
