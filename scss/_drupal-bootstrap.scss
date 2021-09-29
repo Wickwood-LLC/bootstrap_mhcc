@@ -1125,6 +1125,17 @@ nav.tabs {
   }
 }
 
+.node.classified {
+  [class*="uid"] {
+    display: block;
+  }
+
+  .block-field-blocknodeclassifiedunpublish-on {
+    display: inline-block;
+    padding: 0 0.5em;
+  }
+}
+
 .node.bikeabout-post {
   &.teaser {
     .layout--twocol-section {
