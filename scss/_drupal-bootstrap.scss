@@ -1925,6 +1925,17 @@ fieldset:not(.fieldgroup) {
   }
 }
 
+.block-views-blockclassified-ads-block-2,
+.block-views-blockclassified-ads-block-3 {
+  .views-row + .views-row {
+    margin-top: 0.2em;
+  }
+  .views-field-title {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
 /********************* MAINTENANCE *********************/
 .maintenance-page {
   .logo {

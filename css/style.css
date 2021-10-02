@@ -9173,6 +9173,16 @@ fieldset:not(.fieldgroup) {
   margin: auto;
 }
 
+.block-views-blockclassified-ads-block-2 .views-row + .views-row,
+.block-views-blockclassified-ads-block-3 .views-row + .views-row {
+  margin-top: 0.2em;
+}
+.block-views-blockclassified-ads-block-2 .views-field-title,
+.block-views-blockclassified-ads-block-3 .views-field-title {
+  text-align: center;
+  font-weight: bold;
+}
+
 /********************* MAINTENANCE *********************/
 .maintenance-page .logo {
   width: 50%;
