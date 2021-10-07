@@ -8434,6 +8434,13 @@ nav.tabs {
 .node.teaser .node-title {
   text-align: center;
 }
+.node.teaser .links {
+  text-align: right;
+  font-weight: bold;
+}
+.node.teaser .node-readmore a {
+  color: red;
+}
 
 .post-header {
   text-align: center;

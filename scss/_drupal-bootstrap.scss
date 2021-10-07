@@ -1092,6 +1092,13 @@ nav.tabs {
   .node-title {
     text-align: center;
   }
+  .links {
+    text-align: right;
+    font-weight: bold;
+  }
+  .node-readmore a {
+    color: red;
+  }
 }
 
 .post-header {
