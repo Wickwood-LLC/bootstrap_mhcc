@@ -42,3 +42,7 @@ libraries-override:
     css:
       base:
         core/misc/dialog/off-canvas.reset.css: false
+  bootstrap_wwm_base/framework:
+    css:
+      component:
+        css/navbar.css: css/navbar.css
