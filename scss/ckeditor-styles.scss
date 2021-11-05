@@ -380,3 +380,13 @@ a.wt-button:hover {
   margin-right: -5px;
   margin-left: 3px;
 }
+
+figure,
+figure[class] {
+  display: table !important;
+
+  figcaption {
+    display: table-caption;
+    caption-side: bottom;
+  }
+}
