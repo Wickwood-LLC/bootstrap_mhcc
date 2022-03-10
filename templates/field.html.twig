@@ -41,7 +41,7 @@
     </{{ field_wrapper_tag }}>
   {% else %}
     {% for item in items %}
-      <{{ field_item_wrapper_tag }}{{ attributes.addClass(classes, 'field__item') }}>{{ item.content }}</{{ field_item_wrapper_tag }}>
+      <{{ field_item_wrapper_tag }}{{ attributes.addClass(classes, 'field__item').merge(item.attributes) }}>{{ item.content }}</{{ field_item_wrapper_tag }}>
     {% endfor %}
   {% endif %}
 {% else %}
