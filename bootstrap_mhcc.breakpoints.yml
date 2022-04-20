@@ -22,7 +22,7 @@ bootstrap_mhcc.desktop_mobile_breakpoints.mobile:
   weight: 0
   multipliers:
     - 1x
-  group: bootstrap_wwm_base.desktop_mobile_breakpoints
+  group: bootstrap_mhcc.desktop_mobile_breakpoints
 
 bootstrap_mhcc.desktop_mobile_breakpoints.desktop:
   label: Desktop
@@ -30,4 +30,4 @@ bootstrap_mhcc.desktop_mobile_breakpoints.desktop:
   weight: 1
   multipliers:
     - 1x
-  group: bootstrap_wwm_base.desktop_mobile_breakpoints
+  group: bootstrap_mhcc.desktop_mobile_breakpoints
