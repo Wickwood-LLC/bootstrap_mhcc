@@ -8858,6 +8858,29 @@ nav.tabs {
   margin: 0;
 }
 
+.block-field-blocknodepagefield-media-files-for-download {
+  border: 3px solid #9cc3d7;
+  border-radius: 10px;
+}
+.block-field-blocknodepagefield-media-files-for-download .block-title {
+  border-bottom: 3px solid #9cc3d7;
+  background-color: #bae2f1;
+  margin: unset;
+  padding: 0.2em;
+  border-radius: 8px 8px 0 0;
+}
+.block-field-blocknodepagefield-media-files-for-download .field__item:nth-child(odd) {
+  background-color: rgba(226, 219, 219, 0.81);
+  border-bottom: 1px solid #9cc3d7;
+}
+.block-field-blocknodepagefield-media-files-for-download .field__item:last-child {
+  border-bottom: 0;
+  border-radius: 0 0 8px 8px;
+}
+.block-field-blocknodepagefield-media-files-for-download .file {
+  margin: unset;
+}
+
 .boxed {
   background: #D7E7EF;
   border-radius: 6px;
@@ -9069,7 +9092,9 @@ fieldset:not(.fieldgroup) {
 .views-exposed-form .form--inline > .form-item label {
   display: block;
 }
-.views-exposed-form .form--inline > .form-item .select-wrapper, .views-exposed-form .form--inline > .form-item select, .views-exposed-form .form--inline > .form-item .form-text {
+.views-exposed-form .form--inline > .form-item .select-wrapper,
+.views-exposed-form .form--inline > .form-item select,
+.views-exposed-form .form--inline > .form-item .form-text {
   width: 100%;
 }
 .views-exposed-form .form--inline .select-wrapper {
@@ -9633,7 +9658,8 @@ tr:first-child > td > .fc-day-grid-event {
 .slick .slick-track {
   display: flex;
 }
-.slick.slick--view--front-page-slideshow .slide__content, .slick.slick--view--front-page-slideshow .grid__content {
+.slick.slick--view--front-page-slideshow .slide__content,
+.slick.slick--view--front-page-slideshow .grid__content {
   background: #fff;
   border-radius: 10px;
   border: 3px solid #9DC4D7;
