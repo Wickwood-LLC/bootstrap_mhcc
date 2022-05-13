@@ -18,4 +18,13 @@
     }
   }; 
 
+  /**
+   * jquery UI dialog box close button fix
+   */
+  Drupal.behaviors.dialogCloseButtonFix = {
+    attach: function(context, settings) {
+      $.fn.bootstrapBtn = $.fn.button.noConflict();
+    }
+  };
+
 })(jQuery, Drupal);
