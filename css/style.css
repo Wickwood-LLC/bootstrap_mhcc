@@ -9593,14 +9593,20 @@ tr:first-child > td > .fc-day-grid-event {
 #views-exposed-form-full-calendar-view-block-6 {
   text-align: center;
 }
+#views-exposed-form-full-calendar-view-block-4 .form--inline,
+#views-exposed-form-full-calendar-view-block-5 .form--inline,
+#views-exposed-form-full-calendar-view-block-6 .form--inline {
+  display: block;
+}
 #views-exposed-form-full-calendar-view-block-4 .form-item,
 #views-exposed-form-full-calendar-view-block-5 .form-item,
 #views-exposed-form-full-calendar-view-block-6 .form-item {
   display: inline-block;
   vertical-align: top;
-  width: 150px;
   margin-right: 0.5em;
   margin-bottom: 0.5em;
+  width: 100%;
+  max-width: 240px;
 }
 #views-exposed-form-full-calendar-view-block-4 input,
 #views-exposed-form-full-calendar-view-block-4 select,
@@ -9619,10 +9625,8 @@ tr:first-child > td > .fc-day-grid-event {
   overflow-y: auto;
   overflow-x: revert;
   width: 100%;
-  max-width: 150px;
   margin-left: auto;
   margin-right: auto;
-  height: 2.2em;
 }
 @media (min-width: 900px) {
   #views-exposed-form-full-calendar-view-block-4 select[multiple],
@@ -9652,6 +9656,11 @@ tr:first-child > td > .fc-day-grid-event {
 #views-exposed-form-full-calendar-view-block-6 .form-item-field-no-repeat-date-and-time-value-min label,
 #views-exposed-form-full-calendar-view-block-6 .form-item-field-no-repeat-date-and-time-value-max label {
   display: none;
+}
+#views-exposed-form-full-calendar-view-block-4 .form-actions,
+#views-exposed-form-full-calendar-view-block-5 .form-actions,
+#views-exposed-form-full-calendar-view-block-6 .form-actions {
+  width: 100%;
 }
 
 /********************* SLICK SLIDER *********************/

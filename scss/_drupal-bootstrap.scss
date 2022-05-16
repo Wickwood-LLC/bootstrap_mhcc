@@ -1897,6 +1897,7 @@ fieldset:not(.fieldgroup) {
     }
 }
 
+
 .block-views-blockfull-calendar-view-block-1 {
     .view-header {
         text-align: center;
@@ -2442,28 +2443,32 @@ tr:first-child>td>.fc-day-grid-event {
 #views-exposed-form-full-calendar-view-block-6 {
     text-align: center;
 
+    .form--inline {
+        display: block;
+    }
+
     .form-item {
         display: inline-block;
         vertical-align: top;
-        width: 150px;
         margin-right: 0.5em;
         margin-bottom: 0.5em;
+        width: 100%;
+        max-width: 240px;
     }
 
     input,
     select,
     .select-wrapper {
         max-width: 100%;
+
     }
 
     select[multiple] {
         overflow-y: auto;
         overflow-x: revert;
         width: 100%;
-        max-width: 150px;
         margin-left: auto;
         margin-right: auto;
-        height: 2.2em;
 
         @include breakpoint (900px) {
             height: auto;
@@ -2478,6 +2483,10 @@ tr:first-child>td>.fc-day-grid-event {
         label {
             display: none;
         }
+    }
+
+    .form-actions {
+        width: 100%;
     }
 }
 
