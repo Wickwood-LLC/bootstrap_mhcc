@@ -16,51 +16,51 @@
 @import "drupal-bootstrap/jquery-ui/autocomplete";
 body {
     background: #028ad2;
-    background: linear-gradient(0deg, #028ad2 0%, rgba(2, 138, 210, 0.95) 70%, white 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#028ad2", endColorstr="#ffffff", GradientType=1);
+    background: linear-gradient( 0deg, #028ad2 0%, rgba(2, 138, 210, 0.95) 70%, white 100%);
+    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#028ad2", endColorstr="#ffffff", GradientType=1);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    @include fluid-type(320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type( 320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 h1,
 .h1 {
     font-weight: bold;
-    @include fluid-type(320px, 1200px, 24px, 40px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type( 320px, 1200px, 24px, 40px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 h2,
 .h2 {
     font-weight: bold;
-    @include fluid-type(320px, 1200px, 22px, 36px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type( 320px, 1200px, 22px, 36px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 h3,
 .h3 {
     font-weight: bold;
-    @include fluid-type(320px, 1200px, 20px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type( 320px, 1200px, 20px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 h4,
 .h4 {
     font-weight: bold;
-    @include fluid-type(320px, 1200px, 18px, 24px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type( 320px, 1200px, 18px, 24px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 h5,
 .h5 {
     font-weight: bold;
-    @include fluid-type(320px, 1200px, 17px, 22px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type( 320px, 1200px, 17px, 22px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 h6,
 .h6 {
     font-weight: bold;
-    @include fluid-type(320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type( 320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 p {
-    @include fluid-type(320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type( 320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 ol,
@@ -124,25 +124,26 @@ table,
 }
 
 .extlink {
-    font-size: .65em;
+    font-size: 0.65em;
     vertical-align: super;
-    margin-left: .15em;
+    margin-left: 0.15em;
     .svg-inline--fa.fa-w-16 {
         width: 0.8em;
         margin-left: 0.2em;
     }
     span.fa-ext {
-        font-size: .8em;
+        font-size: 0.8em;
         margin-left: 0.2em;
     }
     span.fa-envelope-o {
-        font-size: .8em;
+        font-size: 0.8em;
         margin-left: 0.2em;
     }
 }
 
 .file {
     font-weight: normal;
+    font-size: unset;
 }
 
 .file>span,
@@ -155,7 +156,7 @@ table,
 .file>span:first-child,
 .file>span:last-child {
     border: 0px;
-    @include fluid-type(320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);font-size: 1em;
+    @include fluid-type( 320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);font-size: 1em;
 }
 
 .text-primary {
@@ -163,7 +164,7 @@ table,
 }
 
 .field--label:after {
-    content: ':';
+    content: ":";
 }
 
 .no-field-label-colon {
@@ -171,7 +172,7 @@ table,
     .field__label,
     .field--label-inline .field--label {
         &:after {
-            content: '';
+            content: "";
         }
     }
 }
@@ -181,7 +182,7 @@ table,
     .field__label,
     .field--label-inline .field--label {
         &:after {
-            content: ':';
+            content: ":";
         }
     }
 }
@@ -201,7 +202,7 @@ table,
 .page-title {
     position: relative;
     padding: 1px;
-    color: #0F3C4D;
+    color: #0f3c4d;
     margin: 5px 0px;
     text-align: center;
 }
@@ -224,25 +225,25 @@ table,
 }
 
 .navbar-brand {
-    color: #293C98;
+    color: #293c98;
     height: auto;
-    font-family: 'Neuzeit Grotesk', Tahoma, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+    font-family: "Neuzeit Grotesk", Tahoma, Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
     padding: 0;
     margin: 0;
     line-height: 1.2em;
     font-size: 20px; // backup size
-    @include fluid-type(320px, 519px, 20px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
-    @include fluid-type(520px, 692px, 19px, 34px); // values inside are ($min_width,$max_width, $min_font, $max_font);
-    @include fluid-type(693px, 879px, 30px, 42px); // values inside are ($min_width,$max_width, $min_font, $max_font);
-    @include fluid-type(880px, 1200px, 16px, 26px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type( 320px, 519px, 20px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type( 520px, 692px, 19px, 34px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type( 693px, 879px, 30px, 42px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type( 880px, 1200px, 16px, 26px); // values inside are ($min_width,$max_width, $min_font, $max_font);
     &:hover {
-        color: #293C98;
+        color: #293c98;
     }
 }
 
 .navbar-text {
     box-sizing: border-box;
-    font-family: 'Neuzeit Grotesk', Tahoma, Arial, Helvetica, Sans-Serif;
+    font-family: "Neuzeit Grotesk", Tahoma, Arial, Helvetica, Sans-Serif;
     text-decoration: none;
     line-height: normal;
     margin: 0;
@@ -252,8 +253,8 @@ table,
     text-shadow: 2px 2px 2px #00000080;
     width: 100%;
     font-size: 16px; // backup size
-    @include fluid-type(320px, 649px, 16px, 19px); // values inside are ($min_width,$max_width, $min_font, $max_font);
-    @include fluid-type(650px, 1020px, 19px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type( 320px, 649px, 16px, 19px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type( 650px, 1020px, 19px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 // Page header.
@@ -391,8 +392,8 @@ table,
     .menu--main {
         float: none;
         font-size: 14px;
-        @include fluid-type(320px, $grid-float-breakpoint-max, 14px, 16px); // values inside are ($min_width,$max_width, $min_font, $max_font);
-        @include fluid-type($grid-float-breakpoint, 1200px, 14px, 16px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+        @include fluid-type( 320px, $grid-float-breakpoint-max, 14px, 16px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+        @include fluid-type( $grid-float-breakpoint, 1200px, 14px, 16px); // values inside are ($min_width,$max_width, $min_font, $max_font);
         >li {
             margin-left: 5px;
             float: none;
@@ -403,7 +404,7 @@ table,
             }
             &:hover>a,
             &.active-trail>a {
-                background: #1A6884;
+                background: #1a6884;
                 border-radius: 4px;
                 border: 1px dotted rgba(40, 161, 204, 0.9);
                 color: white;
@@ -450,7 +451,7 @@ table,
             }
         }
         ul.dropdown-menu {
-            background: #96C8DE;
+            background: #96c8de;
             border-radius: 4px;
             border: 1px dotted rgba(40, 161, 204, 0.9);
             margin: 0 auto;
@@ -465,7 +466,7 @@ table,
                     }
                 }
                 &:hover {
-                    background: #1A6884;
+                    background: #1a6884;
                     >ul {
                         left: calc(100% + 2px);
                     }
@@ -477,7 +478,7 @@ table,
                 a {
                     border-bottom: 1px dotted rgba(40, 161, 204, 0.9);
                     text-align: left;
-                    color: #0C2F3C;
+                    color: #0c2f3c;
                     text-decoration: none;
                     text-shadow: 2px 2px 2px rgba(245, 245, 245, 0.5);
                     white-space: nowrap;
@@ -511,7 +512,7 @@ table,
                 box-shadow: 1px 1px 0px whitesmoke;
             }
             &:hover {
-                background: #1A6884;
+                background: #1a6884;
                 .icon-bar {
                     background-color: white;
                     box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
@@ -527,7 +528,7 @@ table,
         }
         .menu--main {
             text-align: center;
-            background: #96C8DE;
+            background: #96c8de;
             border: 1px dotted rgba(40, 161, 204, 0.9);
             border-radius: 4px 0 0 4px;
             box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.5);
@@ -538,7 +539,7 @@ table,
                 margin: 0;
                 >a {
                     border-bottom: 1px dotted rgba(40, 161, 204, 0.9);
-                    color: #0C2F3C;
+                    color: #0c2f3c;
                     text-decoration: none;
                     text-shadow: 2px 2px 2px rgba(245, 245, 245, 0.5);
                     white-space: nowrap;
@@ -567,9 +568,9 @@ table,
 
 // Help
 .region-help {
-    background: #E2EDF3;
+    background: #e2edf3;
     border-radius: 10px;
-    border: 3px solid #9DC4D7;
+    border: 3px solid #9dc4d7;
     padding: 5px;
     margin: 5px auto;
     box-sizing: border-box;
@@ -587,8 +588,8 @@ table,
     .region-content {
         background: #fff;
         border-radius: 10px;
-        border: 3px solid #9DC4D7;
-        padding: .75em 0.5em;
+        border: 3px solid #9dc4d7;
+        padding: 0.75em 0.5em;
         margin: 0px auto;
         box-sizing: border-box;
         .path-frontpage & {
@@ -664,11 +665,11 @@ article[about="/calendar/rides"] {
 
 // Footer.
 .footer {
-    color: #FFF;
+    color: #fff;
     font-size: 0.8em;
     margin-top: 45px;
     padding: 0.5em;
-    border-top: 1px solid #E5E5E5;
+    border-top: 1px solid #e5e5e5;
     .menu--footer {
         text-align: center;
         li {
@@ -813,7 +814,7 @@ nav.tabs {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
         box-shadow: 0 0px 10px #333;
-        @include breakpoint (718px) {
+        @include breakpoint(718px) {
             padding-bottom: 0;
         }
         .block-content {
@@ -821,7 +822,7 @@ nav.tabs {
             width: 100%;
             padding: 0 15px;
             vertical-align: middle;
-            @include breakpoint (718px) {
+            @include breakpoint(718px) {
                 width: auto;
                 padding: 0 0 0.5em 0;
             }
@@ -831,7 +832,7 @@ nav.tabs {
     &.sticky-menu .block-content {
         display: inline-block;
         width: 100%;
-        @include breakpoint (718px) {
+        @include breakpoint(718px) {
             width: auto;
         }
     }
@@ -982,7 +983,7 @@ nav.tabs {
         display: inline-block;
         padding: 0 0.5em;
         &:before {
-            content: 'By:';
+            content: "By:";
             display: inline;
             font-weight: bold;
         }
@@ -993,7 +994,7 @@ nav.tabs {
     }
     .block-field-blocknodeclassifieduid {
         &:before {
-            content: 'Offered By:';
+            content: "Offered By:";
         }
     }
     .block-field-blocknodearticlepublished-at,
@@ -1030,7 +1031,7 @@ nav.tabs {
     .block-field-blocknodebikeabout-postuid {
         display: inline-block;
         &:before {
-            content: 'By:';
+            content: "By:";
             display: inline;
             font-weight: bold;
         }
@@ -1226,7 +1227,7 @@ nav.tabs {
 .press-release.full {
     .sutro-double {
         max-width: 960px;
-        background: #FFF;
+        background: #fff;
         position: relative;
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
         padding: 5%;
@@ -1337,8 +1338,8 @@ nav.tabs {
     }
     &:before {
         display: block;
-        content: '\f1e0' !important;
-        font-family: 'Font Awesome 5 Pro';
+        content: "\f1e0" !important;
+        font-family: "Font Awesome 5 Pro";
         font-size: 24px;
         position: absolute;
         right: -42px;
@@ -1365,7 +1366,7 @@ nav.tabs {
         color: unset;
         margin-top: 0;
         text-align: center;
-        @include fluid-type(320px, 1200px, 18px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+        @include fluid-type( 320px, 1200px, 18px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
     }
     .social-media-sharing {
         li {
@@ -1406,15 +1407,15 @@ nav.tabs {
 }
 
 .boxed {
-    background: #D7E7EF;
+    background: #d7e7ef;
     border-radius: 6px;
     padding: 7px;
     margin: 5px;
-    border: 3px solid #9DC4D7;
+    border: 3px solid #9dc4d7;
     >.block-title {
-        background: #BBE3F2;
+        background: #bbe3f2;
         border-radius: 4px;
-        border: 1px solid #9DC4D7;
+        border: 1px solid #9dc4d7;
         color: #333;
         padding: 6px 5px;
         margin: 0 auto 2px;
@@ -1422,7 +1423,7 @@ nav.tabs {
     }
     >h3.block-title {
         font-weight: bold;
-        @include fluid-type(320px, 1200px, 18px, 24px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+        @include fluid-type( 320px, 1200px, 18px, 24px); // values inside are ($min_width,$max_width, $min_font, $max_font);
     }
     >.block-content {
         padding: 0 0.5em;
@@ -1440,7 +1441,6 @@ nav.tabs {
 
 fieldset:not(.fieldgroup) {
     padding: 2em 1.2em 1em;
-    ;
 }
 
 .boxed-fieldset {
@@ -1459,11 +1459,11 @@ fieldset:not(.fieldgroup) {
         border-bottom: 1px solid #ccc;
         line-height: 1.1;
         font-weight: bold;
-        @include fluid-type(320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+        @include fluid-type( 320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
     }
     >.block-content {
         padding: 1rem;
-        background-color: #FFF;
+        background-color: #fff;
         border-radius: 0 0 5px 5px;
     }
 }
@@ -1491,11 +1491,6 @@ fieldset:not(.fieldgroup) {
     text-align: center;
 }
 
-// .equal-height {
-//   .layout__region>section:not(.js-layout-builder-block) {
-//     height: 100%;
-//   }
-// }
 .no-top-margin-title .block-title {
     margin-top: 0;
 }
@@ -1507,9 +1502,9 @@ fieldset:not(.fieldgroup) {
 .notice-block {
     border: 2px solid #ae133e;
     border-radius: 6px;
-    background: #FFF url(../images/notice-arrow.png) no-repeat;
+    background: #fff url(../images/notice-arrow.png) no-repeat;
     margin: 5px auto;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     min-height: 47px;
     position: relative;
     background-size: auto;
@@ -1628,7 +1623,7 @@ fieldset:not(.fieldgroup) {
         background: #efefef;
         border-radius: 6px;
         padding: 7px;
-        border: 1px solid #9DC4D7;
+        border: 1px solid #9dc4d7;
     }
 }
 
@@ -1693,7 +1688,7 @@ fieldset:not(.fieldgroup) {
         .node-title a {
             color: black;
             &:hover {
-                color: $link-color
+                color: $link-color;
             }
         }
         [class*="block-extra-field"] {
@@ -1704,7 +1699,7 @@ fieldset:not(.fieldgroup) {
             }
         }
         &:after {
-            content: '';
+            content: "";
             width: 80%;
             display: block;
             border-bottom: 5px double gray;
@@ -1742,27 +1737,27 @@ fieldset:not(.fieldgroup) {
         display: inline-block;
         float: none;
         text-align: center;
-        color: #293C98;
+        color: #293c98;
         font-weight: bold;
         width: 100%;
     }
     .navbar-text {
-        color: #FFF;
+        color: #fff;
     }
     main {
         text-align: center;
         margin-top: 2em;
         background: #fff;
         border-radius: 10px;
-        border: 3px solid #9DC4D7;
-        padding: .75em 1.5em;
+        border: 3px solid #9dc4d7;
+        padding: 0.75em 1.5em;
         margin: 0px auto;
         box-sizing: border-box;
         h1 {
             text-transform: capitalize;
             position: relative;
             padding: 1px;
-            color: #0F3C4D;
+            color: #0f3c4d;
             margin: 5px 0px;
             text-align: center;
         }
@@ -1983,7 +1978,7 @@ form#user-register-form {
 #edit-ride-waiver-text-1 {
     height: 200px;
     overflow-y: scroll;
-    border: 2px solid #9DC4D7;
+    border: 2px solid #9dc4d7;
     border-radius: 4px;
     background: white;
     padding: 1em 2.5%;
@@ -2021,9 +2016,9 @@ form#user-register-form {
     }
     .view-content {
         >h3 {
-            background: #BBE3F2;
+            background: #bbe3f2;
             border-radius: 4px;
-            border: 1px solid #9DC4D7;
+            border: 1px solid #9dc4d7;
             margin: 0 auto;
             padding: 5px;
             margin-bottom: 5px;
@@ -2046,7 +2041,7 @@ form#user-register-form {
         div.views-row {
             margin: 5px 15px 10px 35px;
             display: list-item;
-            list-style-image: url('../images/bicycle-bullet.png');
+            list-style-image: url("../images/bicycle-bullet.png");
             line-height: 1.4em;
             a {
                 text-decoration: none;
@@ -2058,7 +2053,7 @@ form#user-register-form {
         div.views-row {
             margin: 5px 15px 5px 35px;
             display: list-item;
-            list-style-image: url('../images/bicycle-bullet.png');
+            list-style-image: url("../images/bicycle-bullet.png");
         }
     }
 }
@@ -2126,7 +2121,7 @@ tr:first-child>td>.fc-day-grid-event {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        @include breakpoint (900px) {
+        @include breakpoint(900px) {
             height: auto;
         }
     }
@@ -2155,7 +2150,7 @@ tr:first-child>td>.fc-day-grid-event {
         .grid__content {
             background: #fff;
             border-radius: 10px;
-            border: 3px solid #9DC4D7;
+            border: 3px solid #9dc4d7;
             width: 100%;
             height: 100%;
         }
@@ -2209,7 +2204,7 @@ tr:first-child>td>.fc-day-grid-event {
     }
     .slide__media img {
         margin: auto;
-        width: 100%
+        width: 100%;
     }
     .slick__arrow {
         display: flex;
