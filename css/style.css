@@ -8091,11 +8091,6 @@ table td,
   background: #efefef;
   border-width: 1px;
 }
-.main-container .region-content .boxed > .block-title {
-  background: transparent;
-  border: none;
-  color: #333;
-}
 .main-container .region-content .boxed .boxed {
   background: white;
   border-width: 2px;
