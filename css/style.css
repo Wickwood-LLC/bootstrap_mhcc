@@ -8088,7 +8088,7 @@ table td,
   padding: unset;
 }
 .main-container .region-content .boxed {
-  background: #efefef;
+  background: white;
   border-width: 1px;
 }
 .main-container .region-content .boxed .boxed {
