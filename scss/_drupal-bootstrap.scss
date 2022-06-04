@@ -1388,14 +1388,14 @@ nav.tabs {
         padding: 0.2em;
         border-radius: 8px 8px 0 0;
     }
-    .field__item:nth-child(odd) {
-        background-color: rgba(226, 219, 219, 0.81);
-        border-bottom: 1px solid #9cc3d7;
-    }
-    .field__item:last-child {
-        border-bottom: 0;
-        border-radius: 0 0 8px 8px;
-    }
+    // .field__item:nth-child(odd) {
+    //     background-color: rgba(226, 219, 219, 0.81);
+    //     border-bottom: 1px solid #9cc3d7;
+    // }
+    // .field__item:last-child {
+    //     border-bottom: 0;
+    //     border-radius: 0 0 8px 8px;
+    // }
     .file {
         margin: unset;
     }
