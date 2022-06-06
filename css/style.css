@@ -7496,6 +7496,7 @@ table,
   border-collapse: separate;
   border-radius: 6px;
   border-width: 2px;
+  max-width: 100%;
 }
 table > *:first-child > tr:first-child th:first-child,
 table > *:first-child > tr:first-child td:first-child,
@@ -7536,6 +7537,20 @@ table tr:nth-child(even),
 table td,
 .table td {
   padding: 5px;
+}
+
+.ride-classifications tbody > tr {
+  display: grid;
+}
+@media (min-width: 380px) {
+  .ride-classifications tbody > tr {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 760px) {
+  .ride-classifications tbody > tr {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .align-center {

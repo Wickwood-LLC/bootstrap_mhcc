@@ -79,6 +79,7 @@ table,
     border-collapse: separate;
     border-radius: 6px;
     border-width: 2px;
+    max-width: 100%;
     >*:first-child>tr:first-child {
         th:first-child,
         td:first-child {
@@ -112,6 +113,18 @@ table,
     }
     td {
         padding: 5px;
+    }
+}
+
+.ride-classifications {
+    tbody>tr {
+        display: grid;
+        @include breakpoint(380px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include breakpoint(760px) {
+            grid-template-columns: repeat(4, 1fr)
+        }
     }
 }
 
