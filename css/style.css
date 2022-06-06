@@ -8088,8 +8088,15 @@ table td,
   padding: unset;
 }
 .main-container .region-content .boxed {
-  background: white;
+  background: #efefef;
   border-width: 1px;
+}
+.main-container .region-content .boxed .block-content {
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #9dc4d7;
+  margin-top: 7px;
+  padding: 0;
 }
 .main-container .region-content .boxed .boxed {
   background: white;
@@ -8838,6 +8845,17 @@ nav.tabs {
   margin: unset;
   padding: 0.2em;
   border-radius: 8px 8px 0 0;
+}
+.block-field-blocknodepagefield-media-files-for-download .field__item:nth-child(odd) {
+  border-bottom: 1px solid #9cc3d7;
+}
+.block-field-blocknodepagefield-media-files-for-download .field__item:nth-child(even) {
+  background-color: rgba(226, 219, 219, 0.81);
+  border-bottom: 1px solid #9cc3d7;
+}
+.block-field-blocknodepagefield-media-files-for-download .field__item:last-child {
+  border-bottom: 0;
+  border-radius: 0 0 8px 8px;
 }
 .block-field-blocknodepagefield-media-files-for-download .file {
   margin: unset;
