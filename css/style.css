@@ -8483,6 +8483,27 @@ nav.tabs {
   top: 0;
   left: 0.5em;
 }
+.post-header [class*=block-field][class*=published-at] {
+  display: inline-block;
+  padding: 0 0.5em;
+  position: relative;
+}
+.post-header [class*=block-field][class*=published-at]:before {
+  content: "\f783";
+  display: inline;
+  font-family: "Font Awesome 5 Duotone", Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
+  font-weight: bold;
+  color: #058ad2;
+}
+.post-header [class*=block-field][class*=published-at]:after {
+  content: "\10f783";
+  font-family: "Font Awesome 5 Duotone", Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
+  color: #058ad2;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0.5em;
+}
 .post-header .block-content {
   display: inline;
   font-weight: bold;
