@@ -8466,22 +8466,35 @@ nav.tabs {
 .post-header [class*=uid] {
   display: inline-block;
   padding: 0 0.5em;
+  position: relative;
 }
 .post-header [class*=uid]:before {
-  content: "By:";
+  content: "\f406  By:";
+  display: inline;
+  font-family: "Font Awesome 5 Duotone", Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
+  font-weight: bold;
+  color: #058ad2;
+}
+.post-header [class*=uid]:after {
+  content: "\10f406";
+  font-family: "Font Awesome 5 Duotone", Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
+  color: goldenrod;
+  position: absolute;
+  top: 0;
+  left: 0.5em;
+}
+.post-header .block-content {
   display: inline;
   font-weight: bold;
 }
-.post-header [class*=uid] .block-content {
-  display: inline;
-  font-weight: bold;
-}
-.post-header .block-field-blocknodeclassifieduid:before {
+
+.block-field-blocknodeclassifieduid:before {
   content: "Offered By:";
 }
-.post-header .block-field-blocknodearticlepublished-at,
-.post-header .block-field-blocknodenewspublished-at,
-.post-header .block-field-blocknodeclassifiedpublished-at {
+
+.block-field-blocknodearticlepublished-at,
+.block-field-blocknodenewspublished-at,
+.block-field-blocknodeclassifiedpublished-at {
   display: inline-block;
   padding: 0 0.5em;
 }

@@ -997,27 +997,40 @@ nav.tabs {
     [class*="uid"] {
         display: inline-block;
         padding: 0 0.5em;
+        position: relative;
         &:before {
-            content: "By:";
+            content: "\f406  By:";
             display: inline;
+            font-family: "Font Awesome 5 Duotone", Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
             font-weight: bold;
+            color: #058ad2;
         }
-        .block-content {
-            display: inline;
-            font-weight: bold;
+        &:after {
+            content: "\10f406";
+            font-family: "Font Awesome 5 Duotone", Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
+            color: goldenrod;
+            position: absolute;
+            top: 0;
+            left: 0.5em;
         }
     }
-    .block-field-blocknodeclassifieduid {
-        &:before {
-            content: "Offered By:";
-        }
+    .block-content {
+        display: inline;
+        font-weight: bold;
     }
-    .block-field-blocknodearticlepublished-at,
-    .block-field-blocknodenewspublished-at,
-    .block-field-blocknodeclassifiedpublished-at {
-        display: inline-block;
-        padding: 0 0.5em;
+}
+
+.block-field-blocknodeclassifieduid {
+    &:before {
+        content: "Offered By:";
     }
+}
+
+.block-field-blocknodearticlepublished-at,
+.block-field-blocknodenewspublished-at,
+.block-field-blocknodeclassifiedpublished-at {
+    display: inline-block;
+    padding: 0 0.5em;
 }
 
 .node.classified {
