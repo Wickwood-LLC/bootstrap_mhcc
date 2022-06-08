@@ -8463,19 +8463,19 @@ nav.tabs {
 .post-header {
   text-align: center;
 }
-.post-header [class*=uid] {
+.post-header .authored-by {
   display: inline-block;
   padding: 0 0.5em;
   position: relative;
 }
-.post-header [class*=uid]:before {
+.post-header .authored-by:before {
   content: "\f406";
   display: inline;
   font-family: "Font Awesome 5 Duotone", Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
   font-weight: bold;
   color: #058ad2;
 }
-.post-header [class*=uid]:after {
+.post-header .authored-by:after {
   content: "\10f406";
   font-family: "Font Awesome 5 Duotone", Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
   color: goldenrod;
@@ -8483,19 +8483,19 @@ nav.tabs {
   top: 0;
   left: 0.5em;
 }
-.post-header [class*=block-field][class*=published-at] {
+.post-header .published-at {
   display: inline-block;
   padding: 0 0.5em;
   position: relative;
 }
-.post-header [class*=block-field][class*=published-at]:before {
+.post-header .published-at:before {
   content: "\f783";
   display: inline;
   font-family: "Font Awesome 5 Duotone", Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
   font-weight: bold;
   color: #058ad2;
 }
-.post-header [class*=block-field][class*=published-at]:after {
+.post-header .published-at:after {
   content: "\10f783";
   font-family: "Font Awesome 5 Duotone", Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
   color: #058ad2;

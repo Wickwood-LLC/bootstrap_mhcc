@@ -994,7 +994,7 @@ nav.tabs {
 
 .post-header {
     text-align: center;
-    [class*="uid"] {
+    .authored-by {
         display: inline-block;
         padding: 0 0.5em;
         position: relative;
@@ -1014,7 +1014,7 @@ nav.tabs {
             left: 0.5em;
         }
     }
-    [class*="block-field"][class*="published-at"] {
+    .published-at {
         display: inline-block;
         padding: 0 0.5em;
         position: relative;
