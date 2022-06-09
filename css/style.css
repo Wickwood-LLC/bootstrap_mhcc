@@ -3036,7 +3036,7 @@ th {
     margin-bottom: 15px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ddd;
+    border: unset;
   }
   .table-responsive > .table {
     margin-bottom: 0;
