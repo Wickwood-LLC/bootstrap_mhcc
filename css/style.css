@@ -7497,26 +7497,6 @@ table,
   border-width: 2px;
   max-width: 100%;
 }
-table > *:first-child > tr:first-child th:first-child,
-table > *:first-child > tr:first-child td:first-child,
-.table > *:first-child > tr:first-child th:first-child,
-.table > *:first-child > tr:first-child td:first-child {
-  border-top-left-radius: 6px;
-}
-table > *:first-child > tr:first-child th:last-child,
-table > *:first-child > tr:first-child td:last-child,
-.table > *:first-child > tr:first-child th:last-child,
-.table > *:first-child > tr:first-child td:last-child {
-  border-top-right-radius: 6px;
-}
-table tr:last-child td:first-child,
-.table tr:last-child td:first-child {
-  border-bottom-left-radius: 6px;
-}
-table tr:last-child td:last-child,
-.table tr:last-child td:last-child {
-  border-bottom-right-radius: 6px;
-}
 table > thead > tr > th,
 .table > thead > tr > th {
   text-align: center;

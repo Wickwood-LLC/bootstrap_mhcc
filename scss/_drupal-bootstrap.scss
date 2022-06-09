@@ -79,24 +79,24 @@ table,
     border-radius: 6px;
     border-width: 2px;
     max-width: 100%;
-    >*:first-child>tr:first-child {
-        th:first-child,
-        td:first-child {
-            border-top-left-radius: 6px;
-        }
-        th:last-child,
-        td:last-child {
-            border-top-right-radius: 6px;
-        }
-    }
-    tr:last-child {
-        td:first-child {
-            border-bottom-left-radius: 6px;
-        }
-        td:last-child {
-            border-bottom-right-radius: 6px;
-        }
-    }
+    // >*:first-child>tr:first-child {
+    //     th:first-child,
+    //     td:first-child {
+    //         border-top-left-radius: 4px;
+    //     }
+    //     th:last-child,
+    //     td:last-child {
+    //         border-top-right-radius: 4px;
+    //     }
+    // }
+    // tr:last-child {
+    //     td:first-child {
+    //         border-bottom-left-radius: 4px;
+    //     }
+    //     td:last-child {
+    //         border-bottom-right-radius: 4px;
+    //     }
+    // }
     >thead>tr>th {
         text-align: center;
         vertical-align: middle;
