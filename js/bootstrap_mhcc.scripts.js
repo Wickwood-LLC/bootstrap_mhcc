@@ -33,7 +33,7 @@
     Drupal.behaviors.responsiveTables = {
         attach: function(context, settings) {
             $('table', context).each(function() {
-                $(this).wrap('<div class="table-responsive"></div>');
+                $(this).addClass('table').wrap('<div class="table-responsive"></div>');
             });
         }
     };
