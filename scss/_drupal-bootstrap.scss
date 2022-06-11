@@ -996,13 +996,15 @@ nav.tabs {
 .post-header {
     text-align: center;
     >.layout__region--content {
-        display: inline-grid;
-        grid-template-columns: auto;
+        display: flex;
+        flex-flow: row wrap;
         grid-gap: 0.5em;
         width: auto;
-        align-items: center;
-        @include breakpoint(440px) {
+        justify-content: center;
+        @include breakpoint(480px) {
+            display: inline-grid;
             grid-template-columns: auto auto;
+            align-items: center;
         }
     }
     .author-picture {
@@ -1092,7 +1094,8 @@ nav.tabs {
             justify-content: center;
             flex-flow: row wrap;
             .authored-by,
-            .published-at {
+            .published-at,
+            .bikeabout-type {
                 &:after {
                     left: 0;
                 }
@@ -1112,6 +1115,35 @@ nav.tabs {
                 .layout__region--second {
                     flex: 1 1 50%;
                 }
+            }
+        }
+    }
+    .post-header .layout__region--content {
+        .author-picture {
+            grid-row: 1 / 4;
+        }
+        .bikeabout-type {
+            display: flex;
+            padding: 0 0.5em;
+            position: relative;
+            &:before {
+                content: "\f1ea";
+                display: inline;
+                font-family: "Font Awesome 5 Duotone", Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
+                font-weight: bold;
+                color: #058ad2;
+            }
+            &:after {
+                content: "\10f1ea";
+                font-family: "Font Awesome 5 Duotone", Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
+                color: #058ad2;
+                opacity: 0.4;
+                position: absolute;
+                top: 0;
+                left: 0.5em;
+            }
+            .block-content {
+                padding: 0 0.5em;
             }
         }
     }

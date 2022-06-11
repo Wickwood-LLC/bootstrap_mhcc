@@ -8445,15 +8445,17 @@ nav.tabs {
   text-align: center;
 }
 .post-header > .layout__region--content {
-  display: inline-grid;
-  grid-template-columns: auto;
+  display: flex;
+  flex-flow: row wrap;
   grid-gap: 0.5em;
   width: auto;
-  align-items: center;
+  justify-content: center;
 }
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .post-header > .layout__region--content {
+    display: inline-grid;
     grid-template-columns: auto auto;
+    align-items: center;
   }
 }
 .post-header .author-picture {
@@ -8537,7 +8539,8 @@ nav.tabs {
   flex-flow: row wrap;
 }
 .node.bikeabout-post.teaser .post-header .layout__region--content .authored-by:after,
-.node.bikeabout-post.teaser .post-header .layout__region--content .published-at:after {
+.node.bikeabout-post.teaser .post-header .layout__region--content .published-at:after,
+.node.bikeabout-post.teaser .post-header .layout__region--content .bikeabout-type:after {
   left: 0;
 }
 .node.bikeabout-post.teaser .post-header .layout__region--content > .block {
@@ -8553,6 +8556,33 @@ nav.tabs {
   .node.bikeabout-post.teaser .layout--twocol-section .layout__region--second {
     flex: 1 1 50%;
   }
+}
+.node.bikeabout-post .post-header .layout__region--content .author-picture {
+  grid-row: 1/4;
+}
+.node.bikeabout-post .post-header .layout__region--content .bikeabout-type {
+  display: flex;
+  padding: 0 0.5em;
+  position: relative;
+}
+.node.bikeabout-post .post-header .layout__region--content .bikeabout-type:before {
+  content: "\f1ea";
+  display: inline;
+  font-family: "Font Awesome 5 Duotone", Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
+  font-weight: bold;
+  color: #058ad2;
+}
+.node.bikeabout-post .post-header .layout__region--content .bikeabout-type:after {
+  content: "\10f1ea";
+  font-family: "Font Awesome 5 Duotone", Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
+  color: #058ad2;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0.5em;
+}
+.node.bikeabout-post .post-header .layout__region--content .bikeabout-type .block-content {
+  padding: 0 0.5em;
 }
 .node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue,
 .node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type {
