@@ -1087,6 +1087,23 @@ nav.tabs {
 
 .node.bikeabout-post {
     &.teaser {
+        .post-header .layout__region--content {
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+            .authored-by,
+            .published-at {
+                &:after {
+                    left: 0;
+                }
+            }
+            >.block {
+                padding: 0;
+                .block-content {
+                    padding: 0 0.5em;
+                }
+            }
+        }
         .layout--twocol-section {
             @include breakpoint(740px) {
                 .layout__region--first {
@@ -1102,11 +1119,13 @@ nav.tabs {
     .block-field-blocknodebikeabout-postfield-bikeabout-post-type {
         display: inline-block;
         font-weight: bold;
-        &:before {
-            content: " - ";
+        .block-content {
             display: inline-block;
         }
-        .block-content {
+    }
+    .block-field-blocknodebikeabout-postfield-bikeabout-post-type {
+        &:before {
+            content: " - ";
             display: inline-block;
         }
     }

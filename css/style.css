@@ -8531,6 +8531,21 @@ nav.tabs {
   padding: 0 0.5em;
 }
 
+.node.bikeabout-post.teaser .post-header .layout__region--content {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.node.bikeabout-post.teaser .post-header .layout__region--content .authored-by:after,
+.node.bikeabout-post.teaser .post-header .layout__region--content .published-at:after {
+  left: 0;
+}
+.node.bikeabout-post.teaser .post-header .layout__region--content > .block {
+  padding: 0;
+}
+.node.bikeabout-post.teaser .post-header .layout__region--content > .block .block-content {
+  padding: 0 0.5em;
+}
 @media (min-width: 740px) {
   .node.bikeabout-post.teaser .layout--twocol-section .layout__region--first {
     flex: 0 1 0;
@@ -8544,13 +8559,12 @@ nav.tabs {
   display: inline-block;
   font-weight: bold;
 }
-.node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue:before,
-.node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type:before {
-  content: " - ";
-  display: inline-block;
-}
 .node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue .block-content,
 .node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type .block-content {
+  display: inline-block;
+}
+.node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type:before {
+  content: " - ";
   display: inline-block;
 }
 .node.bikeabout-post .block-views-blockcontent-image-slideshow-block-2 {
