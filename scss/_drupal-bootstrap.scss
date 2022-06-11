@@ -1098,17 +1098,6 @@ nav.tabs {
             }
         }
     }
-    .block-field-blocknodebikeabout-postuid {
-        display: inline-block;
-        &:before {
-            content: "By:";
-            display: inline;
-            font-weight: bold;
-        }
-        .block-content {
-            display: inline;
-        }
-    }
     .block-field-blocknodebikeabout-postfield-bikeabout-issue,
     .block-field-blocknodebikeabout-postfield-bikeabout-post-type {
         display: inline-block;

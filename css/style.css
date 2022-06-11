@@ -8539,17 +8539,6 @@ nav.tabs {
     flex: 1 1 50%;
   }
 }
-.node.bikeabout-post .block-field-blocknodebikeabout-postuid {
-  display: inline-block;
-}
-.node.bikeabout-post .block-field-blocknodebikeabout-postuid:before {
-  content: "By:";
-  display: inline;
-  font-weight: bold;
-}
-.node.bikeabout-post .block-field-blocknodebikeabout-postuid .block-content {
-  display: inline;
-}
 .node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue,
 .node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type {
   display: inline-block;
