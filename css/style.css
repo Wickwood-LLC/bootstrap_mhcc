@@ -8092,7 +8092,7 @@ table td,
   border-radius: 6px;
   border: 1px solid #9dc4d7;
   margin-top: 7px;
-  padding: 0.5em;
+  padding: 0;
 }
 .main-container .region-content .boxed .boxed {
   background: white;
@@ -8641,7 +8641,8 @@ nav.tabs {
 .page-node-type-article .block-views-blocknews-block-4 table,
 .page-node-type-news .block-views-blockarticles-block-4 table,
 .page-node-type-news .block-views-blocknews-block-4 table {
-  margin: 0;
+  margin: 0.5em;
+  max-width: calc(100% - 1em);
 }
 
 /********************* LAYOUTS *********************/
