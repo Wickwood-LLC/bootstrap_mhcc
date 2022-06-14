@@ -8452,7 +8452,7 @@ nav.tabs {
   justify-content: center;
 }
 @media (min-width: 480px) {
-  .post-header > .layout__region--content {
+  .post-header.has-author-picture > .layout__region--content {
     display: inline-grid;
     grid-template-columns: auto auto;
     align-items: center;

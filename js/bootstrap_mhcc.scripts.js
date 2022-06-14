@@ -38,4 +38,13 @@
         }
     };
 
+    /**
+     * Make Post Header adaptive
+     */
+    Drupal.behaviors.adaptivePostHeader = {
+        attach: function(context, settings) {
+            $('.post-header').has('.author-picture img').addClass('has-author-picture');
+        }
+    };
+
 })(jQuery, Drupal);

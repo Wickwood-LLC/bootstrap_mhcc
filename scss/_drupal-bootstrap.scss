@@ -1001,6 +1001,8 @@ nav.tabs {
         grid-gap: 0.5em;
         width: auto;
         justify-content: center;
+    }
+    &.has-author-picture>.layout__region--content {
         @include breakpoint(480px) {
             display: inline-grid;
             grid-template-columns: auto auto;
