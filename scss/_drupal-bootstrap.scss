@@ -981,6 +981,24 @@ nav.tabs {
 /********************* NODE *********************/
 
 .node.teaser {
+    .post-header .layout__region--content {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        .authored-by,
+        .published-at,
+        .bikeabout-type {
+            &:after {
+                left: 0;
+            }
+        }
+        >.block {
+            padding: 0;
+            .block-content {
+                padding: 0 0.5em;
+            }
+        }
+    }
     .node-title {
         text-align: center;
     }

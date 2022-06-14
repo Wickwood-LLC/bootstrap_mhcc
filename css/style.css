@@ -8430,6 +8430,22 @@ nav.tabs {
 }
 
 /********************* NODE *********************/
+.node.teaser .post-header .layout__region--content {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.node.teaser .post-header .layout__region--content .authored-by:after,
+.node.teaser .post-header .layout__region--content .published-at:after,
+.node.teaser .post-header .layout__region--content .bikeabout-type:after {
+  left: 0;
+}
+.node.teaser .post-header .layout__region--content > .block {
+  padding: 0;
+}
+.node.teaser .post-header .layout__region--content > .block .block-content {
+  padding: 0 0.5em;
+}
 .node.teaser .node-title {
   text-align: center;
 }
