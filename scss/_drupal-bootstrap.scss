@@ -2387,6 +2387,17 @@ tr:first-child>td>.fc-day-grid-event {
     }
 }
 
+#commerce-product-add-to-cart-form {
+    .form-actions {
+        text-align: center;
+        .form-submit {
+            margin: 0.5em;
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+    }
+}
+
 
 /********************* OFF-CANVAS *********************/
 
