@@ -7563,6 +7563,9 @@ table td,
 .file {
   font-weight: normal;
   font-size: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .file > span,
@@ -9349,6 +9352,15 @@ fieldset:not(.fieldgroup) {
 }
 .list-view .views-row {
   overflow: auto;
+}
+
+@media (min-width: 0px) and (max-width: 849px) {
+  .path-product .layout .layout__region--second {
+    display: grid;
+    align-items: start;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
 }
 
 /********************* FORMS *********************/

@@ -158,6 +158,9 @@ table,
 .file {
     font-weight: normal;
     font-size: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .file>span,
@@ -1913,6 +1916,17 @@ fieldset:not(.fieldgroup) {
     }
     .views-row {
         overflow: auto;
+    }
+}
+
+.path-product {
+    .layout .layout__region--second {
+        @include breakpoint(0px 849px) {
+            display: grid;
+            align-items: start;
+            grid-gap: 0.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        }
     }
 }
 
