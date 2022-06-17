@@ -8646,23 +8646,17 @@ nav.tabs {
   margin-top: 0.2em;
 }
 
-.page-node-type-article .block-views-blockarticles-block-4 table,
-.page-node-type-article .block-views-blocknews-block-4 table,
-.page-node-type-news .block-views-blockarticles-block-4 table,
-.page-node-type-news .block-views-blocknews-block-4 table {
+.block-views-blockarticles-block-4 table,
+.block-views-blocknews-block-4 table {
   border-width: 0;
 }
-.page-node-type-article .block-views-blockarticles-block-4 table tbody tr:first-child > td:first-child,
-.page-node-type-article .block-views-blocknews-block-4 table tbody tr:first-child > td:first-child,
-.page-node-type-news .block-views-blockarticles-block-4 table tbody tr:first-child > td:first-child,
-.page-node-type-news .block-views-blocknews-block-4 table tbody tr:first-child > td:first-child {
+.block-views-blockarticles-block-4 table tbody tr:first-child > td:first-child,
+.block-views-blocknews-block-4 table tbody tr:first-child > td:first-child {
   border-radius: 5px 5px 0 0;
 }
-.page-node-type-article .block-views-blockarticles-block-4 table tbody tr:last-child > td:last-child,
-.page-node-type-article .block-views-blocknews-block-4 table tbody tr:last-child > td:last-child,
-.page-node-type-news .block-views-blockarticles-block-4 table tbody tr:last-child > td:last-child,
-.page-node-type-news .block-views-blocknews-block-4 table tbody tr:last-child > td:last-child {
-  border-radius: 5px 5px 0 0;
+.block-views-blockarticles-block-4 table tbody tr:last-child > td:last-child,
+.block-views-blocknews-block-4 table tbody tr:last-child > td:last-child {
+  border-radius: 0 0 5px 5px;
 }
 
 /********************* LAYOUTS *********************/
