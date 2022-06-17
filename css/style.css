@@ -8646,12 +8646,6 @@ nav.tabs {
   margin-top: 0.2em;
 }
 
-.page-node-type-article .block-views-blockarticles-block-3 ul,
-.page-node-type-article .block-views-blocknews-block-3 ul,
-.page-node-type-news .block-views-blockarticles-block-3 ul,
-.page-node-type-news .block-views-blocknews-block-3 ul {
-  padding-left: 1em;
-}
 .page-node-type-article .block-views-blockarticles-block-4 table,
 .page-node-type-article .block-views-blocknews-block-4 table,
 .page-node-type-news .block-views-blockarticles-block-4 table,
