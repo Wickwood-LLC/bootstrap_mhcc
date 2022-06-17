@@ -1232,8 +1232,15 @@ nav.tabs {
     .block-views-blockarticles-block-4,
     .block-views-blocknews-block-4 {
         table {
-            margin: 0.5em;
-            max-width: calc(100% - 1em);
+            border-width: 0;
+            tbody {
+                tr:first-child>td:first-child {
+                    border-radius: 5px 5px 0 0;
+                }
+                tr:last-child>td:last-child {
+                    border-radius: 5px 5px 0 0;
+                }
+            }
         }
     }
 }

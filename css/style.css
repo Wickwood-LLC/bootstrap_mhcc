@@ -3104,7 +3104,6 @@ label {
 
 input[type=search] {
   box-sizing: border-box;
-  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -5794,7 +5793,6 @@ button.close {
   cursor: pointer;
   background: transparent;
   border: 0;
-  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -6211,7 +6209,6 @@ button.close {
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .item {
     transition: transform 0.6s ease-in-out;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     perspective: 1000px;
   }
@@ -6922,7 +6919,6 @@ table .checkbox.form-no-label, table .radio.form-no-label {
   border-bottom-right-radius: 4px;
 }
 .select-wrapper select {
-  -webkit-appearance: none;
   appearance: none;
   line-height: 1;
   padding-right: 2em;
@@ -8660,8 +8656,19 @@ nav.tabs {
 .page-node-type-article .block-views-blocknews-block-4 table,
 .page-node-type-news .block-views-blockarticles-block-4 table,
 .page-node-type-news .block-views-blocknews-block-4 table {
-  margin: 0.5em;
-  max-width: calc(100% - 1em);
+  border-width: 0;
+}
+.page-node-type-article .block-views-blockarticles-block-4 table tbody tr:first-child > td:first-child,
+.page-node-type-article .block-views-blocknews-block-4 table tbody tr:first-child > td:first-child,
+.page-node-type-news .block-views-blockarticles-block-4 table tbody tr:first-child > td:first-child,
+.page-node-type-news .block-views-blocknews-block-4 table tbody tr:first-child > td:first-child {
+  border-radius: 5px 5px 0 0;
+}
+.page-node-type-article .block-views-blockarticles-block-4 table tbody tr:last-child > td:last-child,
+.page-node-type-article .block-views-blocknews-block-4 table tbody tr:last-child > td:last-child,
+.page-node-type-news .block-views-blockarticles-block-4 table tbody tr:last-child > td:last-child,
+.page-node-type-news .block-views-blocknews-block-4 table tbody tr:last-child > td:last-child {
+  border-radius: 5px 5px 0 0;
 }
 
 /********************* LAYOUTS *********************/
