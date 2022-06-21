@@ -23,7 +23,9 @@
      */
     Drupal.behaviors.dialogCloseButtonFix = {
         attach: function(context, settings) {
-            $.fn.bootstrapBtn = $.fn.button.noConflict();
+            if ($.fn.button.noConflict) {
+                $.fn.bootstrapBtn = $.fn.button.noConflict();
+            }
         }
     };
 
