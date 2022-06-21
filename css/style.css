@@ -9830,11 +9830,11 @@ tr:first-child > td > .fc-day-grid-event {
   align-items: center;
 }
 .slick .slick__arrow .slick-arrow:before {
-  color: white;
+  color: #333;
   font-size: 36px;
 }
 .slick .slick__arrow .slick-arrow:hover::before {
-  color: rgba(255, 255, 255, 0.71);
+  color: rgba(51, 51, 51, 0.71);
 }
 .slick .slick__arrow .slick-dots {
   position: relative;
@@ -9851,7 +9851,7 @@ tr:first-child > td > .fc-day-grid-event {
 }
 .slick .slick__arrow .slick-dots li button:before {
   font-size: 1.5rem;
-  color: white;
+  color: #333;
 }
 
 #commerce-product-add-to-cart-form .form-actions {

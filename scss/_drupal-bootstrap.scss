@@ -2371,11 +2371,11 @@ tr:first-child>td>.fc-day-grid-event {
             justify-content: center;
             align-items: center;
             &:before {
-                color: white;
+                color: #333;
                 font-size: 36px;
             }
             &:hover::before {
-                color: transparentize(white, 0.29);
+                color: transparentize(#333, 0.29);
             }
         }
         .slick-dots {
@@ -2391,7 +2391,7 @@ tr:first-child>td>.fc-day-grid-event {
                 margin-bottom: 0;
                 button:before {
                     font-size: 1.5rem;
-                    color: white;
+                    color: #333;
                 }
             }
         }
