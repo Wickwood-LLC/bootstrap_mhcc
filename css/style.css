@@ -9189,6 +9189,10 @@ fieldset:not(.fieldgroup) {
   border: 1px solid #9dc4d7;
 }
 
+#views-exposed-form-bikeabout-posts-block-1 {
+  padding: 0.5em;
+}
+
 .block-views-blockfull-calendar-view-block-1 .view-header {
   text-align: center;
   font-weight: bold;
