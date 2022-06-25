@@ -117,6 +117,10 @@ table,
     }
 }
 
+button {
+    text-transform: capitalize;
+}
+
 .ride-classifications {
     tbody>tr {
         display: grid;
