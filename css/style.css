@@ -9858,10 +9858,10 @@ tr:first-child > td > .fc-day-grid-event {
   color: #333;
 }
 
-#commerce-product-add-to-cart-form .form-actions {
+.commerce-order-item-add-to-cart-form .form-actions {
   text-align: center;
 }
-#commerce-product-add-to-cart-form .form-actions .form-submit {
+.commerce-order-item-add-to-cart-form .form-actions .form-submit {
   margin: 0.5em;
   text-transform: capitalize;
   font-weight: bold;
