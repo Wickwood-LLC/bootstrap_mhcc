@@ -2426,6 +2426,13 @@ tr:first-child>td>.fc-day-grid-event {
     }
 }
 
+.checkout-complete__payment-instructions {
+    >h2 {
+        text-align: center;
+        text-transform: capitalize;
+    }
+}
+
 
 /********************* OFF-CANVAS *********************/
 

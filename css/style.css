@@ -9880,6 +9880,11 @@ tr:first-child > td > .fc-day-grid-event {
   font-weight: bold;
 }
 
+.checkout-complete__payment-instructions > h2 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
 /********************* OFF-CANVAS *********************/
 #drupal-off-canvas .form-item {
   display: block;
