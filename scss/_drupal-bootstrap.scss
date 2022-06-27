@@ -2381,9 +2381,15 @@ tr:first-child>td>.fc-day-grid-event {
             &:before {
                 color: #333;
                 font-size: 36px;
+                .path-frontpage & {
+                    color: white;
+                }
             }
             &:hover::before {
                 color: transparentize(#333, 0.29);
+                .path-frontpage & {
+                    color: transparentize(#fff, 0.29);
+                }
             }
         }
         .slick-dots {
@@ -2400,6 +2406,9 @@ tr:first-child>td>.fc-day-grid-event {
                 button:before {
                     font-size: 1.5rem;
                     color: #333;
+                    .path-frontpage & {
+                        color: white;
+                    }
                 }
             }
         }
