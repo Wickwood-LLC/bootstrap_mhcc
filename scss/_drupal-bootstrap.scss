@@ -1329,32 +1329,6 @@ nav.tabs {
             }
         }
     }
-    &.layout--threecol-section--33-34-33 {
-        >.layout__region--first,
-        >.layout__region--third {
-            @include breakpoint(40em) {
-                flex: 0 1 calc(33% - 0.5em);
-            }
-        }
-        >.layout__region--second {
-            @include breakpoint(40em) {
-                flex: 0 1 calc(34% - 1em);
-            }
-        }
-    }
-    &.layout--threecol-section--25-50-25 {
-        >.layout__region--first,
-        >.layout__region--third {
-            @include breakpoint(40em) {
-                flex: 0 1 calc(25% - 0.5em);
-            }
-        }
-        >.layout__region--second {
-            @include breakpoint(40em) {
-                flex: 0 1 calc(50% - 1em);
-            }
-        }
-    }
 }
 
 .press-release.full {
