@@ -34,7 +34,7 @@
      */
     Drupal.behaviors.responsiveTables = {
         attach: function(context, settings) {
-            $('table', context).each(function() {
+            $('table', context).not('.fc-content-skeleton > table').each(function() {
                 $(this).addClass('table').wrap('<div class="table-responsive"></div>');
             });
         }
