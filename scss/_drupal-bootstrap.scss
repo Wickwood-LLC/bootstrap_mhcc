@@ -2230,9 +2230,10 @@ tr:first-child>td>.fc-day-grid-event {
     .form-item {
         display: inline-block;
         vertical-align: top;
+        margin-left: 0.5em;
         margin-right: 0.5em;
         margin-bottom: 0.5em;
-        width: 100%;
+        width: calc(100% - 1em);
         max-width: 240px;
     }
     input,
