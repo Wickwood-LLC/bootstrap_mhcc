@@ -9730,6 +9730,7 @@ tr:first-child > td > .fc-day-grid-event {
 #views-exposed-form-full-calendar-view-block-5 .form-actions,
 #views-exposed-form-full-calendar-view-block-6 .form-actions {
   width: 100%;
+  margin-bottom: 0.5em;
 }
 
 /********************* SLICK SLIDER *********************/
