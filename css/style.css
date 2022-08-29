@@ -9625,6 +9625,10 @@ form#user-register-form .captcha {
 .view.view-full-calendar-view table tr {
   background-color: rgba(226, 219, 219, 0.81);
 }
+.view.view-full-calendar-view table tr .fc-content:hover {
+  color: inherit;
+  text-decoration: underline;
+}
 
 .view-mobile-full-calendar .views-row {
   margin-bottom: 0.25em;

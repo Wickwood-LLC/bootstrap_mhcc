@@ -2184,6 +2184,11 @@ form#user-register-form {
 
     table tr {
         background-color: rgba(226, 219, 219, 0.81);
+
+        .fc-content:hover {
+            color: inherit;
+            text-decoration: underline;
+        }
     }
 }
 
