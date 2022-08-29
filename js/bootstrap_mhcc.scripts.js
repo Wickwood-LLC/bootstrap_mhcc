@@ -105,7 +105,7 @@
                 });
             });
 
-            const elementToObserve = document.querySelector(".fc-view");
+            const elementToObserve = document.querySelector("#main");
 
             $(window).on("load", function () {
                 observer.observe(elementToObserve, {
