@@ -9622,6 +9622,9 @@ form#user-register-form .captcha {
   display: list-item;
   list-style-image: url("../images/bicycle-bullet.png");
 }
+.view.view-full-calendar-view table tr {
+  background-color: rgba(226, 219, 219, 0.81);
+}
 
 .view-mobile-full-calendar .views-row {
   margin-bottom: 0.25em;
