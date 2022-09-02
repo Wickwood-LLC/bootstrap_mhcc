@@ -122,14 +122,14 @@
 	 */
 	Drupal.behaviors.slickMaxWidth = {
 		attach: function (context, settings) {
-			const target = $(".slick--view");
+			const target = $(".slick--view", context);
 
 			const setMaxWidth = () => {
 				target.css("display", "none");
 				let maxWidth = target.parent().outerWidth();
 				target.css({
 					'max-width': maxWidth,
-					'display': 'unset'
+					'display': 'block'
 				});
 			}
 
