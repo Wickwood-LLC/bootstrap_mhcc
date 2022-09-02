@@ -1206,15 +1206,6 @@ nav.tabs {
 
 /********************* NODE *********************/
 
-.page-node-type-article,
-.page-node-type-news {
-	article {
-		.layout--twocol-section > .layout__region--first {
-			max-width: calc(67% - 1rem);
-		}
-	}
-}
-
 .node.teaser {
 	.post-header .layout__region--content {
 		display: flex;
