@@ -133,7 +133,7 @@
 				});
 			}
 
-			$window.on("load resize", Drupal.debounce(setMaxWidth, 150));
+			$(window).on("load resize", Drupal.debounce(setMaxWidth, 150));
 		},
 	};
 
