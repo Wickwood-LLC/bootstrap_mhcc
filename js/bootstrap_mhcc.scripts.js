@@ -116,4 +116,25 @@
 			});
 		},
 	};
+
+	/**
+	 * Slick view slideshow max width fix
+	 */
+	Drupal.behaviors.slickMaxWidth = {
+		attach: function (context, settings) {
+			const target = $(".slick--view");
+
+			const setMaxWidth = () => {
+				target.css("display", "none");
+				let maxWidth = target.parent().outerWidth();
+				target.css({
+					'max-width': maxWidth,
+					'display': 'unset'
+				});
+			}
+
+			$window.on("load resize", Drupal.debounce(setMaxWidth, 150));
+		},
+	};
+
 })(jQuery, Drupal);
