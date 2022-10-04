@@ -8458,8 +8458,7 @@ nav.tabs {
   display: inline-block;
 }
 .node.bikeabout-post .block-views-blockcontent-image-slideshow-block-2 {
-  width: 100%;
-  display: table-cell;
+  display: inline-block;
 }
 .node.bikeabout-post .view-bikeabout-issue-selection {
   text-align: center;
