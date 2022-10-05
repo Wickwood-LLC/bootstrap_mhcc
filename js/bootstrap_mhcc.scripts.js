@@ -123,18 +123,19 @@
 	Drupal.behaviors.slickMaxWidth = {
 		attach: function (context, settings) {
 			const target = $(".slick--view");
-			target.css("display", "none");
 
 			const setMaxWidth = () => {
+				target.css("display", "none");
 				let parentColumnWidth = target.parents('.layout--twocol-section .layout__region').width();
 				let sideColumnWidth = target.parents('.layout--twocol-section .layout__region').siblings('.layout__region').outerWidth(true);
-				let slideWidth = parentColumnWidth - sideColumnWidth;
+				let slideWidth = ((parentColumnWidth - sideColumnWidth) == 0) ? parentColumnWidth : (parentColumnWidth - sideColumnWidth);
+				console.log(slideWidth);
 				target.css({
 					'max-width': slideWidth,
 					'display': 'inline-block'
 				});
 				$('.slick__slide').css('max-width', slideWidth);
-			}
+			};
 
 			if (target.length) {
 				$(window).on("load resize", Drupal.debounce(setMaxWidth, 150));
