@@ -8325,7 +8325,6 @@ nav.tabs {
   display: flex;
   padding: 0 0.5em;
   position: relative;
-  align-self: end;
 }
 .post-header .authored-by:before {
   content: "\f406";
@@ -8349,7 +8348,6 @@ nav.tabs {
   display: flex;
   padding: 0 0.5em;
   position: relative;
-  align-self: start;
 }
 .post-header .published-at:before {
   content: "\f783";
@@ -8446,8 +8444,8 @@ nav.tabs {
 }
 .node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue,
 .node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type {
-  display: inline-block;
   font-weight: bold;
+  text-align: left;
 }
 .node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-issue .block-content,
 .node.bikeabout-post .block-field-blocknodebikeabout-postfield-bikeabout-post-type .block-content {

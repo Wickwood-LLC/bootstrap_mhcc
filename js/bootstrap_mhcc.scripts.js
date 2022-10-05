@@ -129,7 +129,6 @@
 				let parentColumnWidth = target.parents('.layout--twocol-section .layout__region').width();
 				let sideColumnWidth = target.parents('.layout--twocol-section .layout__region').siblings('.layout__region').outerWidth(true);
 				let slideWidth = ((parentColumnWidth - sideColumnWidth) == 0) ? parentColumnWidth : (parentColumnWidth - sideColumnWidth);
-				console.log(slideWidth);
 				target.css({
 					'max-width': slideWidth,
 					'display': 'inline-block'

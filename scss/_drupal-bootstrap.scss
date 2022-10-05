@@ -1270,7 +1270,6 @@ nav.tabs {
 		display: flex;
 		padding: 0 0.5em;
 		position: relative;
-		align-self: end;
 
 		&:before {
 			content: "\f406";
@@ -1300,7 +1299,6 @@ nav.tabs {
 		display: flex;
 		padding: 0 0.5em;
 		position: relative;
-		align-self: start;
 
 		&:before {
 			content: "\f783";
@@ -1431,8 +1429,8 @@ nav.tabs {
 
 	.block-field-blocknodebikeabout-postfield-bikeabout-issue,
 	.block-field-blocknodebikeabout-postfield-bikeabout-post-type {
-		display: inline-block;
 		font-weight: bold;
+		text-align: left;
 
 		.block-content {
 			display: inline-block;
