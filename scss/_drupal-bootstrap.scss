@@ -1264,6 +1264,10 @@ nav.tabs {
 
 	.author-picture {
 		grid-row: 1 / 3;
+
+		img {
+			height: auto;
+		}
 	}
 
 	.authored-by {
@@ -2174,6 +2178,10 @@ fieldset:not(.fieldgroup) {
 			a {
 				color: red;
 			}
+		}
+
+		.block-field-blocknodebikeabout-postbody:after {
+			clear: none;
 		}
 
 		&:after {

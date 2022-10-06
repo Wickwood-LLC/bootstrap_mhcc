@@ -8321,6 +8321,9 @@ nav.tabs {
 .post-header .author-picture {
   grid-row: 1/3;
 }
+.post-header .author-picture img {
+  height: auto;
+}
 .post-header .authored-by {
   display: flex;
   padding: 0 0.5em;
@@ -9092,6 +9095,11 @@ fieldset:not(.fieldgroup) {
 .view-news.view-display-id-block_1 .views-row [class*=block-extra-field] a,
 .view-bikeabout-posts.view-display-id-block_1 .views-row [class*=block-extra-field] a {
   color: red;
+}
+.view-articles.view-display-id-block_1 .views-row .block-field-blocknodebikeabout-postbody:after,
+.view-news.view-display-id-block_1 .views-row .block-field-blocknodebikeabout-postbody:after,
+.view-bikeabout-posts.view-display-id-block_1 .views-row .block-field-blocknodebikeabout-postbody:after {
+  clear: none;
 }
 .view-articles.view-display-id-block_1 .views-row:after,
 .view-news.view-display-id-block_1 .views-row:after,
