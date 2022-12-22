@@ -2299,6 +2299,23 @@ form#user-pass {
 }
 
 form#user-register-form {
+	.layout.layout--twocol-bricks {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1em;
+
+		.layout__region {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			gap: 1em;
+			flex-flow: column;
+
+			> * {
+				margin: 0;
+			}
+		}
+	}
 	.row {
 		margin-bottom: 0.5em;
 

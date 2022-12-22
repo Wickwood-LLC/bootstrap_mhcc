@@ -9198,6 +9198,21 @@ form#user-pass #edit-actions {
   text-align: center;
 }
 
+form#user-register-form .layout.layout--twocol-bricks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+form#user-register-form .layout.layout--twocol-bricks .layout__region {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+  flex-flow: column;
+}
+form#user-register-form .layout.layout--twocol-bricks .layout__region > * {
+  margin: 0;
+}
 form#user-register-form .row {
   margin-bottom: 0.5em;
 }
