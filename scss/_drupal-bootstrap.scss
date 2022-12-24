@@ -2326,6 +2326,7 @@ form#user-register-form {
 
 	label[for] {
 		display: inline-block;
+		padding: 0;
 
 		&:after {
 			content: ":\00a0";
@@ -2879,13 +2880,6 @@ tr:first-child > td > .fc-day-grid-event {
 	}
 }
 
-.checkout-complete__payment-instructions {
-	> h2 {
-		text-align: center;
-		text-transform: capitalize;
-	}
-}
-
 /********************* OFF-CANVAS *********************/
 
 #drupal-off-canvas {
@@ -2916,4 +2910,52 @@ tr:first-child > td > .fc-day-grid-event {
 			}
 		}
 	}
+}
+
+/********************* CHECK OUT *********************/
+
+.path-checkout {
+	#block-checkoutprogress {
+		text-align: center;
+	}
+}
+
+.checkout-complete__payment-instructions {
+	> h2 {
+		text-align: center;
+		text-transform: capitalize;
+	}
+}
+
+#commerce-checkout-flow-multistep-default {
+	.form-wrapper__login-option {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+
+	.checkout-pane {
+		display: flex;
+		width: 100%;
+		flex-flow: column;
+		gap: 1em;
+	}
+}
+
+#edit-login-mhcc-returning-customer {
+	.panel-body {
+		text-align: center;
+	}
+	.form-item {
+		text-align: left;
+	}
+
+	.form-submit {
+		margin-right: 1em;
+	}
+}
+
+#edit-login-mhcc-register-register {
+	margin: auto;
+	display: block;
 }
