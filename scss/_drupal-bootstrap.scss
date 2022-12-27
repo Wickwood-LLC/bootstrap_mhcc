@@ -2931,7 +2931,7 @@ tr:first-child > td > .fc-day-grid-event {
 	.form-wrapper__login-option {
 		padding: 0;
 		margin: 0;
-		width: 100%;
+		width: clamp(280px, 100%, 480px);
 	}
 
 	.checkout-pane {
@@ -2939,6 +2939,7 @@ tr:first-child > td > .fc-day-grid-event {
 		width: 100%;
 		flex-flow: column;
 		gap: 1em;
+		align-items: center;
 	}
 }
 

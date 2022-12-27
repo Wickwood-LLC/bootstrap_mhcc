@@ -9767,13 +9767,14 @@ tr:first-child > td > .fc-day-grid-event {
 #commerce-checkout-flow-multistep-default .form-wrapper__login-option {
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: clamp(280px, 100%, 480px);
 }
 #commerce-checkout-flow-multistep-default .checkout-pane {
   display: flex;
   width: 100%;
   flex-flow: column;
   gap: 1em;
+  align-items: center;
 }
 
 #edit-login-mhcc-returning-customer .panel-body {
