@@ -9758,6 +9758,9 @@ tr:first-child > td > .fc-day-grid-event {
 .path-checkout #block-checkoutprogress {
   text-align: center;
 }
+.path-checkout #block-checkoutprogress .checkout-progress {
+  padding: 0;
+}
 
 .checkout-complete__payment-instructions > h2 {
   text-align: center;

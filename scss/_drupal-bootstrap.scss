@@ -2917,6 +2917,10 @@ tr:first-child > td > .fc-day-grid-event {
 .path-checkout {
 	#block-checkoutprogress {
 		text-align: center;
+
+		.checkout-progress {
+			padding: 0;
+		}
 	}
 }
 
