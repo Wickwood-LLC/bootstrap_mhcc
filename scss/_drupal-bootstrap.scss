@@ -2042,7 +2042,6 @@ fieldset:not(.fieldgroup) {
 .views-exposed-form {
 	.form--inline {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 		grid-gap: 0.5rem 1rem;
 
 		&:before {
@@ -2079,8 +2078,12 @@ fieldset:not(.fieldgroup) {
 	}
 
 	#edit-actions {
-		text-align: right;
+		text-align: center;
 		align-self: end;
+
+		> .btn {
+			margin: 0;
+		}
 	}
 
 	.view-mhcc-ride-starting-locations & {

@@ -8974,7 +8974,6 @@ fieldset:not(.fieldgroup) {
 /********************* VIEWS *********************/
 .views-exposed-form .form--inline {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 0.5rem 1rem;
 }
 .views-exposed-form .form--inline:before {
@@ -9002,8 +9001,11 @@ fieldset:not(.fieldgroup) {
   }
 }
 .views-exposed-form #edit-actions {
-  text-align: right;
+  text-align: center;
   align-self: end;
+}
+.views-exposed-form #edit-actions > .btn {
+  margin: 0;
 }
 .view-mhcc-ride-starting-locations .views-exposed-form {
   background: #efefef;
