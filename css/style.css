@@ -9515,6 +9515,13 @@ tr:first-child > td > .fc-day-grid-event {
   font-size: 0.65em;
 }
 
+.fc-toolbar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+  gap: 0.5em;
+}
+
 .fc-unthemed .fc-content,
 .fc-unthemed .fc-divider,
 .fc-unthemed .fc-list-view,
