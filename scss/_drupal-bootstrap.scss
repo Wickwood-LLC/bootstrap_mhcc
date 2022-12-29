@@ -2658,9 +2658,9 @@ tr:first-child > td > .fc-day-grid-event {
 }
 
 .fc-toolbar {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	place-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 	gap: 0.5em;
 }
 
