@@ -9781,10 +9781,13 @@ tr:first-child > td > .fc-day-grid-event {
   text-transform: capitalize;
 }
 
-#commerce-checkout-flow-multistep-default .form-wrapper__login-option {
+#commerce-checkout-flow-multistep-default #edit-login-mhcc-returning-customer {
   padding: 0;
   margin: 0;
   width: clamp(280px, 100%, 480px);
+}
+#commerce-checkout-flow-multistep-default #edit-login-mhcc-register {
+  width: auto;
 }
 #commerce-checkout-flow-multistep-default .checkout-pane {
   display: flex;
