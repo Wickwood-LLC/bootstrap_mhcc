@@ -9487,12 +9487,18 @@ form#user-register-form .captcha {
   display: list-item;
   list-style-image: url("../images/bicycle-bullet.png");
 }
-.view.view-full-calendar-view table tr {
+.view.view-full-calendar-view table.table > :is(thead, tbody, tfoot) > tr > :is(th, td) {
+  padding: 0;
+}
+.view.view-full-calendar-view table.table tr {
   background-color: rgba(226, 219, 219, 0.81);
 }
-.view.view-full-calendar-view table tr .fc-content:hover {
+.view.view-full-calendar-view table.table tr .fc-content:hover {
   color: inherit;
   text-decoration: underline;
+}
+.view.view-full-calendar-view table.table td {
+  padding: 0;
 }
 
 .view-mobile-full-calendar .views-row {

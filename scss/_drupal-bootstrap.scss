@@ -2624,12 +2624,20 @@ form#user-register-form {
 		}
 	}
 
-	table tr {
-		background-color: rgba(226, 219, 219, 0.81);
+	table.table {
+		> :is(thead, tbody, tfoot) > tr > :is(th, td) {
+			padding: 0;
+		}
+		tr {
+			background-color: rgba(226, 219, 219, 0.81);
 
-		.fc-content:hover {
-			color: inherit;
-			text-decoration: underline;
+			.fc-content:hover {
+				color: inherit;
+				text-decoration: underline;
+			}
+		}
+		td {
+			padding: 0;
 		}
 	}
 }
