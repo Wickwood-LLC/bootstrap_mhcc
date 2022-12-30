@@ -9545,6 +9545,10 @@ tr:first-child > td > .fc-day-grid-event {
   background-color: #e0e0e0;
 }
 
+.fc-timeGrid-view .fc-day-grid .fc-row .fc-content-skeleton {
+  padding: 0;
+}
+
 #views-exposed-form-full-calendar-view-block-4,
 #views-exposed-form-full-calendar-view-block-5,
 #views-exposed-form-full-calendar-view-block-6 {

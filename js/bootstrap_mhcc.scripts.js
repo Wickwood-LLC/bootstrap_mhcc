@@ -126,14 +126,22 @@
 
 			const setMaxWidth = () => {
 				target.css("display", "none");
-				let parentColumnWidth = target.parents('.layout--twocol-section .layout__region').width();
-				let sideColumnWidth = target.parents('.layout--twocol-section .layout__region').siblings('.layout__region').outerWidth(true);
-				let slideWidth = ((parentColumnWidth - sideColumnWidth) == 0) ? parentColumnWidth : (parentColumnWidth - sideColumnWidth);
+				let parentColumnWidth = target
+					.parents(".layout--twocol-section .layout__region")
+					.width();
+				let sideColumnWidth = target
+					.parents(".layout--twocol-section .layout__region")
+					.siblings(".layout__region")
+					.outerWidth(true);
+				let slideWidth =
+					parentColumnWidth - sideColumnWidth == 0
+						? parentColumnWidth
+						: parentColumnWidth - sideColumnWidth;
 				target.css({
-					'max-width': slideWidth,
-					'display': 'inline-block'
+					"max-width": slideWidth,
+					display: "inline-block",
 				});
-				$('.slick__slide').css('max-width', slideWidth);
+				$(".slick__slide").css("max-width", slideWidth);
 			};
 
 			if (target.length) {
@@ -142,4 +150,17 @@
 		},
 	};
 
+	/**
+	 * Scroll the first calendar item into view
+	 */
+	Drupal.behaviors.fcEventView = {
+		attach: function (context, settings) {
+			const target = document.querySelector(".fc-view .fc-event");
+			target.scrollIntoView({
+				behavior: "smooth",
+				block: "center",
+				inline: "nearest",
+			});
+		},
+	};
 })(jQuery, Drupal);
