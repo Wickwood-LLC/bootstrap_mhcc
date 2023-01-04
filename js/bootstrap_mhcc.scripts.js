@@ -156,11 +156,14 @@
 	Drupal.behaviors.fcEventView = {
 		attach: function (context, settings) {
 			const target = document.querySelector(".fc-view .fc-event");
-			target.scrollIntoView({
-				behavior: "smooth",
-				block: "center",
-				inline: "nearest",
-			});
+
+			if (target) {
+				target.scrollIntoView({
+					behavior: "smooth",
+					block: "center",
+					inline: "nearest",
+				});
+			}
 		},
 	};
 })(jQuery, Drupal);
