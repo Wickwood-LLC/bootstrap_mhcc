@@ -2980,22 +2980,27 @@ tr:first-child > td > .fc-day-grid-event {
 }
 
 #commerce-checkout-flow-multistep-default {
-	#edit-login-mhcc-returning-customer {
-		padding: 0;
-		margin: 0;
-		width: clamp(280px, 100%, 480px);
-	}
-	#edit-login-mhcc-register {
-		width: auto;
-	}
-
 	.checkout-pane {
 		display: flex;
 		width: 100%;
 		flex-flow: column;
 		gap: 1em;
-		align-items: center;
+		align-items: stretch;
+
+		.panel-heading {
+			text-align: center;
+			text-transform: capitalize;
+			font-weight: bold;
+		}
 	}
+}
+#edit-login-mhcc-returning-customer {
+	padding: 0;
+	margin: 0;
+	width: clamp(280px, 100%, 480px);
+}
+#edit-login-mhcc-register {
+	width: auto;
 }
 
 #edit-login-mhcc-returning-customer {
