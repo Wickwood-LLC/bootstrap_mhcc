@@ -9519,6 +9519,7 @@ tr:first-child > td > .fc-day-grid-event {
 
 .fc-event {
   font-size: 0.65em;
+  margin: 0.25em;
 }
 
 .fc-toolbar {
@@ -9543,6 +9544,25 @@ tr:first-child > td > .fc-day-grid-event {
 
 .fc-head {
   background-color: #e0e0e0;
+}
+
+.fc .fc-row .fc-content-skeleton {
+  padding: 0;
+}
+.fc .fc-row .fc-content-skeleton table,
+.fc .fc-row .fc-content-skeleton .table {
+  border-color: #717373;
+  border-top: 0px;
+}
+.fc .fc-row .fc-content-skeleton table tr,
+.fc .fc-row .fc-content-skeleton .table tr {
+  border-color: #707272;
+  border-bottom: 0;
+  background-color: #e2dcdc;
+}
+.fc .fc-row .fc-content-skeleton table td,
+.fc .fc-row .fc-content-skeleton .table td {
+  border-color: #717373;
 }
 
 .fc-timeGrid-view .fc-day-grid .fc-row .fc-content-skeleton {
