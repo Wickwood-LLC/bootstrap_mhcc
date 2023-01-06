@@ -2993,6 +2993,25 @@ tr:first-child > td > .fc-day-grid-event {
 			font-weight: bold;
 		}
 	}
+
+	&[action*="review"] {
+		.layout-checkout-form {
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+		}
+		.layout-region-checkout-main {
+			width: 100%;
+			order: 1;
+			padding: 0;
+		}
+		.paypal-buttons-container {
+			text-align: center;
+		}
+		.layout-region-checkout-secondary {
+			width: 100%;
+		}
+	}
 }
 #edit-login-mhcc-returning-customer {
 	padding: 0;

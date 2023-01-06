@@ -9823,6 +9823,22 @@ tr:first-child > td > .fc-day-grid-event {
   text-transform: capitalize;
   font-weight: bold;
 }
+#commerce-checkout-flow-multistep-default[action*=review] .layout-checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+#commerce-checkout-flow-multistep-default[action*=review] .layout-region-checkout-main {
+  width: 100%;
+  order: 1;
+  padding: 0;
+}
+#commerce-checkout-flow-multistep-default[action*=review] .paypal-buttons-container {
+  text-align: center;
+}
+#commerce-checkout-flow-multistep-default[action*=review] .layout-region-checkout-secondary {
+  width: 100%;
+}
 
 #edit-login-mhcc-returning-customer {
   padding: 0;
