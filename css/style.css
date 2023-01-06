@@ -9823,6 +9823,18 @@ tr:first-child > td > .fc-day-grid-event {
   text-transform: capitalize;
   font-weight: bold;
 }
+#commerce-checkout-flow-multistep-default .checkout-pane-wwm-user-profile > .form-item > .panel-body {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+#commerce-checkout-flow-multistep-default .checkout-pane-wwm-user-profile > .form-item > .panel-body > div {
+  flex: 1 1 300px;
+  margin: 0;
+}
+#commerce-checkout-flow-multistep-default .checkout-pane-wwm-user-profile > .form-item > .panel-body:before, #commerce-checkout-flow-multistep-default .checkout-pane-wwm-user-profile > .form-item > .panel-body:after {
+  display: none;
+}
 #commerce-checkout-flow-multistep-default[action*=review] .layout-checkout-form {
   display: flex;
   flex-direction: column;

@@ -2994,6 +2994,24 @@ tr:first-child > td > .fc-day-grid-event {
 		}
 	}
 
+	.checkout-pane-wwm-user-profile {
+		> .form-item > .panel-body {
+			display: flex;
+			flex-flow: row wrap;
+			gap: 1em;
+
+			> div {
+				flex: 1 1 300px;
+				margin: 0;
+			}
+
+			&:before,
+			&:after {
+				display: none;
+			}
+		}
+	}
+
 	&[action*="review"] {
 		.layout-checkout-form {
 			display: flex;
