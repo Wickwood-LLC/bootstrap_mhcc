@@ -2994,11 +2994,11 @@ tr:first-child > td > .fc-day-grid-event {
 		}
 	}
 
-	.checkout-pane-wwm-user-profile {
-		> .form-item > .panel-body {
-			display: flex;
-			flex-flow: row wrap;
-			gap: 1em;
+	.form-wrapper__login-option {
+		padding: 0;
+		.panel-body {
+			display: grid;
+			gap: 0.5em;
 
 			> div {
 				flex: 1 1 300px;
@@ -3048,10 +3048,6 @@ tr:first-child > td > .fc-day-grid-event {
 	}
 	.form-item {
 		text-align: left;
-	}
-
-	.form-submit {
-		margin-right: 1em;
 	}
 }
 
