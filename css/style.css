@@ -9811,44 +9811,44 @@ tr:first-child > td > .fc-day-grid-event {
   text-transform: capitalize;
 }
 
-#commerce-checkout-flow-multistep-default .checkout-pane {
+#commerce-checkout-flow-multistep-wwm .checkout-pane {
   display: flex;
   width: 100%;
   flex-flow: column;
   gap: 1em;
   align-items: stretch;
 }
-#commerce-checkout-flow-multistep-default .checkout-pane .panel-heading {
+#commerce-checkout-flow-multistep-wwm .checkout-pane .panel-heading {
   text-align: center;
   text-transform: capitalize;
   font-weight: bold;
 }
-#commerce-checkout-flow-multistep-default .checkout-pane-wwm-user-profile > .form-item > .panel-body {
+#commerce-checkout-flow-multistep-wwm .checkout-pane-wwm-user-profile > .form-item > .panel-body {
   display: flex;
   flex-flow: row wrap;
   gap: 1em;
 }
-#commerce-checkout-flow-multistep-default .checkout-pane-wwm-user-profile > .form-item > .panel-body > div {
+#commerce-checkout-flow-multistep-wwm .checkout-pane-wwm-user-profile > .form-item > .panel-body > div {
   flex: 1 1 300px;
   margin: 0;
 }
-#commerce-checkout-flow-multistep-default .checkout-pane-wwm-user-profile > .form-item > .panel-body:before, #commerce-checkout-flow-multistep-default .checkout-pane-wwm-user-profile > .form-item > .panel-body:after {
+#commerce-checkout-flow-multistep-wwm .checkout-pane-wwm-user-profile > .form-item > .panel-body:before, #commerce-checkout-flow-multistep-wwm .checkout-pane-wwm-user-profile > .form-item > .panel-body:after {
   display: none;
 }
-#commerce-checkout-flow-multistep-default[action*=review] .layout-checkout-form {
+#commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form {
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
-#commerce-checkout-flow-multistep-default[action*=review] .layout-region-checkout-main {
+#commerce-checkout-flow-multistep-wwm[action*=review] .layout-region-checkout-main {
   width: 100%;
   order: 1;
   padding: 0;
 }
-#commerce-checkout-flow-multistep-default[action*=review] .paypal-buttons-container {
+#commerce-checkout-flow-multistep-wwm[action*=review] .paypal-buttons-container {
   text-align: center;
 }
-#commerce-checkout-flow-multistep-default[action*=review] .layout-region-checkout-secondary {
+#commerce-checkout-flow-multistep-wwm[action*=review] .layout-region-checkout-secondary {
   width: 100%;
 }
 
