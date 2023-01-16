@@ -2981,11 +2981,12 @@ tr:first-child > td > .fc-day-grid-event {
 
 #commerce-checkout-flow-multistep-wwm {
 	.checkout-pane {
-		display: flex;
+		display: grid;
 		width: 100%;
-		flex-flow: column;
 		gap: 1em;
-		align-items: stretch;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		justify-items: center;
+		align-items: start;
 
 		.panel-heading {
 			text-align: center;
@@ -3035,11 +3036,10 @@ tr:first-child > td > .fc-day-grid-event {
 	padding: 0;
 	margin: 0;
 	width: clamp(280px, 100%, 480px);
-	align-self: center;
 	display: grid;
 }
 #edit-login-mhcc-register {
-	width: auto;
+	width: clamp(280px, 100%, 480px);
 }
 
 #edit-login-mhcc-returning-customer {
