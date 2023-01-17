@@ -9824,6 +9824,9 @@ tr:first-child > td > .fc-day-grid-event {
   text-transform: capitalize;
   font-weight: bold;
 }
+#commerce-checkout-flow-multistep-wwm .checkout-pane-payment-information {
+  display: block;
+}
 #commerce-checkout-flow-multistep-wwm .form-wrapper__login-option {
   padding: 0;
 }
