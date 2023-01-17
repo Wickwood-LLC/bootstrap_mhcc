@@ -7325,6 +7325,18 @@ ul {
   margin-bottom: 0;
 }
 
+dl {
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+dd {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}
+
 table,
 .table {
   border: 3px solid #9cc3d7;
