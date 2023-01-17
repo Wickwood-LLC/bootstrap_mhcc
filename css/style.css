@@ -9846,16 +9846,30 @@ tr:first-child > td > .fc-day-grid-event {
   flex-direction: column;
   gap: 1em;
 }
+#commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form ::before,
+#commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form ::after {
+  display: none;
+}
 #commerce-checkout-flow-multistep-wwm[action*=review] .layout-region-checkout-main {
   width: 100%;
   order: 1;
   padding: 0;
+}
+#commerce-checkout-flow-multistep-wwm[action*=review] .layout-region-checkout-main .panel {
+  width: 100%;
+}
+#commerce-checkout-flow-multistep-wwm[action*=review] .layout-region-checkout-footer {
+  padding: 0;
+  width: 100%;
 }
 #commerce-checkout-flow-multistep-wwm[action*=review] .paypal-buttons-container {
   text-align: center;
 }
 #commerce-checkout-flow-multistep-wwm[action*=review] .layout-region-checkout-secondary {
   width: 100%;
+}
+#commerce-checkout-flow-multistep-wwm button.form-submit {
+  background-color: green;
 }
 
 #edit-login-mhcc-returning-customer {

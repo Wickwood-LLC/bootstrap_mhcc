@@ -3021,11 +3021,24 @@ tr:first-child > td > .fc-day-grid-event {
 			display: flex;
 			flex-direction: column;
 			gap: 1em;
+
+			::before,
+			::after {
+				display: none;
+			}
 		}
 		.layout-region-checkout-main {
 			width: 100%;
 			order: 1;
 			padding: 0;
+
+			.panel {
+				width: 100%;
+			}
+		}
+		.layout-region-checkout-footer {
+			padding: 0;
+			width: 100%;
 		}
 		.paypal-buttons-container {
 			text-align: center;
@@ -3033,6 +3046,10 @@ tr:first-child > td > .fc-day-grid-event {
 		.layout-region-checkout-secondary {
 			width: 100%;
 		}
+	}
+
+	button.form-submit {
+		background-color: green;
 	}
 }
 #edit-login-mhcc-returning-customer {
