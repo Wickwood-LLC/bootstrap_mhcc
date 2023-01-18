@@ -9882,6 +9882,7 @@ tr:first-child > td > .fc-day-grid-event {
 }
 #commerce-checkout-flow-multistep-wwm button.form-submit {
   background-color: green;
+  font-weight: bold;
 }
 
 #edit-login-mhcc-returning-customer {
