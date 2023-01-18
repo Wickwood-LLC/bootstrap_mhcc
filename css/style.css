@@ -9884,6 +9884,10 @@ tr:first-child > td > .fc-day-grid-event {
   background-color: green;
   font-weight: bold;
 }
+#commerce-checkout-flow-multistep-wwm button.address-book-edit-button {
+  color: white;
+  font-weight: normal;
+}
 
 #edit-login-mhcc-returning-customer {
   padding: 0;
