@@ -3049,6 +3049,11 @@ tr:first-child > td > .fc-day-grid-event {
 		color: white;
 		font-weight: normal;
 	}
+	button[value="Update"] {
+		margin: auto;
+		display: block;
+		margin-top: 1em;
+	}
 }
 #edit-login-mhcc-returning-customer {
 	padding: 0;
