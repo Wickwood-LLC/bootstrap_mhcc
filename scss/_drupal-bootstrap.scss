@@ -3038,6 +3038,11 @@ tr:first-child > td > .fc-day-grid-event {
 		}
 		.layout-region-checkout-secondary {
 			width: 100%;
+
+			> h3 {
+				text-align: center;
+				text-transform: capitalize;
+			}
 		}
 	}
 
