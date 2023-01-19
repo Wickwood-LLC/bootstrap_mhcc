@@ -3009,7 +3009,8 @@ tr:first-child > td > .fc-day-grid-event {
 		}
 	}
 
-	&[action*="review"] {
+	&[action*="review"],
+	&[action*="order_information"] {
 		.layout-checkout-form {
 			display: flex;
 			flex-direction: column;
@@ -3022,7 +3023,6 @@ tr:first-child > td > .fc-day-grid-event {
 		}
 		.layout-region-checkout-main {
 			width: 100%;
-			order: 1;
 			padding: 0;
 
 			.panel {
@@ -3037,6 +3037,7 @@ tr:first-child > td > .fc-day-grid-event {
 			text-align: center;
 		}
 		.layout-region-checkout-secondary {
+			order: -1;
 			width: 100%;
 
 			> h3 {
