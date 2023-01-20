@@ -9898,6 +9898,9 @@ tr:first-child > td > .fc-day-grid-event {
   display: block;
   margin-top: 1em;
 }
+#commerce-checkout-flow-multistep-wwm .link--previous {
+  text-transform: capitalize;
+}
 
 #edit-login-mhcc-returning-customer {
   padding: 0;

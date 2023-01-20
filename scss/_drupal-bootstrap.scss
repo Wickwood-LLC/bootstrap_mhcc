@@ -3060,6 +3060,9 @@ tr:first-child > td > .fc-day-grid-event {
 		display: block;
 		margin-top: 1em;
 	}
+	.link--previous {
+		text-transform: capitalize;
+	}
 }
 #edit-login-mhcc-returning-customer {
 	padding: 0;
