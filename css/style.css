@@ -9853,69 +9853,58 @@ tr:first-child > td > .fc-day-grid-event {
 #commerce-checkout-flow-multistep-wwm .form-wrapper__login-option .panel-body:before, #commerce-checkout-flow-multistep-wwm .form-wrapper__login-option .panel-body:after {
   display: none;
 }
-#commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-#commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form ::before,
-#commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form ::after {
-  display: none;
-}
-#commerce-checkout-flow-multistep-wwm[action*=review] .layout-region-checkout-main {
-  width: 100%;
-  padding: 0;
-}
-#commerce-checkout-flow-multistep-wwm[action*=review] .layout-region-checkout-main .panel {
-  width: 100%;
-}
-#commerce-checkout-flow-multistep-wwm[action*=review] .layout-region-checkout-footer {
-  padding: 0;
-  width: 100%;
-}
-#commerce-checkout-flow-multistep-wwm[action*=review] .paypal-buttons-container {
-  text-align: center;
-}
-#commerce-checkout-flow-multistep-wwm[action*=review] .layout-region-checkout-secondary {
-  order: -1;
-  width: 100%;
-}
-#commerce-checkout-flow-multistep-wwm[action*=review] .layout-region-checkout-secondary > h3 {
-  text-align: center;
-  text-transform: capitalize;
-}
-#commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form {
+#commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form {
   display: grid;
   gap: 1em;
   align-items: baseline;
 }
-#commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region {
+#commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .layout-region {
   padding: 0;
   width: unset;
 }
-#commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-secondary {
+#commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-secondary, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .layout-region-checkout-secondary {
   order: -1;
 }
-#commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-secondary > h3 {
+#commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-secondary > h3, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .layout-region-checkout-secondary > h3 {
   text-align: center;
   text-transform: capitalize;
 }
 @media (min-width: 980px) {
-  #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form {
+  #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form {
     grid-template: [main-left] "Main	Sidebar" [main-right] [footer-left] "Footer	Footer" [footer-right]/2fr 1fr;
   }
-  #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-main {
+  #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-main, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .layout-region-checkout-main {
     grid-area: Main;
   }
-  #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-secondary {
+  #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-secondary, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .layout-region-checkout-secondary {
     grid-area: Sidebar;
   }
-  #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-footer {
+  #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-footer, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .layout-region-checkout-footer {
     grid-area: Footer;
   }
 }
-#commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form:before, #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form:after {
+#commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form:before, #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form:after, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form:before, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form:after {
   display: none;
+}
+#commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .layout-region-checkout-main {
+  display: contents;
+}
+@media (min-width: 980px) {
+  #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .paypal-buttons-container,
+#commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .link--previous {
+    grid-area: Footer;
+    text-align: center;
+  }
+  #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .link--previous {
+    align-self: end;
+  }
+}
+#commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .checkout-pane-review .panel-default {
+  width: 100%;
+  margin: 0;
+}
+#commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .link--previous {
+  text-align: center;
 }
 #commerce-checkout-flow-multistep-wwm button.form-submit {
   background-color: green;

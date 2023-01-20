@@ -3009,80 +3009,71 @@ tr:first-child > td > .fc-day-grid-event {
 		}
 	}
 
+	&[action*="order_information"],
 	&[action*="review"] {
 		.layout-checkout-form {
-			display: flex;
-			flex-direction: column;
+			display: grid;
 			gap: 1em;
+			align-items: baseline;
 
-			::before,
-			::after {
+			.layout-region {
+				padding: 0;
+				width: unset;
+			}
+			.layout-region-checkout-secondary {
+				order: -1;
+
+				> h3 {
+					text-align: center;
+					text-transform: capitalize;
+				}
+			}
+
+			@include breakpoint(980px) {
+				grid-template:
+					[main-left] "Main	Sidebar" [main-right]
+					[footer-left] "Footer	Footer" [footer-right]
+					/ 2fr 1fr;
+
+				.layout-region-checkout-main {
+					grid-area: Main;
+				}
+				.layout-region-checkout-secondary {
+					grid-area: Sidebar;
+				}
+				.layout-region-checkout-footer {
+					grid-area: Footer;
+				}
+			}
+
+			&:before,
+			&:after {
 				display: none;
 			}
 		}
-		.layout-region-checkout-main {
-			width: 100%;
-			padding: 0;
-
-			.panel {
-				width: 100%;
-			}
-		}
-		.layout-region-checkout-footer {
-			padding: 0;
-			width: 100%;
-		}
-		.paypal-buttons-container {
-			text-align: center;
-		}
-		.layout-region-checkout-secondary {
-			order: -1;
-			width: 100%;
-
-			> h3 {
-				text-align: center;
-				text-transform: capitalize;
-			}
-		}
 	}
-	&[action*="order_information"] .layout-checkout-form {
-		display: grid;
-		gap: 1em;
-		align-items: baseline;
-
-		.layout-region {
-			padding: 0;
-			width: unset;
-		}
-		.layout-region-checkout-secondary {
-			order: -1;
-
-			> h3 {
-				text-align: center;
-				text-transform: capitalize;
-			}
+	&[action*="review"] .layout-checkout-form {
+		.layout-region-checkout-main {
+			display: contents;
 		}
 
 		@include breakpoint(980px) {
-			grid-template:
-				[main-left] "Main	Sidebar" [main-right]
-				[footer-left] "Footer	Footer" [footer-right]
-				/ 2fr 1fr;
-
-			.layout-region-checkout-main {
-				grid-area: Main;
-			}
-			.layout-region-checkout-secondary {
-				grid-area: Sidebar;
-			}
-			.layout-region-checkout-footer {
+			.paypal-buttons-container,
+			.link--previous {
 				grid-area: Footer;
+				text-align: center;
+			}
+			.link--previous {
+				align-self: end;
 			}
 		}
 
-		&:before,
-		&:after {
-			display: none;
+		.checkout-pane-review .panel-default {
+			width: 100%;
+			margin: 0;
+		}
+		.link--previous {
+			text-align: center;
 		}
 	}
 
