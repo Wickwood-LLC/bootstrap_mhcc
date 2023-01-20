@@ -9932,6 +9932,7 @@ tr:first-child > td > .fc-day-grid-event {
 }
 #commerce-checkout-flow-multistep-wwm .link--previous {
   text-transform: capitalize;
+  font-size: 14px;
 }
 
 #edit-login-mhcc-returning-customer {
