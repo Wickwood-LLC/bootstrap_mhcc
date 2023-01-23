@@ -7369,6 +7369,15 @@ table td,
   border: 1px solid #9cc3d7;
 }
 
+figure {
+  display: table;
+  caption-side: bottom;
+}
+
+figcaption {
+  display: table-caption;
+}
+
 button {
   text-transform: capitalize;
 }
