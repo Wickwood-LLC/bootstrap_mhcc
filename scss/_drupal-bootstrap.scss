@@ -437,7 +437,6 @@ button {
 			#block-sitetitle {
 				flex: 1 1 0;
 				margin-left: 10px;
-				margin-right: 10%;
 				margin-top: 25px;
 				text-align: left;
 
@@ -2800,8 +2799,7 @@ tr:first-child > td > .fc-day-grid-event {
 		height: inherit;
 
 		.slide__media {
-			border-top-left-radius: 7px;
-			border-top-right-radius: 7px;
+			border-radius: 7px;
 
 			.field--name-field-media-oembed-video {
 				position: relative;

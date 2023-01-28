@@ -7649,7 +7649,6 @@ button {
   #header .region-header-left #block-sitetitle {
     flex: 1 1 0;
     margin-left: 10px;
-    margin-right: 10%;
     margin-top: 25px;
     text-align: left;
   }
@@ -9690,8 +9689,7 @@ tr:first-child > td > .fc-day-grid-event {
   height: inherit;
 }
 .slick .slick__slide .slide__media {
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
+  border-radius: 7px;
 }
 .slick .slick__slide .slide__media .field--name-field-media-oembed-video {
   position: relative;
