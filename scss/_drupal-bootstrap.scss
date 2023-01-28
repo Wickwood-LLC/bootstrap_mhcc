@@ -380,6 +380,7 @@ button {
 	display: flex;
 	flex-flow: row wrap;
 	padding: 0;
+	gap: 0.5em;
 
 	.boxed {
 		width: 100%;
@@ -473,7 +474,7 @@ button {
 		.region-header-right {
 			align-content: center;
 			justify-content: center;
-			max-width: 50%;
+			max-width: calc(50% - 0.5em);
 		}
 	}
 
@@ -2822,6 +2823,7 @@ tr:first-child > td > .fc-day-grid-event {
 			bottom: 0;
 			top: unset;
 			padding: 0.5em;
+			text-align: center;
 		}
 
 		.views-field-title-html {
@@ -2842,6 +2844,10 @@ tr:first-child > td > .fc-day-grid-event {
 				color: red;
 			}
 		}
+	}
+
+	.slide__content {
+		width: 100%;
 	}
 
 	.slide__media img {
@@ -2913,6 +2919,12 @@ tr:first-child > td > .fc-day-grid-event {
 				}
 			}
 		}
+	}
+}
+
+.slick--view--cards {
+	a {
+		color: white;
 	}
 }
 
