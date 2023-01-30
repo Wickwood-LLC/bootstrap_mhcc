@@ -9800,6 +9800,9 @@ tr:first-child > td > .fc-day-grid-event {
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
 }
+.slick--view--cards .slide__media iframe {
+  aspect-ratio: 16/9;
+}
 .slick--view--cards .slick__arrow {
   position: absolute;
   top: 50%;

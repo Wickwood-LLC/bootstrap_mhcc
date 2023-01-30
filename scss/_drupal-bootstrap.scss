@@ -2934,6 +2934,9 @@ tr:first-child > td > .fc-day-grid-event {
 		border-bottom-right-radius: 7px;
 		border-bottom-left-radius: 7px;
 	}
+	.slide__media iframe {
+		aspect-ratio: 16 / 9;
+	}
 	.slick__arrow {
 		position: absolute;
 		top: 50%;
