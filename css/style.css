@@ -8438,6 +8438,13 @@ nav.tabs {
   background-color: #c7c7c7;
 }
 
+.view-classified-ads.view-display-id-block_1 li.grid {
+  border: 1.5px solid #2479ff;
+  border-radius: 3px;
+  margin: 0 0 1em;
+  padding: 27px;
+}
+
 .node.bikeabout-post.teaser .post-header .layout__region--content {
   display: flex;
   justify-content: center;
