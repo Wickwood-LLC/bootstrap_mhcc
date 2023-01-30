@@ -2881,7 +2881,7 @@ tr:first-child > td > .fc-day-grid-event {
 				color: #333;
 				font-size: 36px;
 
-				.path-frontpage & {
+				.slick--view--front-page-slideshow & {
 					color: white;
 				}
 			}
@@ -2889,7 +2889,7 @@ tr:first-child > td > .fc-day-grid-event {
 			&:hover::before {
 				color: transparentize(#333, 0.29);
 
-				.path-frontpage & {
+				.slick--view--front-page-slideshow & {
 					color: transparentize(#fff, 0.29);
 				}
 			}
@@ -2924,6 +2924,21 @@ tr:first-child > td > .fc-day-grid-event {
 .slick--view--cards {
 	a {
 		color: white;
+	}
+	.slick__arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		justify-content: space-between;
+
+		.slick-arrow:before {
+			color: #333333a6;
+
+			&:hover::before {
+				color: darken(#333333a6, 10%);
+			}
+		}
 	}
 }
 
