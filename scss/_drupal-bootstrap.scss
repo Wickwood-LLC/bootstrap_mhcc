@@ -2923,7 +2923,16 @@ tr:first-child > td > .fc-day-grid-event {
 
 .slick--view--cards {
 	a {
-		color: white;
+		color: black;
+		text-decoration: underline;
+	}
+	.slick__slide .slide__caption {
+		position: absolute;
+		color: black;
+		font-weight: bold;
+		background-color: #ffffffb5;
+		border-bottom-right-radius: 7px;
+		border-bottom-left-radius: 7px;
 	}
 	.slick__arrow {
 		position: absolute;
@@ -2933,10 +2942,10 @@ tr:first-child > td > .fc-day-grid-event {
 		justify-content: space-between;
 
 		.slick-arrow:before {
-			color: #333333a6;
+			color: #000000a6;
 
 			&:hover::before {
-				color: darken(#333333a6, 10%);
+				color: darken(#000000a6, 10%);
 			}
 		}
 	}

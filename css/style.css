@@ -9789,7 +9789,16 @@ tr:first-child > td > .fc-day-grid-event {
 }
 
 .slick--view--cards a {
-  color: white;
+  color: black;
+  text-decoration: underline;
+}
+.slick--view--cards .slick__slide .slide__caption {
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.7098039216);
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 .slick--view--cards .slick__arrow {
   position: absolute;
@@ -9799,10 +9808,10 @@ tr:first-child > td > .fc-day-grid-event {
   justify-content: space-between;
 }
 .slick--view--cards .slick__arrow .slick-arrow:before {
-  color: rgba(51, 51, 51, 0.6509803922);
+  color: rgba(0, 0, 0, 0.6509803922);
 }
 .slick--view--cards .slick__arrow .slick-arrow:before:hover::before {
-  color: rgba(26, 26, 26, 0.6509803922);
+  color: rgba(0, 0, 0, 0.6509803922);
 }
 
 .commerce-order-item-add-to-cart-form .form-actions {
