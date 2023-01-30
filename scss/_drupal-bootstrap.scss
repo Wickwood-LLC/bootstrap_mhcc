@@ -1336,8 +1336,14 @@ nav.tabs {
 }
 
 .block-field-blocknodeclassifieduid {
+	flex: 100%;
+
+	.block-content {
+		display: inline;
+	}
 	&:before {
 		content: "Offered By:";
+		display: inline;
 	}
 }
 
@@ -1356,6 +1362,25 @@ nav.tabs {
 	.block-field-blocknodeclassifiedunpublish-on {
 		display: inline-block;
 		padding: 0 0.5em;
+	}
+
+	.view-classified-ads.view-display-id-block_3 {
+		.view-content {
+			text-align: center;
+			width: calc(100% + 1em);
+			left: -0.5em;
+			position: relative;
+		}
+		.views-row {
+			margin-top: 0;
+			padding: 0.5em;
+		}
+		.views-row:nth-child(odd) {
+			background-color: #e2e2e2;
+		}
+		.views-row:nth-child(even) {
+			background-color: #c7c7c7;
+		}
 	}
 }
 

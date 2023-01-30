@@ -8396,8 +8396,15 @@ nav.tabs {
   font-weight: bold;
 }
 
+.block-field-blocknodeclassifieduid {
+  flex: 100%;
+}
+.block-field-blocknodeclassifieduid .block-content {
+  display: inline;
+}
 .block-field-blocknodeclassifieduid:before {
   content: "Offered By:";
+  display: inline;
 }
 
 .block-field-blocknodearticlepublished-at,
@@ -8413,6 +8420,22 @@ nav.tabs {
 .node.classified .block-field-blocknodeclassifiedunpublish-on {
   display: inline-block;
   padding: 0 0.5em;
+}
+.node.classified .view-classified-ads.view-display-id-block_3 .view-content {
+  text-align: center;
+  width: calc(100% + 1em);
+  left: -0.5em;
+  position: relative;
+}
+.node.classified .view-classified-ads.view-display-id-block_3 .views-row {
+  margin-top: 0;
+  padding: 0.5em;
+}
+.node.classified .view-classified-ads.view-display-id-block_3 .views-row:nth-child(odd) {
+  background-color: #e2e2e2;
+}
+.node.classified .view-classified-ads.view-display-id-block_3 .views-row:nth-child(even) {
+  background-color: #c7c7c7;
 }
 
 .node.bikeabout-post.teaser .post-header .layout__region--content {
