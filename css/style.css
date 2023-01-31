@@ -8451,6 +8451,11 @@ nav.tabs {
   margin-top: 0.5em;
   text-align: center;
 }
+.view-classified-ads.view-display-id-block_1 .ad-times {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: center;
+}
 
 .node.bikeabout-post.teaser .post-header .layout__region--content {
   display: flex;
