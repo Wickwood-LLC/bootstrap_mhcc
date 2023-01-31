@@ -1385,6 +1385,16 @@ nav.tabs {
 }
 
 .view-classified-ads.view-display-id-block_1 {
+	.view-content .blazy {
+		column-count: 1;
+
+		@include breakpoint(600px) {
+			column-count: 2;
+		}
+		@include breakpoint(1024px) {
+			column-count: 3;
+		}
+	}
 	li.grid {
 		border: 1.5px solid #2479ff;
 		border-radius: 3px;
