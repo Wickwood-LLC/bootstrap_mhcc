@@ -8442,7 +8442,14 @@ nav.tabs {
   border: 1.5px solid #2479ff;
   border-radius: 3px;
   margin: 0 0 1em;
-  padding: 27px;
+  padding: 0;
+}
+.view-classified-ads.view-display-id-block_1 .field--name-classified-category {
+  margin: 0;
+}
+.view-classified-ads.view-display-id-block_1 .block-field-blocknodeclassifieduid {
+  margin-top: 0.5em;
+  text-align: center;
 }
 
 .node.bikeabout-post.teaser .post-header .layout__region--content {

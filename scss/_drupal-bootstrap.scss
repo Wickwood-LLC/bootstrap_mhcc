@@ -1389,7 +1389,15 @@ nav.tabs {
 		border: 1.5px solid #2479ff;
 		border-radius: 3px;
 		margin: 0 0 1em;
-		padding: 27px;
+		padding: 0;
+	}
+
+	.field--name-classified-category {
+		margin: 0;
+	}
+	.block-field-blocknodeclassifieduid {
+		margin-top: 0.5em;
+		text-align: center;
 	}
 }
 
