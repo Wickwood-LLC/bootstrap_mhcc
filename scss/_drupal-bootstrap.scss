@@ -1385,7 +1385,7 @@ nav.tabs {
 }
 
 .view-classified-ads.view-display-id-block_1 {
-	.view-content .blazy {
+	> .view-content > .blazy {
 		column-count: 1;
 
 		@include breakpoint(600px) {
