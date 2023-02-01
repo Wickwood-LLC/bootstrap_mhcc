@@ -1386,19 +1386,14 @@ nav.tabs {
 
 .view-classified-ads.view-display-id-block_1 {
 	> .view-content > .blazy {
-		column-count: 1;
-
-		@include breakpoint(600px) {
-			column-count: 2;
-		}
-		@include breakpoint(1024px) {
-			column-count: 3;
-		}
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+		gap: 1em;
 	}
 	li.grid {
 		border: 1.5px solid #2479ff;
 		border-radius: 3px;
-		margin: 0 0 1em;
+		margin: 0;
 		padding: 0;
 	}
 
@@ -1411,8 +1406,12 @@ nav.tabs {
 	}
 	.ad-times {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-		justify-content: center;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1em;
+
+		.layout__region--content {
+			text-align: center;
+		}
 	}
 }
 

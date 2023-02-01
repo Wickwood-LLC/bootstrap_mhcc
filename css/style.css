@@ -8439,25 +8439,14 @@ nav.tabs {
 }
 
 .view-classified-ads.view-display-id-block_1 > .view-content > .blazy {
-  -moz-column-count: 1;
-       column-count: 1;
-}
-@media (min-width: 600px) {
-  .view-classified-ads.view-display-id-block_1 > .view-content > .blazy {
-    -moz-column-count: 2;
-         column-count: 2;
-  }
-}
-@media (min-width: 1024px) {
-  .view-classified-ads.view-display-id-block_1 > .view-content > .blazy {
-    -moz-column-count: 3;
-         column-count: 3;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  gap: 1em;
 }
 .view-classified-ads.view-display-id-block_1 li.grid {
   border: 1.5px solid #2479ff;
   border-radius: 3px;
-  margin: 0 0 1em;
+  margin: 0;
   padding: 0;
 }
 .view-classified-ads.view-display-id-block_1 .field--name-classified-category {
@@ -8469,8 +8458,11 @@ nav.tabs {
 }
 .view-classified-ads.view-display-id-block_1 .ad-times {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+}
+.view-classified-ads.view-display-id-block_1 .ad-times .layout__region--content {
+  text-align: center;
 }
 
 .node.bikeabout-post.teaser .post-header .layout__region--content {
