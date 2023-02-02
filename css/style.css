@@ -8446,8 +8446,9 @@ nav.tabs {
 .view-classified-ads.view-display-id-block_1 li.grid {
   border: 1.5px solid #2479ff;
   border-radius: 3px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: min(100%, 552px);
 }
 .view-classified-ads.view-display-id-block_1 .field--name-classified-category {
   margin: 0;
