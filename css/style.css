@@ -8440,15 +8440,24 @@ nav.tabs {
 
 .view-classified-ads.view-display-id-block_1 > .view-content > .blazy {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1em;
+  justify-content: center;
+}
+@media (min-width: 1050px) {
+  .view-classified-ads.view-display-id-block_1 > .view-content > .blazy {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
 }
 .view-classified-ads.view-display-id-block_1 li.grid {
   border: 1.5px solid #2479ff;
   border-radius: 3px;
   margin: 0 auto;
   padding: 0;
-  width: min(100%, 552px);
+  width: min(100%, 362px);
+}
+.view-classified-ads.view-display-id-block_1 .node-title {
+  padding: 0 0.5em;
 }
 .view-classified-ads.view-display-id-block_1 .field--name-classified-category {
   margin: 0;
