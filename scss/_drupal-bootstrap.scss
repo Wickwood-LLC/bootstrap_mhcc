@@ -534,6 +534,7 @@ button {
 	.menu--main {
 		float: none;
 		font-size: 14px;
+		margin: auto;
 		@include fluid-type(
 			320px,
 			$grid-float-breakpoint-max,
@@ -871,6 +872,7 @@ article[about="/calendar/rides"] {
 
 	.menu--footer {
 		text-align: center;
+		margin: auto;
 
 		li {
 			display: inline-block;

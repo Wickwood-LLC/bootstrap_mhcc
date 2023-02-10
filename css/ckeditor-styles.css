@@ -60,9 +60,9 @@ li {
 }
 @media only screen and (min-width: 850px) {
   .wt-col-md-6,
-.wt-col-md-3,
-.wt-col-md-4,
-.wt-col-md-9 {
+  .wt-col-md-3,
+  .wt-col-md-4,
+  .wt-col-md-9 {
     padding: 15px;
   }
 }
@@ -121,25 +121,25 @@ li {
 
 @media only screen and (min-width: 850px) {
   .wt-two-col.ltrb,
-.wt-two-col.lbrt,
-.wt-three-col.ltrb,
-.wt-three-col.lbrt {
+  .wt-two-col.lbrt,
+  .wt-three-col.ltrb,
+  .wt-three-col.lbrt {
     display: flex;
     flex-flow: row wrap;
   }
   .wt-two-col.lbrt .wt-col-1,
-.wt-three-col.lbrt .wt-col-1 {
+  .wt-three-col.lbrt .wt-col-1 {
     order: 0;
   }
   .wt-three-col.lbrt .wt-col-3 {
     order: 0;
   }
   .wt-two-col.ltrb .wt-col-md-6,
-.wt-two-col.lbrt .wt-col-md-6 {
+  .wt-two-col.lbrt .wt-col-md-6 {
     width: 50%;
   }
   .wt-three-col.ltrb .wt-col-md-4,
-.wt-three-col.lbrt .wt-col-md-4 {
+  .wt-three-col.lbrt .wt-col-md-4 {
     flex: 1 1 30%;
   }
 }
@@ -238,7 +238,6 @@ a.wt-button {
   font-family: proxima-nova, sans-serif;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   color: #fff;
   background-color: #5cb85c;
