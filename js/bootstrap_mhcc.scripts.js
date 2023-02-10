@@ -125,9 +125,25 @@
 			const target = $(".layout--twocol-section .slick--view");
 
 			const setMaxWidth = () => {
-				target.css("display", "none");
-				const parentWidth = target.parents(".view-content").width();
-				let slideWidth = parentWidth;
+				if ($(".layout--twocol-section.wlar .slick--view").length) {
+					target.css("display", "none");
+					let parentColumnWidth = target
+						.parents(".layout--twocol-section .layout__region")
+						.width();
+					let sideColumnWidth = target
+						.parents(".layout--twocol-section .layout__region")
+						.siblings(".layout__region")
+						.outerWidth(true);
+					slideWidth =
+						parentColumnWidth - sideColumnWidth == 0
+							? parentColumnWidth
+							: parentColumnWidth - sideColumnWidth;
+				} else {
+					target.css("display", "none");
+					const parentWidth = target.parents(".view-content").width();
+					slideWidth = parentWidth;
+				}
+
 				target.css({
 					"max-width": slideWidth,
 					display: "inline-block",
