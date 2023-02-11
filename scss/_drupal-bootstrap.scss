@@ -2279,6 +2279,51 @@ fieldset:not(.fieldgroup) {
 	}
 }
 
+.block-views-exposed-filter-blockuser-management-block-1 {
+	.block-content {
+		padding: 0.5em;
+	}
+	.form--inline {
+		grid-template-columns: 1fr;
+		gap: 0.5em;
+		> .form-item {
+			margin: 0;
+		}
+		.form-actions {
+			text-align: center;
+		}
+
+		@include breakpoint(498px) {
+			grid-template:
+				"a b"
+				"a b"
+				"a b"
+				"c c"
+				/ 1fr 1fr;
+			grid-auto-flow: column;
+			.form-actions {
+				grid-area: c;
+			}
+		}
+		@include breakpoint(768px) {
+			grid-template:
+				"a a a"
+				"b b b"
+				"c c c"
+				/ 1fr 1fr 1fr;
+			grid-auto-flow: row;
+			.form-actions {
+				grid-area: c;
+			}
+		}
+
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+}
+
 /********************* MAINTENANCE *********************/
 
 .maintenance-page {

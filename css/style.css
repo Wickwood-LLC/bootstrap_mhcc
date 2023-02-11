@@ -9184,6 +9184,41 @@ fieldset:not(.fieldgroup) {
   font-weight: bold;
 }
 
+.block-views-exposed-filter-blockuser-management-block-1 .block-content {
+  padding: 0.5em;
+}
+.block-views-exposed-filter-blockuser-management-block-1 .form--inline {
+  grid-template-columns: 1fr;
+  gap: 0.5em;
+}
+.block-views-exposed-filter-blockuser-management-block-1 .form--inline > .form-item {
+  margin: 0;
+}
+.block-views-exposed-filter-blockuser-management-block-1 .form--inline .form-actions {
+  text-align: center;
+}
+@media (min-width: 498px) {
+  .block-views-exposed-filter-blockuser-management-block-1 .form--inline {
+    grid-template: "a b" "a b" "a b" "c c"/1fr 1fr;
+    grid-auto-flow: column;
+  }
+  .block-views-exposed-filter-blockuser-management-block-1 .form--inline .form-actions {
+    grid-area: c;
+  }
+}
+@media (min-width: 768px) {
+  .block-views-exposed-filter-blockuser-management-block-1 .form--inline {
+    grid-template: "a a a" "b b b" "c c c"/1fr 1fr 1fr;
+    grid-auto-flow: row;
+  }
+  .block-views-exposed-filter-blockuser-management-block-1 .form--inline .form-actions {
+    grid-area: c;
+  }
+}
+.block-views-exposed-filter-blockuser-management-block-1 .form--inline:before, .block-views-exposed-filter-blockuser-management-block-1 .form--inline:after {
+  display: none;
+}
+
 /********************* MAINTENANCE *********************/
 .maintenance-page .logo {
   width: 50%;
