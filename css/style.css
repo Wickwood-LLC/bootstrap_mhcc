@@ -7402,9 +7402,15 @@ button {
 .file {
   font-weight: normal;
   font-size: unset;
-  display: flex;
+  display: grid;
+  gap: 1em;
+  grid-auto-flow: column;
   justify-content: center;
   align-items: center;
+}
+.file .file-icon,
+.file .file-size {
+  padding: 0;
 }
 
 .file > span,
