@@ -7410,11 +7410,12 @@ button {
 .file {
   font-weight: normal;
   font-size: unset;
-  display: grid;
+  display: inline-grid;
   gap: 1em;
   grid-auto-flow: column;
   justify-content: center;
   align-items: center;
+  width: auto;
 }
 .file .file-icon,
 .file .file-size {
