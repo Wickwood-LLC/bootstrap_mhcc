@@ -7394,9 +7394,17 @@ button {
   font-size: 0.8em;
   margin-left: 0.2em;
 }
+.extlink span.fa-external-link {
+  display: inherit;
+}
 .extlink span.fa-envelope-o {
   font-size: 0.8em;
   margin-left: 0.2em;
+  display: inherit;
+}
+
+.address-map-link.ext {
+  margin-left: 1ch;
 }
 
 .file {
