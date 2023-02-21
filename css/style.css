@@ -7945,7 +7945,7 @@ button {
   background: #efefef;
   border-width: 1px;
 }
-.main-container .region-content .boxed .block-content {
+.main-container .region-content .boxed > .block-content {
   background-color: white;
   border-radius: 6px;
   border: 1px solid #9dc4d7;
