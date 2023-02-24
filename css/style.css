@@ -9993,10 +9993,34 @@ tr:first-child > td > .fc-day-grid-event {
 }
 #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-secondary, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .layout-region-checkout-secondary {
   order: -1;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-secondary > h3, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .layout-region-checkout-secondary > h3 {
   text-align: center;
   text-transform: capitalize;
+  margin: 0;
+  border-radius: 3px 3px 0 0;
+  color: #333333;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+#commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-secondary > .checkout-pane, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .layout-region-checkout-secondary > .checkout-pane {
+  margin: 1em;
+  width: auto;
+}
+#commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-secondary > .checkout-pane table, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .layout-region-checkout-secondary > .checkout-pane table {
+  border: 0;
+}
+#commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-secondary > .checkout-pane table tr, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .layout-region-checkout-secondary > .checkout-pane table tr {
+  background-color: unset;
+}
+#commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-secondary > .checkout-pane table td, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .layout-region-checkout-secondary > .checkout-pane table td {
+  border: 1px solid #ddd;
 }
 @media (min-width: 980px) {
   #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form {
