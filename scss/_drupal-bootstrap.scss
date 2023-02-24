@@ -1572,6 +1572,12 @@ nav.tabs {
 	}
 }
 
+.node.calendar-item {
+	>.content>.layout--twocol-section {
+		padding: 0 0.5em;
+	}
+}
+
 /********************* LAYOUTS *********************/
 
 .layout {

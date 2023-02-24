@@ -8575,6 +8575,10 @@ nav.tabs {
   border-radius: 0 0 5px 5px;
 }
 
+.node.calendar-item > .content > .layout--twocol-section {
+  padding: 0 0.5em;
+}
+
 /********************* LAYOUTS *********************/
 .layout {
   position: relative;
