@@ -10023,9 +10023,11 @@ tr:first-child > td > .fc-day-grid-event {
 }
 #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-secondary > .checkout-pane table tr, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .layout-region-checkout-secondary > .checkout-pane table tr {
   background-color: unset;
+  border: 0;
 }
 #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form .layout-region-checkout-secondary > .checkout-pane table td, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form .layout-region-checkout-secondary > .checkout-pane table td {
   border: 1px solid #ddd;
+  border: 0;
 }
 @media (min-width: 980px) {
   #commerce-checkout-flow-multistep-wwm[action*=order_information] .layout-checkout-form, #commerce-checkout-flow-multistep-wwm[action*=review] .layout-checkout-form {

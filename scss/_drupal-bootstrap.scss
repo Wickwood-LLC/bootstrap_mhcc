@@ -3230,10 +3230,12 @@ tr:first-child>td>.fc-day-grid-event {
 
 						tr {
 							background-color: unset;
+							border: 0;
 						}
 
 						td {
 							border: 1px solid #ddd;
+							border: 0;
 						}
 					}
 				}
