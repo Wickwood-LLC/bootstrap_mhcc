@@ -8753,6 +8753,11 @@ nav.tabs {
   padding: 0;
 }
 
+.block-embed-view-blockride-leader .views-field-field-user-media-picture {
+  float: left;
+  margin-right: 1em;
+}
+
 .block-social-sharing-block {
   position: fixed;
   top: 90px;
