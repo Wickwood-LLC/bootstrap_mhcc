@@ -1907,6 +1907,29 @@ nav.tabs {
 	}
 }
 
+#block-views-block-full-calendar-view-block-1 {
+	margin-top: -40px;
+
+	.view>nav {
+		position: absolute;
+		margin-top: 0.5em;
+		width: calc(100% - 14px);
+		text-align: center;
+	}
+
+	ul.pager {
+		width: 100%;
+
+		li:is(.next, .previous) a {
+			float: none;
+			background-color: #333333c2;
+			color: white;
+			border: 0;
+			border-radius: 50%;
+		}
+	}
+}
+
 .boxed {
 	background: #d7e7ef;
 	border-radius: 6px;

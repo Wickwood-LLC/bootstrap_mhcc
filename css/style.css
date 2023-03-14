@@ -8860,6 +8860,26 @@ nav.tabs {
   margin: unset;
 }
 
+#block-views-block-full-calendar-view-block-1 {
+  margin-top: -40px;
+}
+#block-views-block-full-calendar-view-block-1 .view > nav {
+  position: absolute;
+  margin-top: 0.5em;
+  width: calc(100% - 14px);
+  text-align: center;
+}
+#block-views-block-full-calendar-view-block-1 ul.pager {
+  width: 100%;
+}
+#block-views-block-full-calendar-view-block-1 ul.pager li:is(.next, .previous) a {
+  float: none;
+  background-color: rgba(51, 51, 51, 0.7607843137);
+  color: white;
+  border: 0;
+  border-radius: 50%;
+}
+
 .boxed {
   background: #d7e7ef;
   border-radius: 6px;
