@@ -8866,7 +8866,6 @@ nav.tabs {
 }
 #block-views-block-full-calendar-view-block-1 .view > nav {
   margin-top: 0.5em;
-  width: calc(100% - 14px);
   text-align: center;
 }
 #block-views-block-full-calendar-view-block-1 ul.pager {
