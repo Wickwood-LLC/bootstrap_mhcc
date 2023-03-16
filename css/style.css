@@ -8860,6 +8860,10 @@ nav.tabs {
   margin: unset;
 }
 
+#block-views-block-full-calendar-view-block-1 {
+  height: 100%;
+  margin: 0;
+}
 #block-views-block-full-calendar-view-block-1 .view > nav {
   margin-top: 0.5em;
   width: calc(100% - 14px);
