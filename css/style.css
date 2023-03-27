@@ -7535,17 +7535,17 @@ button {
 }
 @media screen and (min-width: 693px) {
   .navbar-brand {
-    font-size: calc(30px + 12 * ((100vw - 693px) / 186));
+    font-size: calc(30px + 12 * ((100vw - 693px) / 507));
   }
 }
-@media screen and (min-width: 879px) {
+@media screen and (min-width: 1200px) {
   .navbar-brand {
     font-size: 42px;
   }
 }
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 1100px) {
   .navbar-brand {
-    font-size: calc(16px + 10 * ((100vw - 880px) / 320));
+    font-size: calc(16px + 10 * ((100vw - 1100px) / 100));
   }
 }
 @media screen and (min-width: 1200px) {
@@ -7615,6 +7615,7 @@ button {
   flex: 1 1 100%;
   justify-content: center;
   display: flex;
+  gap: 0.5em;
 }
 #header .region-header-left {
   flex-flow: row wrap;
@@ -7623,9 +7624,11 @@ button {
 }
 #header .region-header-left .logo {
   flex: 0 1 200px;
+  margin: 0;
 }
 #header .region-header-left #block-sitetitle {
   flex: 1 1 100%;
+  margin: 0;
 }
 #header .region-header-left #block-sitetitle .navbar-brand {
   width: 100%;
@@ -7635,13 +7638,8 @@ button {
   max-width: 100%;
 }
 @media (min-width: 520px) {
-  #header .region-header-left .logo {
-    margin-left: 10%;
-  }
   #header .region-header-left #block-sitetitle {
     flex: 1 1 0;
-    margin-left: 10px;
-    margin-top: 25px;
     text-align: left;
   }
   #header .region-header-left #block-sitetitle .navbar-brand {
@@ -7665,7 +7663,7 @@ button {
   #header .region-header-left {
     flex: 1 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
   }
   #header .region-header-mid,
   #header .region-header-right {
@@ -7675,17 +7673,12 @@ button {
   }
 }
 @media (min-width: 693px) {
-  #header .region-header-left .logo {
-    margin-left: 0;
-  }
   #header .region-header-left #block-sitetitle {
     flex: 0 auto;
-    margin-right: 0;
-    margin-top: 20px;
     text-align: center;
   }
 }
-@media (min-width: 880px) {
+@media (min-width: 1100px) {
   #header .region-header-left,
   #header .region-header-mid,
   #header .region-header-right {
@@ -7695,11 +7688,12 @@ button {
     align-content: center;
     max-width: 33.3333333333%;
   }
+  #header .region-header-left {
+    flex-flow: row wrap;
+  }
   #header .region-header-left .logo,
   #header .region-header-left #block-sitetitle {
     flex: 1 1 100%;
-    margin-left: 0;
-    margin-top: 0;
   }
   #header .region-header-left .logo .navbar-brand,
   #header .region-header-left #block-sitetitle .navbar-brand {
@@ -8865,11 +8859,11 @@ nav.tabs {
   margin: 0;
 }
 #block-views-block-full-calendar-view-block-1 .view > nav {
-  margin-top: 0.5em;
   text-align: center;
 }
 #block-views-block-full-calendar-view-block-1 ul.pager {
   width: 100%;
+  margin: 0;
 }
 #block-views-block-full-calendar-view-block-1 ul.pager li:is(.next, .previous) a {
   color: rgba(0, 0, 0, 0.6509803922);

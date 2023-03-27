@@ -329,10 +329,10 @@ button {
 		19px,
 		34px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 	@include fluid-type(693px,
-		879px,
+		1200px,
 		30px,
 		42px); // values inside are ($min_width,$max_width, $min_font, $max_font);
-	@include fluid-type(880px,
+	@include fluid-type(1100px,
 		1200px,
 		16px,
 		26px); // values inside are ($min_width,$max_width, $min_font, $max_font);
@@ -393,6 +393,7 @@ button {
 		flex: 1 1 100%;
 		justify-content: center;
 		display: flex;
+		gap: 0.5em;
 	}
 
 	.region-header-left {
@@ -402,10 +403,12 @@ button {
 
 		.logo {
 			flex: 0 1 200px;
+			margin: 0;
 		}
 
 		#block-sitetitle {
 			flex: 1 1 100%;
+			margin: 0;
 
 			.navbar-brand {
 				width: 100%;
@@ -420,14 +423,8 @@ button {
 
 	@include breakpoint(520px) {
 		.region-header-left {
-			.logo {
-				margin-left: 10%;
-			}
-
 			#block-sitetitle {
 				flex: 1 1 0;
-				margin-left: 10px;
-				margin-top: 25px;
 				text-align: left;
 
 				.navbar-brand {
@@ -456,7 +453,7 @@ button {
 		.region-header-left {
 			flex: 1 100%;
 			display: flex;
-			flex-flow: row wrap;
+			flex-flow: row nowrap;
 		}
 
 		.region-header-mid,
@@ -469,20 +466,14 @@ button {
 
 	@include breakpoint(693px) {
 		.region-header-left {
-			.logo {
-				margin-left: 0;
-			}
-
 			#block-sitetitle {
 				flex: 0 auto;
-				margin-right: 0;
-				margin-top: 20px;
 				text-align: center;
 			}
 		}
 	}
 
-	@include breakpoint(880px) {
+	@include breakpoint(1100px) {
 
 		.region-header-left,
 		.region-header-mid,
@@ -495,12 +486,11 @@ button {
 		}
 
 		.region-header-left {
+			flex-flow: row wrap;
 
 			.logo,
 			#block-sitetitle {
 				flex: 1 1 100%;
-				margin-left: 0;
-				margin-top: 0;
 
 				.navbar-brand {
 					text-align: center;
@@ -1912,12 +1902,12 @@ nav.tabs {
 	margin: 0;
 
 	.view>nav {
-		margin-top: 0.5em;
 		text-align: center;
 	}
 
 	ul.pager {
 		width: 100%;
+		margin: 0;
 
 		li:is(.next, .previous) a {
 			color: rgba(0, 0, 0, 0.6509803922);
