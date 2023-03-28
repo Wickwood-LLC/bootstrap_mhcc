@@ -93,7 +93,7 @@ p {
 
 ol,
 ul {
-	padding-left: 1.5em;
+	padding-left: 1em;
 
 	.popover &:last-child {
 		margin-bottom: 0;
@@ -1913,40 +1913,6 @@ nav.tabs {
 	.view>nav {
 		text-align: center;
 	}
-
-	ul.pager {
-		width: 100%;
-		margin: 0;
-
-		li:is(.next, .previous) a {
-			color: rgba(0, 0, 0, 0.6509803922);
-			float: none;
-			background-color: unset;
-			border: 0;
-			border-radius: 50%;
-			font-family: 'slick';
-			font-size: 36px;
-			line-height: 1;
-			opacity: .75;
-
-			>span {
-				display: none;
-			}
-
-			&:hover {
-				color: rgba(51, 51, 51, 0.71);
-			}
-		}
-
-		li.next a:before {
-			content: '→';
-
-		}
-
-		li.previous a:before {
-			content: '←';
-		}
-	}
 }
 
 .boxed {
@@ -2155,6 +2121,42 @@ fieldset:not(.fieldgroup) {
 
 /********************* VIEWS *********************/
 
+.view {
+	ul.pager {
+		width: 100%;
+		margin: 0;
+
+		li:is(.next, .previous) a {
+			color: rgba(0, 0, 0, 0.6509803922);
+			float: none;
+			background-color: unset;
+			border: 0;
+			border-radius: 50%;
+			font-family: 'slick';
+			font-size: 36px;
+			line-height: 1;
+			opacity: .75;
+
+			>span {
+				display: none;
+			}
+
+			&:hover {
+				color: rgba(51, 51, 51, 0.71);
+			}
+		}
+
+		li.next a:before {
+			content: '→';
+
+		}
+
+		li.previous a:before {
+			content: '←';
+		}
+	}
+}
+
 .views-exposed-form {
 	.form--inline {
 		display: grid;
@@ -2311,6 +2313,14 @@ fieldset:not(.fieldgroup) {
 			text-align: center;
 			margin: auto;
 		}
+	}
+}
+
+.block-views-blockarticles-block-4,
+.block-views-blocknews-block-4,
+.block-views-blockbikeabout-posts-block-4 {
+	.block-content {
+		padding: 0.5em;
 	}
 }
 

@@ -7294,7 +7294,7 @@ h6,
 
 ol,
 ul {
-  padding-left: 1.5em;
+  padding-left: 1em;
 }
 .popover ol:last-child,
 .popover ul:last-child {
@@ -8867,33 +8867,6 @@ nav.tabs {
 #block-views-block-full-calendar-view-block-1 .view > nav {
   text-align: center;
 }
-#block-views-block-full-calendar-view-block-1 ul.pager {
-  width: 100%;
-  margin: 0;
-}
-#block-views-block-full-calendar-view-block-1 ul.pager li:is(.next, .previous) a {
-  color: rgba(0, 0, 0, 0.6509803922);
-  float: none;
-  background-color: unset;
-  border: 0;
-  border-radius: 50%;
-  font-family: "slick";
-  font-size: 36px;
-  line-height: 1;
-  opacity: 0.75;
-}
-#block-views-block-full-calendar-view-block-1 ul.pager li:is(.next, .previous) a > span {
-  display: none;
-}
-#block-views-block-full-calendar-view-block-1 ul.pager li:is(.next, .previous) a:hover {
-  color: rgba(51, 51, 51, 0.71);
-}
-#block-views-block-full-calendar-view-block-1 ul.pager li.next a:before {
-  content: "→";
-}
-#block-views-block-full-calendar-view-block-1 ul.pager li.previous a:before {
-  content: "←";
-}
 
 .boxed {
   background: #d7e7ef;
@@ -9091,6 +9064,34 @@ fieldset:not(.fieldgroup) {
 }
 
 /********************* VIEWS *********************/
+.view ul.pager {
+  width: 100%;
+  margin: 0;
+}
+.view ul.pager li:is(.next, .previous) a {
+  color: rgba(0, 0, 0, 0.6509803922);
+  float: none;
+  background-color: unset;
+  border: 0;
+  border-radius: 50%;
+  font-family: "slick";
+  font-size: 36px;
+  line-height: 1;
+  opacity: 0.75;
+}
+.view ul.pager li:is(.next, .previous) a > span {
+  display: none;
+}
+.view ul.pager li:is(.next, .previous) a:hover {
+  color: rgba(51, 51, 51, 0.71);
+}
+.view ul.pager li.next a:before {
+  content: "→";
+}
+.view ul.pager li.previous a:before {
+  content: "←";
+}
+
 .views-exposed-form .form--inline {
   display: grid;
   grid-gap: 0.5rem 1rem;
@@ -9232,6 +9233,12 @@ fieldset:not(.fieldgroup) {
   border-bottom: 5px double gray;
   text-align: center;
   margin: auto;
+}
+
+.block-views-blockarticles-block-4 .block-content,
+.block-views-blocknews-block-4 .block-content,
+.block-views-blockbikeabout-posts-block-4 .block-content {
+  padding: 0.5em;
 }
 
 .block-views-blockclassified-ads-block-2 .views-row + .views-row,
