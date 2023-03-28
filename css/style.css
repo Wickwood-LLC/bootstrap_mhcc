@@ -7700,6 +7700,12 @@ button {
     text-align: center;
     width: 100%;
   }
+  #header .region-header-mid {
+    min-width: 360px;
+  }
+  #header .region-header-right {
+    min-width: 360px;
+  }
 }
 
 #navbar {
