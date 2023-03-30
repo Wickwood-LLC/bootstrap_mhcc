@@ -173,4 +173,43 @@
 			}
 		},
 	};
+
+	/**
+	 * Sticky menu
+	 */
+	Drupal.behaviors.stickyMenu = {
+		attach: function (context, settings) {
+			const toolbarTray = document.querySelector(
+				".toolbar-tray-horizontal.is-active"
+			);
+			const toolbarBar = document.querySelector("#toolbar-bar");
+			const menu = document.querySelector("#navbar");
+
+			let topSpacing;
+
+			const setTopSpacing = () => {
+				topSpacing =
+					toolbarBar?.offsetHeight + (toolbarTray?.offsetHeight || 0);
+				menu.style.setProperty("--topSpacing", `${topSpacing}px`);
+				menu.classList.toggle("sticky", menu.scrollTop == topSpacing);
+			};
+
+			// Create a new MutationObserver
+			const observer = new MutationObserver((mutations) => {
+				mutations.forEach((mutation) => {
+					if (mutation.attributeName === "class") {
+						setTopSpacing();
+					}
+				});
+			});
+
+			setTopSpacing();
+
+			// Recalculate on window resize
+			window.onresize = setTopSpacing;
+
+			// Observe changes to the body element
+			observer.observe(document.body, { attributes: true });
+		},
+	};
 })(jQuery, Drupal);

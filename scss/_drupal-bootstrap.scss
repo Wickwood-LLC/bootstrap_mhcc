@@ -16,14 +16,7 @@
 @import "drupal-bootstrap/jquery-ui/autocomplete";
 
 body {
-	background: #028ad2;
-	background: linear-gradient(0deg,
-			#028ad2 0%,
-			rgba(2, 138, 210, 0.95) 70%,
-			white 100%);
-	// filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#028ad2", endColorstr="#ffffff", GradientType=1);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-color: #028ad2;
 	@include fluid-type(320px,
 		1200px,
 		16px,
@@ -516,6 +509,24 @@ button {
 	border: unset;
 	text-align: center;
 	margin-bottom: 0;
+	z-index: 10;
+
+	@include breakpoint(880px) {
+		border-radius: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		width: 100%;
+		background-color: #028ad2;
+		position: sticky;
+
+		top: var(--topSpacing);
+
+		&.sticky {
+			box-shadow: 1px 1px 3px 0px #00000057;
+		}
+	}
 
 	.navbar-header {
 		float: none;
