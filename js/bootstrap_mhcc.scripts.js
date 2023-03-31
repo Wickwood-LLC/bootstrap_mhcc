@@ -189,7 +189,7 @@
 
 			const setTopSpacing = () => {
 				topSpacing =
-					toolbarBar?.offsetHeight + (toolbarTray?.offsetHeight || 0);
+					(toolbarBar?.offsetHeight || 0) + (toolbarTray?.offsetHeight || 0);
 				menu.style.setProperty("--topSpacing", `${topSpacing}px`);
 				menu.classList.toggle("sticky", menu.scrollTop == topSpacing);
 			};
