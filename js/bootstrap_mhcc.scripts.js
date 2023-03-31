@@ -184,6 +184,8 @@
 			);
 			const toolbarBar = document.querySelector("#toolbar-bar");
 			const menu = document.querySelector("#navbar");
+			const logo = document.querySelector(".logo");
+			const homeLink = menu.querySelector("li.first");
 
 			let topSpacing;
 
@@ -196,9 +198,11 @@
 			// Add or remove the "sticky" class
 			window.onscroll = () => {
 				const { top } = menu.getBoundingClientRect();
-				console.log(`${top}, ${topSpacing}`);
 				const isSticky = top <= topSpacing;
 				menu.classList.toggle("sticky", isSticky);
+				isSticky
+					? homeLink.replaceWith(logo)
+					: menu.querySelector(".logo").replaceWith(homeLink);
 			};
 
 			// Create a new MutationObserver
