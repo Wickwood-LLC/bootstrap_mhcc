@@ -7726,6 +7726,12 @@ button {
   }
   #navbar.sticky {
     box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3411764706);
+    transition: box-shadow 1s;
+  }
+  #navbar.sticky .logo {
+    display: inline-block;
+    width: 66px;
+    transition: 0.5s;
   }
 }
 #navbar .navbar-header {

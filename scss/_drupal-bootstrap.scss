@@ -525,6 +525,13 @@ button {
 
 		&.sticky {
 			box-shadow: 1px 1px 3px 0px #00000057;
+			transition: box-shadow 1s;
+
+			.logo {
+				display: inline-block;
+				width: 66px;
+				transition: 0.5s;
+			}
 		}
 	}
 
