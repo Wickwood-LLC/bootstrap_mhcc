@@ -191,7 +191,14 @@
 				topSpacing =
 					(toolbarBar?.offsetHeight || 0) + (toolbarTray?.offsetHeight || 0);
 				menu.style.setProperty("--topSpacing", `${topSpacing}px`);
-				menu.classList.toggle("sticky", menu.scrollTop == topSpacing);
+			};
+
+			// Add or remove the "sticky" class
+			window.onscroll = () => {
+				const { top } = menu.getBoundingClientRect();
+				console.log(`${top}, ${topSpacing}`);
+				const isSticky = top <= topSpacing;
+				menu.classList.toggle("sticky", isSticky);
 			};
 
 			// Create a new MutationObserver
