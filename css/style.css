@@ -7710,7 +7710,7 @@ button {
   border: unset;
   text-align: center;
   margin-bottom: 0;
-  z-index: 10;
+  z-index: 100;
 }
 @media (min-width: 880px) {
   #navbar {
