@@ -184,8 +184,9 @@
 			);
 			const toolbarBar = document.querySelector("#toolbar-bar");
 			const menu = document.querySelector("#navbar");
-			const logo = document.querySelector(".logo");
 			const homeLink = menu.querySelector("li.first");
+			// Clone the logo element
+			const logoCopy = document.querySelector(".logo").cloneNode(true);
 
 			let topSpacing;
 
@@ -201,7 +202,7 @@
 				const isSticky = top <= topSpacing;
 				menu.classList.toggle("sticky", isSticky);
 				isSticky
-					? homeLink.replaceWith(logo)
+					? homeLink.replaceWith(logoCopy)
 					: menu.querySelector(".logo").replaceWith(homeLink);
 			};
 
