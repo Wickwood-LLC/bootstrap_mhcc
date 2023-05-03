@@ -3136,17 +3136,30 @@ tr:first-child>td>.fc-day-grid-event {
 		text-decoration: underline;
 	}
 
-	.slick__slide .slide__caption {
-		position: absolute;
-		color: black;
-		font-weight: bold;
-		background-color: #ffffffb5;
-		border-bottom-right-radius: 7px;
-		border-bottom-left-radius: 7px;
+	.slick-list {
+		border-radius: 6px;
 	}
 
-	.slide__media iframe {
+	.slick__slide {
+		display: block;
+	}
+
+	.views-field.views-field-title {
+		position: absolute;
+		bottom: 0;
+		background-color: #ffffff7d;
+		display: block;
+		width: 100%;
+		padding: 0.5em;
+		backdrop-filter: blur(3px);
+		text-align: center;
+	}
+
+	.views-field.views-field-field-feature-media img {
+		height: auto;
+		width: 100%;
 		aspect-ratio: 16 / 9;
+		object-fit: cover;
 	}
 
 	.slick__arrow {
