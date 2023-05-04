@@ -9958,7 +9958,7 @@ tr:first-child > td > .fc-day-grid-event {
 .slick--view--cards .slick__slide {
   display: block;
 }
-.slick--view--cards .views-field.views-field-title {
+.slick--view--cards .views-field.views-field-views-conditional-field {
   position: absolute;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.4901960784);
