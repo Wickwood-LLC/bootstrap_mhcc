@@ -3158,8 +3158,7 @@ tr:first-child>td>.fc-day-grid-event {
 	.views-field.views-field-field-feature-media img {
 		height: auto;
 		width: 100%;
-		aspect-ratio: 16 / 9;
-		object-fit: cover;
+		object-fit: fill;
 	}
 
 	.slick__arrow {

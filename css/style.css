@@ -9972,9 +9972,8 @@ tr:first-child > td > .fc-day-grid-event {
 .slick--view--cards .views-field.views-field-field-feature-media img {
   height: auto;
   width: 100%;
-  aspect-ratio: 16/9;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .slick--view--cards .slick__arrow {
   position: absolute;
