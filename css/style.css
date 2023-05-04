@@ -6044,7 +6044,6 @@ button.close {
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .item {
     transition: transform 0.6s ease-in-out;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     perspective: 1000px;
   }
@@ -7163,10 +7162,7 @@ body.toolbar-loading.toolbar {
 }
 
 body {
-  background: #028ad2;
-  background: linear-gradient(0deg, #028ad2 0%, rgba(2, 138, 210, 0.95) 70%, white 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #028ad2;
 }
 @media screen and (min-width: 320px) {
   body {
@@ -7713,6 +7709,29 @@ button {
   border: unset;
   text-align: center;
   margin-bottom: 0;
+  z-index: 100;
+}
+@media (min-width: 880px) {
+  #navbar {
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    background-color: #028ad2;
+    position: sticky;
+    top: var(--topSpacing);
+  }
+  #navbar.sticky {
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3411764706);
+    transition: box-shadow 1s;
+  }
+  #navbar.sticky .logo {
+    display: inline-block;
+    width: 66px;
+    transition: 0.5s;
+  }
 }
 #navbar .navbar-header {
   float: none;
@@ -7839,6 +7858,7 @@ button {
     top: 90px;
     right: 0;
     z-index: 110;
+    width: auto;
   }
   #navbar .navbar-toggle {
     margin: 0;
@@ -9932,16 +9952,31 @@ tr:first-child > td > .fc-day-grid-event {
   color: black;
   text-decoration: underline;
 }
-.slick--view--cards .slick__slide .slide__caption {
-  position: absolute;
-  color: black;
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.7098039216);
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
+.slick--view--cards a:focus {
+  outline: unset;
 }
-.slick--view--cards .slide__media iframe {
-  aspect-ratio: 16/9;
+.slick--view--cards .slick-list {
+  border-radius: 6px;
+}
+.slick--view--cards .slick__slide {
+  display: block;
+}
+.slick--view--cards .views-field.views-field-views-conditional-field {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.4901960784);
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  text-align: center;
+}
+.slick--view--cards .views-field.views-field-field-feature-media img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .slick--view--cards .slick__arrow {
   position: absolute;

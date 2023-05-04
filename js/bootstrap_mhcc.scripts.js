@@ -173,4 +173,55 @@
 			}
 		},
 	};
+
+	/**
+	 * Sticky menu
+	 */
+	Drupal.behaviors.stickyMenu = {
+		attach: function (context, settings) {
+			const toolbarTray = document.querySelector(
+				".toolbar-tray-horizontal.is-active"
+			);
+			const toolbarBar = document.querySelector("#toolbar-bar");
+			const menu = document.querySelector("#navbar");
+			const homeLink = menu.querySelector("li.first");
+			// Clone the logo element
+			const logoCopy = document.querySelector(".logo").cloneNode(true);
+
+			let topSpacing;
+
+			const setTopSpacing = () => {
+				topSpacing =
+					(toolbarBar?.offsetHeight || 0) + (toolbarTray?.offsetHeight || 0);
+				menu.style.setProperty("--topSpacing", `${topSpacing}px`);
+			};
+
+			// Add or remove the "sticky" class
+			window.onscroll = () => {
+				const { top } = menu.getBoundingClientRect();
+				const isSticky = top <= topSpacing;
+				menu.classList.toggle("sticky", isSticky);
+				isSticky
+					? homeLink.replaceWith(logoCopy)
+					: menu.querySelector(".logo").replaceWith(homeLink);
+			};
+
+			// Create a new MutationObserver
+			const observer = new MutationObserver((mutations) => {
+				mutations.forEach((mutation) => {
+					if (mutation.attributeName === "class") {
+						setTopSpacing();
+					}
+				});
+			});
+
+			setTopSpacing();
+
+			// Recalculate on window resize
+			window.onresize = setTopSpacing;
+
+			// Observe changes to the body element
+			observer.observe(document.body, { attributes: true });
+		},
+	};
 })(jQuery, Drupal);

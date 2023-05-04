@@ -16,14 +16,7 @@
 @import "drupal-bootstrap/jquery-ui/autocomplete";
 
 body {
-	background: #028ad2;
-	background: linear-gradient(0deg,
-			#028ad2 0%,
-			rgba(2, 138, 210, 0.95) 70%,
-			white 100%);
-	// filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#028ad2", endColorstr="#ffffff", GradientType=1);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-color: #028ad2;
 	@include fluid-type(320px,
 		1200px,
 		16px,
@@ -516,6 +509,31 @@ button {
 	border: unset;
 	text-align: center;
 	margin-bottom: 0;
+	z-index: 100;
+
+	@include breakpoint(880px) {
+		border-radius: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		width: 100%;
+		background-color: #028ad2;
+		position: sticky;
+
+		top: var(--topSpacing);
+
+		&.sticky {
+			box-shadow: 1px 1px 3px 0px #00000057;
+			transition: box-shadow 1s;
+
+			.logo {
+				display: inline-block;
+				width: 66px;
+				transition: 0.5s;
+			}
+		}
+	}
 
 	.navbar-header {
 		float: none;
@@ -651,6 +669,7 @@ button {
 		top: 90px;
 		right: 0;
 		z-index: 110;
+		width: auto;
 
 		.navbar-toggle {
 			margin: 0;
@@ -3115,19 +3134,35 @@ tr:first-child>td>.fc-day-grid-event {
 	a {
 		color: black;
 		text-decoration: underline;
+
+		&:focus {
+			outline: unset;
+		}
 	}
 
-	.slick__slide .slide__caption {
+	.slick-list {
+		border-radius: 6px;
+	}
+
+	.slick__slide {
+		display: block;
+	}
+
+	.views-field.views-field-views-conditional-field {
 		position: absolute;
-		color: black;
-		font-weight: bold;
-		background-color: #ffffffb5;
-		border-bottom-right-radius: 7px;
-		border-bottom-left-radius: 7px;
+		bottom: 0;
+		background-color: #ffffff7d;
+		display: block;
+		width: 100%;
+		padding: 0.5em;
+		backdrop-filter: blur(3px);
+		text-align: center;
 	}
 
-	.slide__media iframe {
-		aspect-ratio: 16 / 9;
+	.views-field.views-field-field-feature-media img {
+		height: auto;
+		width: 100%;
+		object-fit: fill;
 	}
 
 	.slick__arrow {
