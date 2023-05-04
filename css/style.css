@@ -9952,6 +9952,9 @@ tr:first-child > td > .fc-day-grid-event {
   color: black;
   text-decoration: underline;
 }
+.slick--view--cards a:focus {
+  outline: unset;
+}
 .slick--view--cards .slick-list {
   border-radius: 6px;
 }
