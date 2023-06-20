@@ -200,10 +200,13 @@
 			window.onscroll = () => {
 				const { top } = menu.getBoundingClientRect();
 				const isSticky = top <= topSpacing;
-				menu.classList.toggle("sticky", isSticky);
-				isSticky
-					? homeLink.replaceWith(logoCopy)
-					: menu.querySelector(".logo").replaceWith(homeLink);
+				const alreadySticky = menu.classList.contains("sticky");
+				if (isSticky != alreadySticky) {
+					menu.classList.toggle("sticky", isSticky);
+					isSticky
+						? homeLink.replaceWith(logoCopy)
+						: menu.querySelector(".logo").replaceWith(homeLink);
+				}
 			};
 
 			// Create a new MutationObserver
